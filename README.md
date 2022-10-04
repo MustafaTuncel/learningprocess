@@ -1,1 +1,1 @@
-# learningprocess
+# Öğrendiklerimi burada uyguluyorum.
