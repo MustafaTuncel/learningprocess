@@ -2,14 +2,20 @@
 
 * ## IMG UPLOAD & LINK
 
-Fotoğraf ekleme ; 
-![Zangetsu](https://user-images.githubusercontent.com/114073869/194291123-13de67b5-139d-4106-9347-cd46b130e4b7.jpg)
-Link verme ; [Google](https://www.google.com) <br/>
+Fotoğraf ekleme : 
+
+![Zangetsu](https://user-images.githubusercontent.com/114073869/194291123-13de67b5-139d-4106-9347-cd46b130e4b7.jpg) Açıklamalı <br/> 
+<img src="https://user-images.githubusercontent.com/114073869/194291123-13de67b5-139d-4106-9347-cd46b130e4b7.jpg" width"50" height"50">
+Önceden belirtilmiş ve boyutlandırılmış
+
+Link verme : <br/> [Google](https://www.google.com) Açıklamalı <br/> [Google] Önceden belirtilmiş <br/>
 
 * ## MARKDOWN
 ### BAŞLIK HALİNE GETİRME {1..6}
 
 alt satıra geçme < br/ > <br/> **kalınlaştırma** <br/> *italikleştirme* <br/> ***kalın ve italik*** <br/>
+
+> Alıntılama
 
 ~~üstü çizili~~ <br/>
 <ins>altı çizili<ins> <br/>
@@ -18,3 +24,8 @@ alt satıra geçme < br/ > <br/> **kalınlaştırma** <br/> *italikleştirme* <b
 
 Script<sub>Subscript</sub> <br/>
 Script<sup>Superscript</sup> <br/>
+
+
+
+[Google]: https://www.google.com.tr
+[Zangetsu]: https://user-images.githubusercontent.com/114073869/194291123-13de67b5-139d-4106-9347-cd46b130e4b7.jpg
