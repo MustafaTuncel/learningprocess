@@ -27,11 +27,13 @@ alt satıra geçme < br/ > <br/> **kalınlaştırma** <br/> *italikleştirme* <b
 Script<sub>Subscript</sub> <br/>
 Script<sup>Superscript</sup> <br/>
 
-### Code Line (\```bash/python/javascript...<text>\```)
+### Code Line
+**(\```bash / python / javascript...
+\<code text>\```)**
 ````bash
     git clone https://www.github.com/MustafaTuncel...
     cd /MustafaTuncel
-    npm install...
+    npm install
 ````
 
 
