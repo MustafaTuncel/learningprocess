@@ -5,7 +5,7 @@
 Fotoğraf ekleme : 
 
 ![Zangetsu](https://user-images.githubusercontent.com/114073869/194291123-13de67b5-139d-4106-9347-cd46b130e4b7.jpg) Açıklamalı <br/> 
-<img src="https://user-images.githubusercontent.com/114073869/194291123-13de67b5-139d-4106-9347-cd46b130e4b7.jpg" width="400" height="200"> <br/>
+<img src="https://user-images.githubusercontent.com/114073869/194291123-13de67b5-139d-4106-9347-cd46b130e4b7.jpg" width="600" height="300"> <br/>
 Önceden belirtilmiş ve boyutlandırılmış
 
 Link verme : <br/> [Google](https://www.google.com) Açıklamalı <br/> [Google] Önceden belirtilmiş <br/>
@@ -25,7 +25,16 @@ alt satıra geçme < br/ > <br/> **kalınlaştırma** <br/> *italikleştirme* <b
 Script<sub>Subscript</sub> <br/>
 Script<sup>Superscript</sup> <br/>
 
-
-
+* ## LISTS (Unordered & Ordered)
+  
+### Unordered Lists (tab+tab)
+1. A
+    1. aa
+    2. bb
+    3. cc
+2. B
+3. C
+  
+  
 [Google]: https://www.google.com.tr
 [Zangetsu]: https://user-images.githubusercontent.com/114073869/194291123-13de67b5-139d-4106-9347-cd46b130e4b7.jpg
