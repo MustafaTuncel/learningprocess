@@ -27,6 +27,9 @@ alt satıra geçme < br/ > <br/> **kalınlaştırma** <br/> *italikleştirme* <b
 Script<sub>Subscript</sub> <br/>
 Script<sup>Superscript</sup> <br/>
 
+
+<font color="blue">*Renklendirme* </font>
+
 ### Code Line
 **(\```bash / python / javascript...
 \<code text>\```)**
