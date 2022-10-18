@@ -10,6 +10,24 @@ Fotoğraf ekleme :
 
 Link verme : <br/> [Google](https://www.google.com) Açıklamalı <br/> [Google] Önceden belirtilmiş <br/>
 
+**sola veya sağa yaslamak için** align="left - right" <br/>
+
+**link kısaltma** <br/>
+\[google]: https://www.google.com.tr\ <br/>
+
+* ## ICONS & LINKS
+**sosyal medya ikonlama işlemi için ;** <br/>
+[\<img height="22" width="22" src="ikon resim kaynak urlsi" />\][<sosyal medya <ins>**linki**</ins> veya belirlenmiş kısaltması] <br/>
+
+**kullanılan teknolojiler ikonlama işlemi için ;** <br/>
+[\<img height="25" width="25" src="ikon resim kaynak urlsi">\][teknoloji <ins>**linki**</ins> veya belirlenmiş kısaltması]
+
+* ## DETAYLANDIRMA
+\<details>
+**gizlenecek/gösterilecek text dizisi**
+</details\>
+
+\<summary> **tıklanabilir başlık adı** </summary\>
 
 
 * ## MARKDOWN
@@ -28,11 +46,11 @@ Script<sub>Subscript</sub> <br/>
 Script<sup>Superscript</sup> <br/>
 
 
-<font color="blue">*Renklendirme* </font>
+***<font color="blue"> Renklendirme </font>***
 
 ### Code Line
-**(\```bash / python / javascript...
-\<code text>\```)**
+**\``bash / python / javascript... <br/>
+\<code text>\``**
 ````bash
     git clone https://www.github.com/MustafaTuncel...
     cd /MustafaTuncel
