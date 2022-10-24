@@ -98,8 +98,22 @@ Script<sup>Superscript</sup> <br/>
 ### :ghost: GitHub Emojies :skull:
 https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 
+* ## TABLO ÖRNEĞİ
+| Company 1 | Period of work (mm/yyyy - mm/yyyy) |
+|:---------:|:----------------------------------:|
+| Position 1 | Description about position 1 |
 
+| Company 2 | Period of work (mm/yyyy - mm/yyyy) |
+|:---------:|:----------------------------------:|
+| Position 2 | Description about position 2 |
 
+| Company 3 | Period of work (mm/yyyy - mm/yyyy) |
+|:---------:|:----------------------------------:|
+| Position 3 | Description about position 3 |
+
+| Company 4 | Period of work (mm/yyyy - mm/yyyy) |
+|:---------:|:----------------------------------:|
+| Position 4 | Description about position 4 |
 
   
 [Google]: https://www.google.com.tr
