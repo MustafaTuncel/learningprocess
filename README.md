@@ -115,6 +115,16 @@ https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 |:---------:|:----------------------------------:|
 | Position 4 | Description about position 4 |
 
+* ## GITHUB PROFILE STATS
+
+**GitHub Stats**
+<img src="https://github-readme-stats.vercel.app/api?username=MustafaTuncel&theme=default">
+**Contributions & Streaks**
+<img src="https://github-readme-streak-stats.herokuapp.com?user=mustafatuncel&theme=default&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="My github stats"/>
+**Most Used Languages**
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MustafaTuncel&theme=default&&layout=compact">
   
+
+
 [Google]: https://www.google.com.tr
 [Zangetsu]: https://user-images.githubusercontent.com/114073869/194291123-13de67b5-139d-4106-9347-cd46b130e4b7.jpg
