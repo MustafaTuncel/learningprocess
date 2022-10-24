@@ -120,7 +120,7 @@ https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 **GitHub Stats**<br/>
 <img src="https://github-readme-stats.vercel.app/api?username=MustafaTuncel&theme=default"><br/>
 **Contributions & Streaks**<br/>
-<img src="https://github-readme-streak-stats.herokuapp.com?user=mustafatuncel&theme=default&hide_border=true&date_format=M%20j%5B%2C%20Y%5D" alt="My github stats"/><br/>
+<img src="https://github-readme-streak-stats.herokuapp.com?user=mustafatuncel&theme=default&hide_border=false&date_format=M%20j%5B%2C%20Y%5D"/><br/>
 **Most Used Languages**<br/>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MustafaTuncel&theme=default&&layout=compact"><br/>
   
