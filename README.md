@@ -15,6 +15,13 @@ Link verme : <br/> [Google](https://www.google.com) Açıklamalı <br/> [Google]
 **link kısaltma** <br/>
 \[google]: https://www.google.com.tr\ <br/>
 
+* ## BANNER
+**Linked**
+[![Header](https://github.com/MustafaTuncel/MustafaTuncel/blob/ab9b13091a4d536512dd05a152119b20bce5187d/Mia%20Wallace%20Banner.png "Header")](https://mustafatuncel.github.io/)<br/>
+
+**Not linked**
+<img src="https://github.com/MustafaTuncel/MustafaTuncel/blob/ab9b13091a4d536512dd05a152119b20bce5187d/Mia%20Wallace%20Banner.png" alt="Mustafa Tuncel - software developer"><br/>
+
 * ## ICONS & LINKS
 **sosyal medya ikonlama işlemi için ;** <br/>
 [\<img height="22" width="22" src="ikon resim kaynak urlsi" />\][<sosyal medya <ins>**linki**</ins> veya belirlenmiş kısaltması] <br/>
