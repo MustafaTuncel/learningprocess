@@ -1,0 +1,43 @@
+<!--
+!DOCTYPE html = döküman türünü html olarak seçmek
+    html = html düzenlemelerinin yapıldığı alan aralığı
+        head = Diller, Metalar, Sayfa Başlığı, Script ve Style tanımlamaları (Javascript ve CSS, Jquery...), altyazı tanımlamaları.
+            < head lang="tr">
+            < meta charset="UTF-8">
+            < title>başlık</title>
+        body = Elements & Attributes içeren alan aralığı
+            elements   = (tagler) Resim yükleme (<img src"..."/>) yada link verme (<a href="..."/a>) gibi body içerikleri, 
+                resim yükleme etiketi   = <img />
+                link verme etiketi      = <a> </a>
+            attributes = (özellikler) Elementlere genişlik (width="...") yada yükseklik (height="...") gibi özellikler veren kullanımlar.
+                yüklenen resim ayrıntıları  = <img width="..." height="..." src="url" resim açıklaması />
+                yüklenen link ayrıntıları   = <a target="_blank" href="url"> link açıklaması </a>
+-->
+
+<h3>1 - SAYFA YAPISI</h3>
+< !DOCTYPE html> <br/>
+< html> <br/>
+    < head> <br/>
+    < /head> <br/>
+    < body> <br/>
+    < /body> <br/>
+< /html> <br/>
+
+<h3>2 - SAYFA İÇİ DÜZEN VE ETİKETLER</h3>
+Yorum satırı = < !-- -->     (comment) <br/>
+Paragraf     = < p>text< /p> (pharagraph) <br/>
+Bağlantı     = < a> < /a>    (link) <br/>
+Satır atlama = < br/> <br/>
+Kalın metin  = <b>text</b>   (bold) <br/>
+Eğik metin   = <i>text</i>   (italic) <br/>
+Altı çizili  = <u>text</u>   (underline) <br/>
+Üstü çizili  = <s>text</s>   (strike) <br/>
+
+<h3>3 - RESİMLER</h3>
+Resim Dosyasının Kaynağını Belirtme = src="url/dosya adı" <br/>
+    (dosya olarak belirtmek için, resim dosyasının html dosyasının bulunduğu klasörde olması gerekir) <br/>
+Görüntülenemeyen Resim Açıklaması = alt="text" <br/>
+Fare ile Resimin Üzerine Gelindiğinde Resim Açıklaması Vermek = title="text" <br/>
+    
+<h3>4 - LİNKLER</h3>
+Linki Yeni Sekmede Açmak = target="_blank"
