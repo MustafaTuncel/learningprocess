@@ -15,12 +15,16 @@ Link verme : <br/> [Google](https://www.google.com) Açıklamalı <br/> [Google]
 **link kısaltma** <br/>
 \[google]: https://www.google.com.tr\ <br/>
 
+<hr/>
+
 * ## BANNER
 **Linked**
 [![Header](https://github.com/MustafaTuncel/MustafaTuncel/blob/ab9b13091a4d536512dd05a152119b20bce5187d/Mia%20Wallace%20Banner.png "Header")](https://mustafatuncel.github.io/)<br/>
 
 **Not linked**
 <img src="https://github.com/MustafaTuncel/MustafaTuncel/blob/ab9b13091a4d536512dd05a152119b20bce5187d/Mia%20Wallace%20Banner.png" alt="Mustafa Tuncel - software developer"><br/>
+
+<hr/>
 
 * ## ICONS & LINKS
 **sosyal medya ikonlama işlemi için ;** <br/>
@@ -29,6 +33,8 @@ Link verme : <br/> [Google](https://www.google.com) Açıklamalı <br/> [Google]
 **kullanılan teknolojiler ikonlama işlemi için ;** <br/>
 [\<img height="25" width="25" src="ikon resim kaynak urlsi">\][teknoloji <ins>**linki**</ins> veya belirlenmiş kısaltması]
 
+<hr/>
+
 * ## DETAYLANDIRMA
 \<details>
 **gizlenecek/gösterilecek text dizisi**
@@ -36,13 +42,14 @@ Link verme : <br/> [Google](https://www.google.com) Açıklamalı <br/> [Google]
 
 \<summary> **tıklanabilir başlık adı** </summary\>
 
+<hr/>
 
 * ## MARKDOWN
 ##### BAŞLIK HALİNE GETİRME \{1..6}
 
 alt satıra geçme < br/ > <br/> **kalınlaştırma** <br/> *italikleştirme* <br/> ***kalın ve italik*** <br/> 
 
-> Alıntılama
+>Alıntılama
 
 ~~üstü çizili~~ <br/>
 <ins>altı çizili<ins> <br/>
@@ -54,6 +61,8 @@ Script<sup>Superscript</sup> <br/>
 
 
 ***<font color="blue"> Renklendirme </font>***
+
+<hr/>
 
 ### Code Line
 **\``bash / python / javascript... <br/>
@@ -98,6 +107,8 @@ Script<sup>Superscript</sup> <br/>
 ### :ghost: GitHub Emojies :skull:
 https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 
+<hr/>
+
 * ## TABLO ÖRNEĞİ
 | Company 1 | Period of work (mm/yyyy - mm/yyyy) |
 |:---------:|:----------------------------------:|
@@ -114,6 +125,8 @@ https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 | Company 4 | Period of work (mm/yyyy - mm/yyyy) |
 |:---------:|:----------------------------------:|
 | Position 4 | Description about position 4 |
+
+<hr/>
 
 * ## GITHUB PROFILE STATS
 
