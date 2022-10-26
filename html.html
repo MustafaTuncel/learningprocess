@@ -1,0 +1,104 @@
+<!--
+!DOCTYPE html = döküman türünü html olarak seçmek
+    html = html düzenlemelerinin yapıldığı alan aralığı
+        head = Diller, Metalar, Sayfa Başlığı, Script ve Style tanımlamaları (Javascript ve CSS, Jquery...), altyazı tanımlamaları.
+            < head lang="tr">
+            < meta charset="UTF-8">
+            < title>başlık</title>
+        body = Elements & Attributes içeren alan aralığı
+            elements   = (tagler) Resim yükleme (<img src"..."/>) yada link verme (<a href="..."/a>) gibi body içerikleri, 
+                resim yükleme etiketi   = <img />
+                link verme etiketi      = <a> </a>
+            attributes = (özellikler) Elementlere genişlik (width="...") yada yükseklik (height="...") gibi özellikler veren kullanımlar.
+                yüklenen resim ayrıntıları  = <img width="..." height="..." src="url" resim açıklaması />
+                yüklenen link ayrıntıları   = <a target="_blank" href="url"> link açıklaması </a>
+-->
+
+<h3>1 - SAYFA YAPISI</h3>
+< !DOCTYPE html> <br/>
+< html> <br/>
+    < head> <br/>
+    < /head> <br/>
+    < body> <br/>
+    < /body> <br/>
+< /html> <br/>
+
+<hr/>
+
+<h3>2 - SAYFA İÇİ DÜZEN VE ETİKETLER</h3>
+Kalın metin     = < b> < /b>   (bold) <br/>
+Eğik metin      = < i> < /i>   (italic) <br/>
+Altı çizili     = < u> < /u>   (underline) <br/>
+Üstü çizili     = < s> < /s>   (strike) <br/>
+Satır atlama    = < br/> <br/>
+Sınırsız Çizgi  = < hr/> <br/>
+Yorum satırı    = < !-- -->    (comment) <br/>
+Paragraf        = < p> < /p>   (pharagraph) <br/>
+Bağlantı        = < a> < /a>   (link) <br/>
+Resim           = < img /> <br/>
+
+<hr/>
+
+<h3>3 - RESİMLER</h3>
+Resim Dosyasının Kaynağını Belirtme = src="url/dosya adı" <br/>
+    (dosya olarak belirtmek için, resim dosyasının html dosyasının bulunduğu klasörde olması gerekir) <br/>
+Görüntülenemeyen Resim Açıklaması = alt="text" <br/>
+Fare ile Resimin Üzerine Gelindiğinde Resim Açıklaması Vermek = title="text" <br/>
+
+<hr/>
+
+<h3>4 - LİNKLER</h3>
+Linki Yeni Sekmede Açmak = target="_blank"
+
+<hr/>
+
+<h3>5 - TABLOLAR</h3>
+< table> < /table>  = tablo oluşturma <br/>
+< thead> < /thead>  = tablo başlık kısmı <br/>
+< tbody> < /tbody>  = tablo gelişme kısmı (bilgiler) <br/>
+< tfoot> < /tfoot>    = tablo sonuç kısmı (toplamlar) <br/>
+<br/>
+border="1px"        = tablo çizgileri ve kalınlığı <br/>
+< th> < /th>        = başlık eki (thead ve tfoot içerisinde) <br/>
+< tr> < /tr>        = satır oluşturma (tbody içerisinde) <br/>
+< td> < /td>        = sütun oluşturma (satır içerisinde) <br/>
+colspan="2"         = sütun birleştirme (yazıyı ortalama) <br/>
+align="left-right"  = satır içi hizalama <br/>
+<br/>
+
+<html>
+    <head>
+    </head>
+    <body>
+        <table border="1px">
+            <thead>
+                <th>AD SOYAD</th>
+                <th>TELEFON</th>
+                <th>ADRES</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mustafa Tuncel</td>
+                    <td>123</td>
+                    <td>asd</td>
+                </tr>
+                <tr>
+                    <td>Salime Tuncel</td>
+                    <td>456</td>
+                    <td>fgh</td>
+                </tr>
+                <tr>
+                    <td>Nihat Tuncel</td>
+                    <td>789</td>
+                    <td>jkl</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th colspan="2" align="right">KAYIT TOPLAMI</th>
+                <th align="left">3</th>
+            </tfoot>
+        </table>
+    </body>
+</html>
+
+<hr/>

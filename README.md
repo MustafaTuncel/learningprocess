@@ -10,7 +10,7 @@ Fotoğraf ekleme :
 
 Link verme : <br/> [Google](https://www.google.com) Açıklamalı <br/> [Google] Önceden belirtilmiş <br/>
 
-**sola veya sağa yaslamak için** align="left - right" <br/>
+**sola, sağa, ortaya, iki yana yaslamak için** align="left - right - center - justify" <br/>
 
 **link kısaltma** <br/>
 \[google]: https://www.google.com.tr\ <br/>
