@@ -107,7 +107,8 @@ https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 
 <hr/>
 
-* ## TABLO ÖRNEĞİ
+* ## TABLO ÖRNEKLERİ
+### Tablo 1
 | Company 1 | Period of work (mm/yyyy - mm/yyyy) |
 |:---------:|:----------------------------------:|
 | Position 1 | Description about position 1 |
@@ -122,6 +123,14 @@ https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md
 
 | Company 4 | Period of work (mm/yyyy - mm/yyyy) |
 |:---------:|:----------------------------------:|
+| Position 4 | Description about position 4 |
+
+### Tablo 2
+| Company 1 | Period of work (mm/yyyy - mm/yyyy) |
+|:---------:|:----------------------------------:|
+| Position 1 | Description about position 1 |
+| Position 2 | Description about position 2 |
+| Position 3 | Description about position 3 |
 | Position 4 | Description about position 4 |
 
 <hr/>
