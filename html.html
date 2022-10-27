@@ -14,18 +14,21 @@
                 yüklenen link ayrıntıları   = <a target="_blank" href="url"> link açıklaması </a>
 -->
 
-<h3>1 - SAYFA YAPISI</h3>
-< !DOCTYPE html> <br/>
+<details>
+<summary><b>1 - SAYFA YAPISI</b></summary>
 < html> <br/>
     < head> <br/>
     < /head> <br/>
     < body> <br/>
     < /body> <br/>
+    < foot> <br/>
+    < /foot> <br/>
 < /html> <br/>
+</details> <br/>
 
-<hr/>
+<details>
+<summary><b>2 - SAYFA İÇİ DÜZEN VE ETİKETLER</b></summary>
 
-<h3>2 - SAYFA İÇİ DÜZEN VE ETİKETLER</h3>
 Kalın metin     = < b> < /b>   (bold) <br/>
 Eğik metin      = < i> < /i>   (italic) <br/>
 Altı çizili     = < u> < /u>   (underline) <br/>
@@ -36,23 +39,24 @@ Yorum satırı    = < !-- -->    (comment) <br/>
 Paragraf        = < p> < /p>   (pharagraph) <br/>
 Bağlantı        = < a> < /a>   (link) <br/>
 Resim           = < img /> <br/>
+</details> <br/>
 
-<hr/>
-
-<h3>3 - RESİMLER</h3>
+<details>
+<summary><b>3 - RESİMLER</b></summary>
 Resim Dosyasının Kaynağını Belirtme = src="url/dosya adı" <br/>
-    (dosya olarak belirtmek için, resim dosyasının html dosyasının bulunduğu klasörde olması gerekir) <br/>
+    (<i>dosya olarak belirtmek için, resim dosyasının html dosyasının bulunduğu klasörde olması gerekir</i>) <br/>
 Görüntülenemeyen Resim Açıklaması = alt="text" <br/>
 Fare ile Resimin Üzerine Gelindiğinde Resim Açıklaması Vermek = title="text" <br/>
+</details> <br/>
 
-<hr/>
+<details>
+<summary><b>4 - LİNKLER</b></summary>
+Link Parametresi            = href="..." <br/>
+Linki Yeni Sekmede Açmak    = target="_blank" <br/>
+</details> <br/>
 
-<h3>4 - LİNKLER</h3>
-Linki Yeni Sekmede Açmak = target="_blank"
-
-<hr/>
-
-<h3>5 - TABLOLAR</h3>
+<details>
+<summary><b>5 - TABLOLAR</b></summary>
 < table> < /table>  = tablo oluşturma <br/>
 < thead> < /thead>  = tablo başlık kısmı <br/>
 < tbody> < /tbody>  = tablo gelişme kısmı (bilgiler) <br/>
@@ -100,5 +104,105 @@ align="left-right"  = satır içi hizalama <br/>
         </table>
     </body>
 </html>
+</details> <br/>
 
-<hr/>
+<details>
+<summary><b>6 - LİSTELEME</b></summary>
+< ol> < /ol>    = Ordered liste oluşturma <br/>
+< ul> < /ul>    = Unordered liste oluşturma <br/>
+< li> < /li>    = Liste maddeleri <br/>
+[ol/li/ul/li]   = kategori - iç içe liste oluşturma (sıralı ve sırasız listeleme kullanarak) <br/>
+<br/>
+< dl> < /dl>    = Kategori - İç içe liste oluşturma <br/>
+< dt> < /dt>    = Kategori - Liste adı <br/>
+< dd> < /dd>    = Kategori - Liste özellikleri yada detayları <br/>
+<br/>
+<b><i>İşaretler CSS aracılığıyla ;</i></b> <br/>
+Unordered listelerde < ul> type="..."> type parametresi girilerek, (disc,circle,square gibi) <br/>
+Ordered listelerde < ol> type="..."> type parametresi girilerek, (I,i,A,a gibi) <br/>
+Ordered Listelerde < ol> type="..." start="2,3,4..."> start parametresi girilerek (başlangıç maddesi) değişiklikler yapılabilir.
+<details>
+<summary><b>a - Sıralı (Ordered) Listeler</b></summary>
+<html>
+    <head>
+    </head>
+    <body>
+        <h5>Katılım Şartları</h5>
+        <ol>
+            <li>Reşitlik</li>
+            <li>Lisans Diploması</li>
+            <li>Herhangi bir cezai geçmişin bulunmaması</li>
+        </ol>
+    </body>
+    <foot>
+    </foot>
+</html>
+</details>
+
+<details>
+<summary><b>b - Sırasız (Unordered) Listeler</b></summary>
+<html>
+    <head>
+    </head>
+    <body>
+        <h5>Gerekli Evraklar Listesi</h5>
+        <ul>
+            <li>T.C. Kimliği</li>
+            <li>İkametgah Adresi</li>
+            <li>Adli Sicil Kaydı</li>
+            <li>4 adet Fotoğraf</li>
+        </ul>
+    </body>
+    <foot>
+    </foot>
+</html>
+</details>
+
+<details>
+<summary><b>c - Sıralı ve Sırasız Listeleme Kullanarak Kategorik - İç İçe Listeleme</b></summary>
+<html>
+    <head>
+    </head>
+    <body>
+        <ol type="I">
+            <li>asd</li>
+                <ul type="disc">
+                    <li>123</li>
+                </ul>
+            <li>fgh</li>
+                <ul type="circle">
+                    <li>456</li>
+                </ul>
+            <li>jkl</li>
+                <ul type="square">
+                    <li>789</li>
+                    <li>010</li>
+                </ul>
+        </ol>
+    </body>
+    <foot>
+    </foot>
+</html>
+</details>
+
+<details>
+<summary><b>d - Kategorik - İç içe Listeler (alt maddeli listeler)</b></summary>
+<html>
+    <head>
+    </head>
+    <body>
+        <h4>Kahve & Süt</h4>
+        <dl>
+            <dt>Kahve</dt>
+                <dd>Kahverengidir</dd>
+                <dd>Sıcaktır</dd>
+            <dt>Süt</dt>
+                <dd>Beyazdır</dd>
+        </dl>
+    </body>
+    <foot>
+    </foot>
+</html>
+</details>
+</details> <br/>
+
