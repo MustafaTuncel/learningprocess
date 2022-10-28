@@ -9,13 +9,21 @@
             elements   = (tagler) Resim yükleme (<img src"..."/>) yada link verme (<a href="..."/a>) gibi body içerikleri, 
                 resim yükleme etiketi   = <img />
                 link verme etiketi      = <a> </a>
+                tablo etiketi           = <table> </table>
+                listeleme etiketleri    = <ol> </ol> - <ul> </ul> - <dl> </dl>
+                veri giriş etiketi      = <input> (input verilerinin gönderilip/alınabilmesi için <form> </form> etiketi kullanılır.)
+                form etiketi            = <form> </form>
             attributes = (özellikler) Elementlere genişlik (width="...") yada yükseklik (height="...") gibi özellikler veren kullanımlar.
-                yüklenen resim ayrıntıları  = <img width="..." height="..." src="url" resim açıklaması />
-                yüklenen link ayrıntıları   = <a target="_blank" href="url"> link açıklaması </a>
+                resim ayrıntıları       = <img width="..." height="..." src="url" resim açıklaması />
+                link ayrıntıları        = <a target="_blank" href="url"> link açıklaması </a>
+                tablo ayrıntıları       = <table border="..."> - <th> colspan="..."</th> - <th> align="..."</th>
+                listeleme ayrıntıları   = <ol / ul type="I,i,A,a,1,disc,circle,square" start="2,3,4...">
+                veri giriş ayrıntıları  = type (text,password,email,number,radio,checkbox,file,submit)
 -->
 
 <details>
 <summary><b>1 - SAYFA YAPISI</b></summary>
+<ol>
 < html> <br/>
     < head> <br/>
     < /head> <br/>
@@ -24,11 +32,12 @@
     < foot> <br/>
     < /foot> <br/>
 < /html> <br/>
+</ol>
 </details> <br/>
 
 <details>
 <summary><b>2 - SAYFA İÇİ DÜZEN VE ETİKETLER</b></summary>
-
+<ol>
 Kalın metin     = < b> < /b>   (bold) <br/>
 Eğik metin      = < i> < /i>   (italic) <br/>
 Altı çizili     = < u> < /u>   (underline) <br/>
@@ -39,24 +48,30 @@ Yorum satırı    = < !-- -->    (comment) <br/>
 Paragraf        = < p> < /p>   (pharagraph) <br/>
 Bağlantı        = < a> < /a>   (link) <br/>
 Resim           = < img /> <br/>
+</ol>
 </details> <br/>
 
 <details>
 <summary><b>3 - RESİMLER</b></summary>
+<ol>
 Resim Dosyasının Kaynağını Belirtme = src="url/dosya adı" <br/>
     (<i>dosya olarak belirtmek için, resim dosyasının html dosyasının bulunduğu klasörde olması gerekir</i>) <br/>
 Görüntülenemeyen Resim Açıklaması = alt="text" <br/>
 Fare ile Resimin Üzerine Gelindiğinde Resim Açıklaması Vermek = title="text" <br/>
+</ol>
 </details> <br/>
 
 <details>
 <summary><b>4 - LİNKLER</b></summary>
+<ol>
 Link Parametresi            = href="..." <br/>
 Linki Yeni Sekmede Açmak    = target="_blank" <br/>
+</ol>
 </details> <br/>
 
 <details>
 <summary><b>5 - TABLOLAR</b></summary>
+<ol>
 < table> < /table>  = tablo oluşturma <br/>
 < thead> < /thead>  = tablo başlık kısmı <br/>
 < tbody> < /tbody>  = tablo gelişme kısmı (bilgiler) <br/>
@@ -104,10 +119,12 @@ align="left-right"  = satır içi hizalama <br/>
         </table>
     </body>
 </html>
+</ol>
 </details> <br/>
 
 <details>
 <summary><b>6 - LİSTELEME</b></summary>
+<ol>
 < ol> < /ol>    = Ordered liste oluşturma <br/>
 < ul> < /ul>    = Unordered liste oluşturma <br/>
 < li> < /li>    = Liste maddeleri <br/>
@@ -120,7 +137,7 @@ align="left-right"  = satır içi hizalama <br/>
 <b><i>İşaretler CSS aracılığıyla ;</i></b> <br/>
 Unordered listelerde < ul> type="..."> type parametresi girilerek, (disc,circle,square gibi) <br/>
 Ordered listelerde < ol> type="..."> type parametresi girilerek, (I,i,A,a gibi) <br/>
-Ordered Listelerde < ol> type="..." start="2,3,4..."> start parametresi girilerek (başlangıç maddesi) değişiklikler yapılabilir.
+Ordered listelerde < ol> start="2,3,4..."> start parametresi girilerek (başlangıç maddesi) değişiklikler yapılabilir. <br/>
 <details>
 <summary><b>a - Sıralı (Ordered) Listeler</b></summary>
 <html>
@@ -146,7 +163,7 @@ Ordered Listelerde < ol> type="..." start="2,3,4..."> start parametresi girilere
     </head>
     <body>
         <h5>Gerekli Evraklar Listesi</h5>
-        <ul>
+        <ul type="disc">
             <li>T.C. Kimliği</li>
             <li>İkametgah Adresi</li>
             <li>Adli Sicil Kaydı</li>
@@ -204,5 +221,78 @@ Ordered Listelerde < ol> type="..." start="2,3,4..."> start parametresi girilere
     </foot>
 </html>
 </details>
+</ol>
 </details> <br/>
 
+<details>
+    <summary><b>7 - FORM ETİKETLERİ</b></summary>
+    <ol>
+    <i>INPUT (text, password, email, number, radio, checkbox, file, submit)</i><br/>
+    <i>SELECT</i><br/>
+    <i>TEXTAREA</i><br/>
+    <i>PLACE HOLDER</i><br/>
+    <i>Öncesinde açıklama belirtilerek input isimlendirilebilir (ID < input type="text"/> gibi).</i><br/>
+    < form> < /form>            = verilerin gönderilip/alınabilmesi için kullanılır <br/>
+    < input value="...">        = girilen verileri kaydetme ve otomatik tamamlama <br/>
+    < input type="text"/>       = tek satırlık veri giriş alanı (karakter sayısı sınırı varsayılan 20) <br/>
+    < input type="textarea"/>   = çok satırlık veri giriş alanı (karakter sayısı sınırsız) <br/>
+    < input type="password"/>   = input veri giriş alanında şifre görünürlüğünü kapatma <br/>
+    < input type="email"/>      = email veri giriş alanı <br/>
+    < input type="submit"/>     = girilen verilerin gönderilmesini sağlar <br/>
+    <details>
+        <summary><b>a - Input</b>></summary>
+        <html>
+            <head>
+            </head>
+            <body>
+                <form>
+                    ID      <input type="text" value=""/>
+                    Pass    <input type="password" value=""/>
+                    E-Posta <input type="email" value=""/>
+                            <input type="submit"/>
+                </form>
+            </body>
+            <foot>
+            </foot>
+        </html>
+    </details>
+
+    <details>
+        <summary><b>b - Select</b>></summary>
+        <html>
+            <head>
+            </head>
+            <body>
+    
+            </body>
+            <foot>
+            </foot>
+        </html>
+    </details>
+
+    <details>
+        <summary><b>c - Textarea</b>></summary>
+        <html>
+            <head>
+            </head>
+            <body>
+    
+            </body>
+            <foot>
+            </foot>
+        </html>
+    </details>
+
+    <details>
+        <summary><b>d - Place Holder</b></summary>
+        <html>
+            <head>
+            </head>
+            <body>
+            </body>
+            <foot>
+            </foot>
+        </html>
+    </details>
+</ol>
+</details>
