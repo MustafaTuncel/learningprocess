@@ -31,7 +31,7 @@
     < /body> <br/>
     < foot> <br/>
     < /foot> <br/>
-< /html> <br/>
+< /html>
 </ol>
 </details> <br/>
 
@@ -227,29 +227,123 @@ Ordered listelerde < ol> start="2,3,4..."> start parametresi girilerek (başlang
 <details>
     <summary><b>7 - FORM ETİKETLERİ</b></summary>
     <ol>
-    <i>INPUT (text, password, email, number, radio, checkbox, file, submit)</i><br/>
-    <i>SELECT</i><br/>
-    <i>TEXTAREA</i><br/>
-    <i>PLACE HOLDER</i><br/>
-    <i>Öncesinde açıklama belirtilerek input isimlendirilebilir (ID < input type="text"/> gibi).</i><br/>
-    < form> < /form>            = verilerin gönderilip/alınabilmesi için kullanılır <br/>
-    < input value="...">        = girilen verileri kaydetme ve otomatik tamamlama <br/>
-    < input type="text"/>       = tek satırlık veri giriş alanı (karakter sayısı sınırı varsayılan 20) <br/>
-    < input type="textarea"/>   = çok satırlık veri giriş alanı (karakter sayısı sınırsız) <br/>
-    < input type="password"/>   = input veri giriş alanında şifre görünürlüğünü kapatma <br/>
-    < input type="email"/>      = email veri giriş alanı <br/>
-    < input type="submit"/>     = girilen verilerin gönderilmesini sağlar <br/>
+    <b>INPUT</b> - <i>id, class, style, lang, name, value, type (text, textarea, password, email, checkbox, radio, submit...)</i><br/>
+    <b>SELECT</b> - <i></i><br/>
+    <b>TEXTAREA</b> - <i></i><br/>
+    <b>PLACE HOLDER</b> - <i></i><br/>
+    <br/>
     <details>
         <summary><b>a - Input</b>></summary>
+        <br/>
+        <i>Öncesinde açıklama belirtilerek input isimlendirilebilir (ID < input type="text"/> gibi).</i><br/>
+    < form> < /form>            = verilerin gönderilip/alınabilmesi için kullanılır <br/>
+    < input id="..."            = eşsiz kimliğini belirtir <br/>
+    < input class="..."         = sınıf adını belirtir <br/>
+    < input style="..."         = CSS kuralları tanımlar <br/>
+    < input lang="..."          = içerdiği metnin lisanını belirtir <br/>
+    < input name="..."/>        = kontrolün ismini belirtir <br/>
+    < input value="..."/>       = girilen verileri kaydetme ve otomatik tamamlama <br/>
+    < input type="..."/>        = girilen veri değerleri <br/>
+        <br/>
         <html>
             <head>
             </head>
             <body>
                 <form>
-                    ID      <input type="text" value=""/>
-                    Pass    <input type="password" value=""/>
-                    E-Posta <input type="email" value=""/>
-                            <input type="submit"/>
+                    <ol>
+                            <details>
+                            <summary><b>1 - Type Değerleri</b></summary>
+                            <br/>
+                    Tek Satırlı Veri Girişi Alanı (sınırlı karakter varsayılan 20) <br/>
+                            <input type="text"/> <br/>
+                            <br/>
+                    Kapalı Şifre Görünürlüğü <br/>
+                            <input type="password"/> <br/>
+                            <br/>
+                    E-Posta Adresi Giriş Alanı <br/>
+                            <input type="email"/> <br/>
+                            <br/>
+                    Sayısal Değer Giriş Alanı (yaş vb.) <br/>
+                            <input type="number"/> <br/>
+                            <br/>   
+                    Çok Satırlı Veri Girişi Alanı (sınırsız karakter)<br/>
+                            <input type="textarea"/> <br/>
+                            <br/>
+                    İşaretleme (kare) <br/>
+                            <input type="checkbox"/> <br/>
+                            <br/>
+                    İşaretleme (daire) <br/>
+                            <input type="radio"/> <br/>
+                            <br/>
+                    Formun (girilen verilerin) Gönderilmesi <br/>
+                            <input type="submit"/> <br/>
+                            <br/>
+                    Gizli   <input type="hidden"/> <br/>
+                            <br/>
+                    Düğme   <input type="button" value="buton"/> <br/>
+                            <br/>
+                    Min-Max Kaydırma Çubuğu
+                            <input type="range"/> <br/>
+                            <br/>
+                    Resim   <input type="image"/> <br/>
+                            <br/>
+                    Renk    <input type="color"/> <br/>
+                            <br/>
+                    Saat    <input type="time"/> <br/>
+                            <br/>
+                    Tarih (manuel)
+                            <input type="datetime_local"/> <br/>
+                            <br/>
+                    Tarih (gün)
+                            <input type="date"/> <br/>
+                            <br/>
+                    Tarih (hafta)
+                            <input type="week"/> <br/>
+                            <br/>
+                    Tarih (ay)
+                            <input type="month"/> <br/>
+                            <br/>
+                    Telefon <input type="tel"/> <br/>
+                            <br/>
+                    Bağlantı
+                            <input type="url"/> <br/>
+                            <br/>
+                    Arama   <input type="search"/> <br/>
+                            <br/>
+                    Sıfırla <input type="reset" value="reset"/> <br/>
+                            <br/>
+                            </details>
+                            <details>
+                                <summary><b>2 - Type Değerleri Kullanım Örnekleri</b></summary>
+                            <br/>
+                    ID      <input type="text" value="" name="kullanıcı adı"/>
+                    Pass    <input type="password" value="" name="sifre"/>
+                    E-Posta <input type="email" value="" name="eposta"/>
+                            <input type="submit" value="Giriş Yap"/>
+                            <br/>
+                            <br/>
+                    <b>Hobileriniz</b>
+                            <br/>
+                            <br/>
+                    Sinema  <input type="checkbox" value="sinema"/> 
+                    Tiyatro <input type="checkbox" value="tiyatro"/> 
+                    Spor    <input type="checkbox" value="spor"/> 
+                            <br/>
+                            <br/>
+                    <b>En Sevdiğiniz Hobiniz (lütfen 1 tane seçiniz)</b>
+                            <br/>
+                            <br/>
+                    Sinema  <input type="radio" value="sinema" name="hobi"/> 
+                    Tiyatro <input type="radio" value="tiyatro" name="hobi"/> 
+                    Spor    <input type="radio" value="spor" name="hobi"/> 
+                            <br/>
+                            <br/>
+                    <b>Fotoğraf Seçiniz</b> <br/>
+                            <input type="file" value="fotograf" name="fotograf"/> <br/>
+                            <br/>
+                            <input type="submit" value="Kaydet"/> <br/>
+                            </details>
+                    </ol>
                 </form>
             </body>
             <foot>
@@ -263,7 +357,7 @@ Ordered listelerde < ol> start="2,3,4..."> start parametresi girilerek (başlang
             <head>
             </head>
             <body>
-    
+
             </body>
             <foot>
             </foot>
