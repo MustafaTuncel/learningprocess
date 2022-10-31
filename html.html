@@ -20,230 +20,244 @@
                 listeleme ayrıntıları   = <ol / ul type="I,i,A,a,1,disc,circle,square" start="2,3,4...">
                 veri giriş ayrıntıları  = type (text,password,email,number,radio,checkbox,file,submit)
 -->
-
-<details>
-<summary><b>1 - SAYFA YAPISI</b></summary>
-<ol>
-< html> <br/>
-    < head> <br/>
-    < /head> <br/>
-    < body> <br/>
-    < /body> <br/>
-    < foot> <br/>
-    < /foot> <br/>
-< /html>
-</ol>
-</details> <br/>
-
-<details>
-<summary><b>2 - SAYFA İÇİ DÜZEN VE ETİKETLER</b></summary>
-<ol>
-Kalın metin     = < b> < /b>   (bold) <br/>
-Eğik metin      = < i> < /i>   (italic) <br/>
-Altı çizili     = < u> < /u>   (underline) <br/>
-Üstü çizili     = < s> < /s>   (strike) <br/>
-Satır atlama    = < br/> <br/>
-Sınırsız Çizgi  = < hr/> <br/>
-Yorum satırı    = < !-- -->    (comment) <br/>
-Paragraf        = < p> < /p>   (pharagraph) <br/>
-Bağlantı        = < a> < /a>   (link) <br/>
-Resim           = < img /> <br/>
-</ol>
-</details> <br/>
-
-<details>
-<summary><b>3 - RESİMLER</b></summary>
-<ol>
-Resim Dosyasının Kaynağını Belirtme = src="url/dosya adı" <br/>
-    (<i>dosya olarak belirtmek için, resim dosyasının html dosyasının bulunduğu klasörde olması gerekir</i>) <br/>
-Görüntülenemeyen Resim Açıklaması = alt="text" <br/>
-Fare ile Resimin Üzerine Gelindiğinde Resim Açıklaması Vermek = title="text" <br/>
-</ol>
-</details> <br/>
-
-<details>
-<summary><b>4 - LİNKLER</b></summary>
-<ol>
-Link Parametresi            = href="..." <br/>
-Linki Yeni Sekmede Açmak    = target="_blank" <br/>
-</ol>
-</details> <br/>
-
-<details>
-<summary><b>5 - TABLOLAR</b></summary>
-<ol>
-< table> < /table>  = tablo oluşturma <br/>
-< thead> < /thead>  = tablo başlık kısmı <br/>
-< tbody> < /tbody>  = tablo gelişme kısmı (bilgiler) <br/>
-< tfoot> < /tfoot>    = tablo sonuç kısmı (toplamlar) <br/>
-<br/>
-border="1px"        = tablo çizgileri ve kalınlığı <br/>
-< th> < /th>        = başlık eki (thead ve tfoot içerisinde) <br/>
-< tr> < /tr>        = satır oluşturma (tbody içerisinde) <br/>
-< td> < /td>        = sütun oluşturma (satır içerisinde) <br/>
-colspan="2"         = sütun birleştirme <br/>
-align="left-right"  = satır içi hizalama <br/>
-<br/>
-
 <html>
     <head>
+        <title>HTML</title>
     </head>
     <body>
-        <table border="1px">
-            <thead>
-                <th>AD SOYAD</th>
-                <th>TELEFON</th>
-                <th>ADRES</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Mustafa Tuncel</td>
-                    <td>123</td>
-                    <td>asd</td>
-                </tr>
-                <tr>
-                    <td>Salime Tuncel</td>
-                    <td>456</td>
-                    <td>fgh</td>
-                </tr>
-                <tr>
-                    <td>Nihat Tuncel</td>
-                    <td>789</td>
-                    <td>jkl</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <th colspan="2" align="right">KAYIT TOPLAMI</th>
-                <th align="left">3</th>
-            </tfoot>
-        </table>
-    </body>
-</html>
-</ol>
-</details> <br/>
-
-<details>
-<summary><b>6 - LİSTELEME</b></summary>
-<ol>
-< ol> < /ol>    = Ordered liste oluşturma <br/>
-< ul> < /ul>    = Unordered liste oluşturma <br/>
-< li> < /li>    = Liste maddeleri <br/>
-[ol/li/ul/li]   = kategori - iç içe liste oluşturma (sıralı ve sırasız listeleme kullanarak) <br/>
-<br/>
-< dl> < /dl>    = Kategori - İç içe liste oluşturma <br/>
-< dt> < /dt>    = Kategori - Liste adı <br/>
-< dd> < /dd>    = Kategori - Liste özellikleri yada detayları <br/>
-<br/>
-<b><i>İşaretler CSS aracılığıyla ;</i></b> <br/>
-Unordered listelerde < ul> type="..."> type parametresi girilerek, (disc,circle,square gibi) <br/>
-Ordered listelerde < ol> type="..."> type parametresi girilerek, (I,i,A,a gibi) <br/>
-Ordered listelerde < ol> start="2,3,4..."> start parametresi girilerek (başlangıç maddesi) değişiklikler yapılabilir. <br/>
-<details>
-<summary><b>a - Sıralı (Ordered) Listeler</b></summary>
-<html>
-    <head>
-    </head>
-    <body>
-        <h5>Katılım Şartları</h5>
-        <ol>
-            <li>Reşitlik</li>
-            <li>Lisans Diploması</li>
-            <li>Herhangi bir cezai geçmişin bulunmaması</li>
-        </ol>
-    </body>
-    <foot>
-    </foot>
-</html>
-</details>
-
-<details>
-<summary><b>b - Sırasız (Unordered) Listeler</b></summary>
-<html>
-    <head>
-    </head>
-    <body>
-        <h5>Gerekli Evraklar Listesi</h5>
-        <ul type="disc">
-            <li>T.C. Kimliği</li>
-            <li>İkametgah Adresi</li>
-            <li>Adli Sicil Kaydı</li>
-            <li>4 adet Fotoğraf</li>
+        <details>
+        <summary><b>1 - SAYFA YAPISI</b></summary>
+        <ul type="circle">
+        <li>< html> </li>
+        <li>< head> </li>
+        <li>< /head> </li>
+        <li>< body> </li>
+        <li>< /body> </li>
+        <li>< foot> </li>
+        <li>< /foot> </li>
+        <li>< /html> </li>
         </ul>
-    </body>
-    <foot>
-    </foot>
-</html>
-</details>
+        </details> <br/>
 
-<details>
-<summary><b>c - Sıralı ve Sırasız Listeleme Kullanarak Kategorik - İç İçe Listeleme</b></summary>
-<html>
-    <head>
-    </head>
-    <body>
-        <ol type="I">
-            <li>asd</li>
-                <ul type="disc">
-                    <li>123</li>
-                </ul>
-            <li>fgh</li>
-                <ul type="circle">
-                    <li>456</li>
-                </ul>
-            <li>jkl</li>
-                <ul type="square">
-                    <li>789</li>
-                    <li>010</li>
-                </ul>
+        <details>
+        <summary><b>2 - SAYFA İÇİ DÜZEN VE ETİKETLER</b></summary>
+        <ul type="circle">
+        <li>Kalın metin     = < b> < /b>   (bold) </li>
+        <li>Eğik metin      = < i> < /i>   (italic) </li>
+        <li>Altı çizili     = < u> < /u>   (underline) </li>
+        <li>Üstü çizili     = < s> < /s>   (strike) </li>
+        <li>Satır atlama    = < br/> </li>
+        <li>Sınırsız Çizgi  = < hr/> </li>
+        <li>Yorum satırı    = < !-- -->    (comment) </li>
+        <li>Paragraf        = < p> < /p>   (pharagraph) </li>
+        <li>Bağlantı        = < a> < /a>   (link) </li>
+        <li>Resim           = < img /> </li>
+        </ul>
+        </details> <br/>
+
+        <details>
+        <summary><b>3 - RESİMLER</b></summary>
+        <ol>
+        <li>Resim Dosyasının Kaynağını Belirtme = src="url/dosya adı" </li>
+        (<i>dosya olarak belirtmek için, resim dosyasının html dosyasının bulunduğu klasörde olması gerekir</i>) <br/>
+        <li>Görüntülenemeyen Resim Açıklaması = alt="text" <br/> </li>
+        <li>Fare ile Resimin Üzerine Gelindiğinde Resim Açıklaması Vermek = title="text" </li>
         </ol>
-    </body>
-    <foot>
-    </foot>
-</html>
-</details>
+        </details> <br/>
 
-<details>
-<summary><b>d - Kategorik - İç içe Listeler (alt maddeli listeler)</b></summary>
-<html>
-    <head>
-    </head>
-    <body>
-        <h4>Kahve & Süt</h4>
-        <dl>
-            <dt>Kahve</dt>
-                <dd>Kahverengidir</dd>
-                <dd>Sıcaktır</dd>
-            <dt>Süt</dt>
-                <dd>Beyazdır</dd>
-        </dl>
-    </body>
-    <foot>
-    </foot>
-</html>
-</details>
-</ol>
-</details> <br/>
+        <details>
+        <summary><b>4 - LİNKLER</b></summary>
+        <ol>
+        <li>Link Parametresi            = href="..." </li>
+        <li>Linki Yeni Sekmede Açmak    = target="_blank" </li>
+        </ol>
+        </details> <br/>
 
-<details>
-    <summary><b>7 - FORM ETİKETLERİ</b></summary>
-    <ol>
-    <b>INPUT</b> - <i>id, class, style, lang, name, value, type (text, textarea, password, email, checkbox, radio, submit...)</i><br/>
-    <b>SELECT</b> - <i></i><br/>
-    <b>TEXTAREA</b> - <i></i><br/>
-    <b>PLACE HOLDER</b> - <i></i><br/>
-    <br/>
-    <details>
-        <summary><b>a - Input</b>></summary>
+        <details>
+        <summary><b>5 - TABLOLAR</b></summary>
+        <ul type="disc">
+        <li><b>< table> < /table>  = tablo oluşturma </b></li>
+        <li>< thead> < /thead>  = tablo başlık kısmı </li>
+        <li>< tbody> < /tbody>  = tablo gelişme kısmı (bilgiler) </li>
+        <li>< tfoot> < /tfoot>    = tablo sonuç kısmı (toplamlar) </li>
+        </ul>
+        <ul type="circle">
+        <li><i>border="1px"        = tablo çizgileri ve kalınlığı </i></li>
+        <li>< th> < /th>        = başlık eki (thead ve tfoot içerisinde) </li>
+        <li>< tr> < /tr>        = satır oluşturma (tbody içerisinde) </li>
+        <li>< td> < /td>        = sütun oluşturma (satır içerisinde) </li>
+        <li><i>colspan="2"         = sütun birleştirme </i></li>
+        <li><i>align="left-right"  = satır içi hizalama </i></li>
+        </ul>
+        <ol>
+        <html>
+            <head>
+            </head>
+            <body>
+                <table border="1px">
+                    <thead>
+                        <th>AD SOYAD</th>
+                        <th>TELEFON</th>
+                        <th>ADRES</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mustafa Tuncel</td>
+                            <td>123</td>
+                            <td>asd</td>
+                        </tr>
+                        <tr>
+                            <td>Salime Tuncel</td>
+                            <td>456</td>
+                            <td>fgh</td>
+                        </tr>
+                        <tr>
+                            <td>Nihat Tuncel</td>
+                            <td>789</td>
+                            <td>jkl</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <th colspan="2" align="right">KAYIT TOPLAMI</th>
+                        <th align="left">3</th>
+                    </tfoot>
+                </table>
+            </body>
+        </html>
+        </ol>
+        </details> <br/>
+
+        <details>
+        <summary><b>6 - LİSTELEME</b></summary>
+        <ul type="disc">
+        <li>< ol> < /ol>    = Ordered liste oluşturma </li>
+        <li>< ul> < /ul>    = Unordered liste oluşturma </li>
+        <li>< li> < /li>    = Liste maddeleri </li>
+        <li><i>[ol/li/ul/li]   = kategori - iç içe liste oluşturma (sıralı ve sırasız listeleme kullanarak) </i></li>
+        </ul>
+        <ul type="square">
+        <li>< dl> < /dl>    = Kategori - İç içe liste oluşturma 
+        <li>< dt> < /dt>    = Kategori - Liste adı 
+        <li>< dd> < /dd>    = Kategori - Liste özellikleri yada detayları 
+        </ul>
+        <b><i>İşaretler CSS aracılığıyla ;</i></b> <br/>
+        <ul type="circle">
+        <li>Unordered listelerde < ul> type="..."> type parametresi girilerek, (disc,circle,square gibi) </li>
+        <li>Ordered listelerde < ol> type="..."> type parametresi girilerek, (I,i,A,a gibi) </li>
+        <li>Ordered listelerde < ol> start="2,3,4..."> start parametresi girilerek (başlangıç maddesi) değişiklikler yapılabilir. </li>
+        </ul>
+        <ol>
+        <details>
+        <summary><b>a - Sıralı (Ordered) Listeler</b></summary>
+        <html>
+            <head>
+            </head>
+            <body>
+                <h5>Katılım Şartları</h5>
+                <ol>
+                    <li>Reşitlik</li>
+                    <li>Lisans Diploması</li>
+                    <li>Herhangi bir cezai geçmişin bulunmaması</li>
+                </ol>
+            </body>
+            <foot>
+            </foot>
+        </html>
         <br/>
+        </details>
+
+        <details>
+        <summary><b>b - Sırasız (Unordered) Listeler</b></summary>
+        <html>
+            <head>
+            </head>
+            <body>
+                <h5>Gerekli Evraklar Listesi</h5>
+                <ul type="disc">
+                    <li>T.C. Kimliği</li>
+                    <li>İkametgah Adresi</li>
+                    <li>Adli Sicil Kaydı</li>
+                    <li>4 adet Fotoğraf</li>
+                </ul>
+            </body>
+            <foot>
+            </foot>
+        </html>
+        <br/>
+        </details>
+
+        <details>
+        <summary><b>c - Sıralı ve Sırasız Listeleme Kullanarak Kategorik - İç İçe Listeleme</b></summary>
+        <br/>
+        <html>
+            <head>
+            </head>
+            <body>
+                <ol type="I">
+                    <li>asd</li>
+                        <ul type="disc">
+                            <li>123</li>
+                        </ul>
+                    <li>fgh</li>
+                        <ul type="circle">
+                            <li>456</li>
+                        </ul>
+                    <li>jkl</li>
+                        <ul type="square">
+                            <li>789</li>
+                            <li>010</li>
+                        </ul>
+                </ol>
+            </body>
+            <foot>
+            </foot>
+        </html>
+        <br/>
+        </details>
+
+        <details>
+        <summary><b>d - Kategorik - İç içe Listeler (alt maddeli listeler)</b></summary>
+        <html>
+            <head>
+            </head>
+            <body>
+                <h4>Kahve & Süt</h4>
+                <dl>
+                    <dt>Kahve</dt>
+                        <dd>Kahverengidir</dd>
+                        <dd>Sıcaktır</dd>
+                    <dt>Süt</dt>
+                        <dd>Beyazdır</dd>
+                </dl>
+            </body>
+            <foot>
+            </foot>
+        </html>
+        </details>
+        </ol>
+        </details><br/>
+
+        <details>
+        <summary><b>7 - FORM ETİKETLERİ</b></summary>
+        <ol>
+        <details>
+        <summary><b>a - Input</b></summary>
+        [id, class, style, lang, name, value, type (text, password, email, checkbox, radio, submit...)]<br/>
+        <br/>
+        <ol>
         <i>Öncesinde açıklama belirtilerek input isimlendirilebilir (ID < input type="text"/> gibi).</i><br/>
-    < form> < /form>            = verilerin gönderilip/alınabilmesi için kullanılır <br/>
-    < input id="..."            = eşsiz kimliğini belirtir <br/>
-    < input class="..."         = sınıf adını belirtir <br/>
-    < input style="..."         = CSS kuralları tanımlar <br/>
-    < input lang="..."          = içerdiği metnin lisanını belirtir <br/>
-    < input name="..."/>        = kontrolün ismini belirtir <br/>
-    < input value="..."/>       = girilen verileri kaydetme ve otomatik tamamlama <br/>
-    < input type="..."/>        = girilen veri değerleri <br/>
+        </ol>
+        <ol>
+            <li>< form> < /form>            = verilerin gönderilip/alınabilmesi için kullanılır </li>
+            <li>< input id="..."/>          = eşsiz kimliğini belirtir </li>
+            <li>< input class="..."/>       = sınıf adını belirtir </li>
+            <li>< input style="..."/>       = CSS kuralları tanımlar </li>
+            <li>< input lang="..."/>        = içerdiği metnin lisanını belirtir </li>
+            <li>< input name="..."/>        = kontrolün ismini belirtir </li>
+            <li>< input value="..."/>       = girilen verileri kaydetme ve otomatik tamamlama </li>
+            <li>< input type="..."/>        = girilen veri değerleri </li>
+            <li>< input placeholder="..."/> = metin kutusu önizleme açıklaması </li>
+        </ol>
         <br/>
         <html>
             <head>
@@ -251,142 +265,156 @@ Ordered listelerde < ol> start="2,3,4..."> start parametresi girilerek (başlang
             <body>
                 <form>
                     <ol>
-                            <details>
-                            <summary><b>1 - Type Değerleri</b></summary>
-                            <br/>
-                    Tek Satırlı Veri Girişi Alanı (sınırlı karakter varsayılan 20) <br/>
-                            <input type="text"/> <br/>
-                            <br/>
-                    Kapalı Şifre Görünürlüğü <br/>
-                            <input type="password"/> <br/>
-                            <br/>
-                    E-Posta Adresi Giriş Alanı <br/>
-                            <input type="email"/> <br/>
-                            <br/>
-                    Sayısal Değer Giriş Alanı (yaş vb.) <br/>
-                            <input type="number"/> <br/>
-                            <br/>   
-                    Çok Satırlı Veri Girişi Alanı (sınırsız karakter)<br/>
-                            <input type="textarea"/> <br/>
-                            <br/>
-                    İşaretleme (kare) <br/>
-                            <input type="checkbox"/> <br/>
-                            <br/>
-                    İşaretleme (daire) <br/>
-                            <input type="radio"/> <br/>
-                            <br/>
-                    Formun (girilen verilerin) Gönderilmesi <br/>
-                            <input type="submit"/> <br/>
-                            <br/>
-                    Gizli   <input type="hidden"/> <br/>
-                            <br/>
-                    Düğme   <input type="button" value="buton"/> <br/>
-                            <br/>
-                    Min-Max Kaydırma Çubuğu
-                            <input type="range"/> <br/>
-                            <br/>
-                    Resim   <input type="image"/> <br/>
-                            <br/>
-                    Renk    <input type="color"/> <br/>
-                            <br/>
-                    Saat    <input type="time"/> <br/>
-                            <br/>
-                    Tarih (manuel)
-                            <input type="datetime_local"/> <br/>
-                            <br/>
-                    Tarih (gün)
-                            <input type="date"/> <br/>
-                            <br/>
-                    Tarih (hafta)
-                            <input type="week"/> <br/>
-                            <br/>
-                    Tarih (ay)
-                            <input type="month"/> <br/>
-                            <br/>
-                    Telefon <input type="tel"/> <br/>
-                            <br/>
-                    Bağlantı
-                            <input type="url"/> <br/>
-                            <br/>
-                    Arama   <input type="search"/> <br/>
-                            <br/>
-                    Sıfırla <input type="reset" value="reset"/> <br/>
-                            <br/>
-                            </details>
-                            <details>
-                                <summary><b>2 - Type Değerleri Kullanım Örnekleri</b></summary>
-                            <br/>
-                    ID      <input type="text" value="" name="kullanıcı adı"/>
-                    Pass    <input type="password" value="" name="sifre"/>
-                    E-Posta <input type="email" value="" name="eposta"/>
-                            <input type="submit" value="Giriş Yap"/>
-                            <br/>
-                            <br/>
-                    <b>Hobileriniz</b>
-                            <br/>
-                            <br/>
-                    Sinema  <input type="checkbox" value="sinema"/> 
-                    Tiyatro <input type="checkbox" value="tiyatro"/> 
-                    Spor    <input type="checkbox" value="spor"/> 
-                            <br/>
-                            <br/>
-                    <b>En Sevdiğiniz Hobiniz (lütfen 1 tane seçiniz)</b>
-                            <br/>
-                            <br/>
-                    Sinema  <input type="radio" value="sinema" name="hobi"/> 
-                    Tiyatro <input type="radio" value="tiyatro" name="hobi"/> 
-                    Spor    <input type="radio" value="spor" name="hobi"/> 
-                            <br/>
-                            <br/>
-                    <b>Fotoğraf Seçiniz</b> <br/>
+                        <details>
+                        <summary><b>1 - Type Değerleri</b></summary>
+                        <br/>
+                        <ol>
+                            <li>Tek Satırlı Veri Girişi Alanı (sınırlı karakter varsayılan 20) 
+                                <input type="text"/> </li><br/>
+                            <li>Kapalı Şifre Görünürlüğü 
+                                <input type="password"/> </li><br/>
+                            <li>E-Posta Adresi Giriş Alanı 
+                                <input type="email"/> </li><br/>
+                            <li>Sayısal Değer Giriş Alanı (yaş vb.) 
+                                <input type="number"/> </li><br/>
+                            <li>İşaretleme (kare) 
+                                <input type="checkbox"/> </li><br/>
+                            <li>İşaretleme (daire) 
+                                <input type="radio"/> </li><br/>
+                            <li>Formun (girilen verilerin) Gönderilmesi 
+                                <input type="submit"/> </li><br/>
+                            <li>Gizli 
+                                <input type="hidden"/> </li><br/>
+                            <li>Düğme 
+                                <input type="button" value="buton"/> </li><br/>
+                            <li>Min-Max Kaydırma Çubuğu 
+                                <input type="range"/> </li><br/>
+                            <li>Resim 
+                                <input type="image"/> </li><br/>
+                            <li>Saat 
+                                <input type="time"/> </li><br/>
+                            <li>Tarih (manuel) 
+                                <input type="datetime_local"/> </li><br/>
+                            <li>Tarih (gün) 
+                                <input type="date"/> </li><br/>
+                            <li>Tarih (hafta) 
+                                <input type="week"/> </li><br/>
+                            <li>Tarih (ay) 
+                                <input type="month"/> </li><br/>
+                            <li>Telefon 
+                                <input type="tel"/> </li><br/>
+                            <li>Bağlantı 
+                                <input type="url"/> </li><br/>
+                            <li>Arama 
+                                <input type="search"/> </li><br/>
+                            <li>Sıfırla 
+                                <input type="reset" value="reset"/> </li><br/>
+                        </ol>
+                        </details>
+                        <details>
+                        <summary><b>2 - Type Değerleri Kullanım Örnekleri</b></summary><br/>
+                        <ol>
+                                    <input type="text" value="" name="kullanıcı adı" placeholder="Kullanıcı Adı"/>
+                                    <input type="password" value="" name="sifre" placeholder="Şifre"/>
+                                    <input type="email" value="" name="eposta" placeholder="E-Posta Adresi"/>
+                                    <input type="submit" value="Giriş Yap"/>
+
+                            <h4>Hobileriniz</h4>
+                            Sinema  <input type="checkbox" value="sinema"/> 
+                            Tiyatro <input type="checkbox" value="tiyatro"/> 
+                            Spor    <input type="checkbox" value="spor"/> 
+
+                            <h4>En Sevdiğiniz Hobiniz (lütfen 1 tane seçiniz)</h4>
+                            Sinema  <input type="radio" value="sinema" name="hobi"/> 
+                            Tiyatro <input type="radio" value="tiyatro" name="hobi"/> 
+                            Spor    <input type="radio" value="spor" name="hobi"/>
+
+                            <h4>Fotoğraf Seçiniz</h4>
                             <input type="file" value="fotograf" name="fotograf"/> <br/>
                             <br/>
                             <input type="submit" value="Kaydet"/> <br/>
-                            </details>
+                        </ol>
+                        </details>
                     </ol>
                 </form>
             </body>
             <foot>
             </foot>
         </html>
-    </details>
+        </details>
 
-    <details>
-        <summary><b>b - Select</b>></summary>
+        <details>
+        <summary><b>b - Select</b></summary><br/>
+        <ul type="disc">
+            <li><i>Liste boyutu ancak CSS ile düzenlenebilir (width, height gibi attribute ler verilemez).</i></li>
+            <li><i>Multiple çoklu seçim yapmana izin verir.</i></li>
+            <li><i>Selected bir listeyi, liste içinden bir öğeyi seçilmiş olarak karşımıza getirir.</i></li>
+        </ul>
+        <ol>
         <html>
             <head>
             </head>
             <body>
-
+                <h4>Cinsiyet seçiniz</h4>
+                <select name="cinsiyet" id="cinsiyet">
+                    <option value="erkek">Erkek</option>
+                    <option value="kadın">Kadın</option>
+                </select>
+                <h4>Sevdiğiniz bir kedi türü seçiniz</h4>
+                <select name="keditürü" id="keditürü">
+                    <option value="mainecoon">Maine Coon</option>
+                    <option value="tekir">Tekir</option>
+                    <option value="britishfold" selected>British Fold</option>
+                    <option value="Scottishfold">Scottish Fold</option>
+                    <option value="iran">İran</option>
+                    <option value="ankara">Ankara</option>
+                    <option value="siyam">Siyam</option>
+                </select>
+                <h4>Sevdiğiniz kedi türlerini seçiniz</h4>
+                <select name="keditürleri" id="keditürleri" multiple>
+                    <option value="mainecoon">Maine Coon</option>
+                    <option value="tekir">Tekir</option>
+                    <option value="britishfold">British Fold</option>
+                    <option value="Scottishfold">Scottish Fold</option>
+                    <option value="iran">İran</option>
+                    <option value="ankara">Ankara</option>
+                    <option value="siyam">Siyam</option>
+                </select>
             </body>
             <foot>
             </foot>
         </html>
-    </details>
-
-    <details>
-        <summary><b>c - Textarea</b>></summary>
-        <html>
-            <head>
-            </head>
-            <body>
+        </ol>
+        <br/>
+        <br/>
+        </details>
     
-            </body>
-            <foot>
-            </foot>
-        </html>
-    </details>
-
-    <details>
-        <summary><b>d - Place Holder</b></summary>
+        <details>
+        <summary><b>c - Textarea</b></summary><br/>
+        <ul type="disc">
+        <li><i>< textarea> içerisine 'Value' attribute u girilmez, < textarea> < /textarea> arasındaki veriler 'value' olarak alınır.</i></li>
+        <li><i>< textarea> içerisine 'width, height' girilemez, ayarlamalar CSS üzerinde yapılabilir.</i></li>
+        <li><i>cols="" sütun</i></li>
+        <li><i>rows="" satır</i></li>
+        </ul>
+        <br/>
+        <ol>
         <html>
             <head>
             </head>
             <body>
+                <textarea name="aciklama" id="aciklama" cols="30" rows="10" placeholder="Metni giriniz."></textarea>
             </body>
             <foot>
             </foot>
         </html>
-    </details>
+        </ol>
+        <br/>
+        <br/>
+        </details>
 </ol>
 </details>
+    </body>
+    <foot>
+    </foot>
+</html>
