@@ -19,6 +19,7 @@
                 tablo ayrıntıları       = <table border="..."> - <th> colspan="..."</th> - <th> align="..."</th>
                 listeleme ayrıntıları   = <ol / ul type="I,i,A,a,1,disc,circle,square" start="2,3,4...">
                 veri giriş ayrıntıları  = type (text,password,email,number,radio,checkbox,file,submit)
+        foot = Sonuç Kısmı (toplam vb.)
 -->
 <html>
 
@@ -27,7 +28,7 @@
 </head>
 
 <body>
-    <details>
+    <details 1 - SAYFA YAPISI>
         <summary><b>1 - SAYFA YAPISI</b></summary>
         <ul type="circle">
             <li>
@@ -57,7 +58,7 @@
         </ul>
     </details> <br />
 
-    <details>
+    <details 2 - SAYFA İÇİ DÜZEN VE ETİKETLER>
         <summary><b>2 - SAYFA İÇİ DÜZEN VE ETİKETLER</b></summary>
         <ul type="circle">
             <li>Kalın metin = < b>
@@ -113,7 +114,7 @@
         </ul>
     </details> <br />
 
-    <details>
+    <details 3 - RESİMLER>
         <summary><b>3 - RESİMLER</b></summary>
         <ol>
             <li>Resim Dosyasının Kaynağını Belirtme = src="url/dosya adı" </li>
@@ -124,15 +125,16 @@
         </ol>
     </details> <br />
 
-    <details>
+    <details 4 - LİNKLER>
         <summary><b>4 - LİNKLER</b></summary>
         <ol>
             <li>Link Parametresi = href="..." </li>
             <li>Linki Yeni Sekmede Açmak = target="_blank" </li>
+            <li>ID yönlendirme = # (< a href="#images"> yada < a href="#p1"> gibi)</li>
         </ol>
     </details> <br />
 
-    <details>
+    <details 5 - TABLOLAR>
         <summary><b>5 - TABLOLAR</b></summary>
         <ul type="disc">
             <li><b>
@@ -167,6 +169,7 @@
                     < /td> = sütun oluşturma (satır içerisinde)
             </li>
             <li><i>colspan="2" = sütun birleştirme </i></li>
+            <li><i>rowspan="2" = satır birleştirme </i></li>
             <li><i>align="left-right" = satır içi hizalama </i></li>
         </ul>
         <ol>
@@ -186,17 +189,15 @@
                         <tr>
                             <td>Mustafa Tuncel</td>
                             <td>123</td>
-                            <td>asd</td>
+                            <td rowspan="3" align="center">asd</td>
                         </tr>
                         <tr>
                             <td>Salime Tuncel</td>
                             <td>456</td>
-                            <td>fgh</td>
                         </tr>
                         <tr>
                             <td>Nihat Tuncel</td>
                             <td>789</td>
-                            <td>jkl</td>
                         </tr>
                     </tbody>
                     <tfoot>
@@ -210,7 +211,7 @@
         </ol>
     </details> <br />
 
-    <details>
+    <details 6 - LİSTELEME>
         <summary><b>6 - LİSTELEME</b></summary>
         <ul type="disc">
             <li>
@@ -238,7 +239,6 @@
                 < dd>
                     < /dd> = Kategori - Liste özellikleri yada detayları
         </ul>
-        <b><i>İşaretler CSS aracılığıyla ;</i></b> <br />
         <ul type="circle">
             <li>Unordered listelerde < ul> type="..."> type parametresi girilerek, (disc,circle,square gibi) </li>
             <li>Ordered listelerde < ol> type="..."> type parametresi girilerek, (I,i,A,a gibi) </li>
@@ -348,7 +348,7 @@
         </ol>
     </details><br />
 
-    <details>
+    <details 7 - FORM ETİKETLERİ>
         <summary><b>7 - FORM ETİKETLERİ</b></summary>
         <ol>
             <details>
@@ -622,6 +622,7 @@
         </ol>
     </details>
 </body>
+
 <foot>
 </foot>
 
