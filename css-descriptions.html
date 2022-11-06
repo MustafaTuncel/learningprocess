@@ -7,11 +7,15 @@
             body    = tüm gövde kısmı üzerinde değişiklikler yapmak için
             p       = paragraf kısmı üzerinde değişiklikler yapmak için
             span    = span kısmı üzerinde değişiklikler yapmak için
+            link    = dosya yoluna yönlendirme
+                rel     = ilişiği bulunduğu dosya türünü belirtme (stylesheet)
+                href    = dosya yolunu belirtme (style.css)
         Tags
             Color
             Background-color
             Text-decoration
             Font-size
+            Border-color
         Genel Seçici
     </style>
 </head>
@@ -28,32 +32,94 @@
 </head>
 
 <body>
-    <p>
-        CSS dört şekilde kullanılabilir :
-    <ol>
-        <li>Sayfada tanımlanarak,</li>
-        <li>Ek bir dosyada yazılarak,</li>
-        <li>Sayfa üzerinden tanımlanarak,</li>
-        <li>InLine yazılarak.</li>
-    </ol>
-    </p>
-    <p>
-    <ul>
-        <li>
-            <b>
-                < style></style>
-            </b> etiketiyle oluşturulur.
-        </li>
-        <li>Yapısı şu şekildedir ; <b>seçici {özellik:değer; özellik2:değer}</b> body {color:blueviolet} gibi</li>
-        <li>Oluşturulmuş <u>id'yi seçmek için</u> <b>#id adı</b> yazılır.</li>
-        <li>Oluşturulmuş <u>class'ı seçmek için</u> <b>.class adı</b> yazılır.</li>
-    </ul>
-    </p>
-    <details 1 - Sayfada Tanımlama (head bloğu)>
-        <summary><b>1 - Sayfada Tanımlama (head bloğu)</b></summary>
+    <details CSS KULLANIM ŞEKİLLERİ>
+        <summary><b>CSS KULLANIM ŞEKİLLERİ</b></summary>
+        <ol>
+            CSS dört şekilde kullanılabilir : <br><br>
+            <details 1 - Sayfada Tanımlama>
+                <summary><b>1 - Sayfada Tanımlama</b></summary>
+                <p>
+                <ol>
+                    <mark>Head bloğu içerisinde yazılan</mark>
+                    < style>
+                        </style> tanımlamalarıdır. <br>
+                        <b>
+                            < head> <br>
+                                < style>
+                                    body{color: pink;}
+                                    </style>
+                                    < style>
+                                        </style> <br>
+                                        < /head>
+                        </b> gibi.
+                </ol>
+                </p>
+            </details>
+            <details 2 - InLine Tanımlama>
+                <summary><b>2 - InLine Tanımlama</b></summary>
+                <p>
+                <ol>
+                    <mark>Satır içerisinde yazılan</mark>
+                    < style>
+                        </style> tanımlamalarıdır. <br>
+                        <b>
+                            < p id="ilkparagraf" style="border: 1 solid #555" ;>
+                        </b>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas, quasi?<b>
+                            < /p>
+                        </b> gibi.
+                </ol>
+                </p>
+            </details>
+            <details 3 - Ek Bir Dosyayı Sayfaya Tanımlama>
+                <summary><b>3 - Ek Bir Dosyayı Sayfaya Tanımlama</b></summary>
+                <p>
+                <ol>
+                    <u>Projenin bulunduğu klasör içerisinde</u> <mark>style.css</mark> adında bir dosya oluşturulur.
+                    <br>
+                    CSS tanımlamaları bu dosyanın içerisine yazılır ve dosya içerisinde tekrardan < style>
+                        </style> tagi kullanılmaz. <br><br>
+                        Daha sonra <u>çalışılan dosya içerisinde</u> <mark>style.css</mark> dosyasıyla şu şekilde
+                        bağlantı
+                        kurulur ; <br>
+                        <b>
+                            < link rel="stylesheet" href="style.css">
+                        </b>
+                </ol>
+                </p>
+            </details>
+            <details 4 - Dosya Üzerinden Tanımlanarak>
+                <summary><b>4 - Dosya Üzerinden Tanımlanarak</b></summary>
+                <p>
+                <ol>
+
+                </ol>
+                </p>
+            </details>
+        </ol>
+    </details> <br>
+
+    <details SAYFA İÇİ DÜZEN VE ETİKETLER>
+        <summary><b>SAYFA İÇİ DÜZEN VE ETİKETLER</b></summary>
         <p>
+        <ul>
+            <li>
+                <b>
+                    < style>
+                        </style>
+                </b> etiketiyle oluşturulur.
+            </li>
+            <li>Yapısı şu şekildedir ; <b>seçici {özellik:değer; özellik2:değer}</b> body {color:blueviolet} gibi.</li>
+            <li>Oluşturulmuş <u>id'yi seçmek için</u> <b>#id adı</b> yazılır.</li>
+            <li>Oluşturulmuş <u>class'ı seçmek için</u> <b>.class adı</b> yazılır.</li>
+            <li>Değerden sonra girilen !important tagi seçili attribute'e verilen değeri diğer genel tanımlamalardan
+                üstün
+                kılar. <br>
+                <b>#ilkparagraf</b> yada <b>.ilkbaşlıkparagrafları {font-size: 40px!important;}</b> gibi.
+            </li>
+        </ul>
         </p>
-    </details>
+    </details> <br>
+
 </body>
 <footer>
 </footer>
