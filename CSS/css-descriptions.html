@@ -11,6 +11,7 @@
             link    = dosya yoluna yönlendirme
                 rel     = ilişiği bulunduğu dosya türünü belirtme (stylesheet)
                 href    = dosya yolunu belirtme (style.css)
+            div
         Tags
             backround
             text
@@ -112,11 +113,10 @@
             <li>Oluşturulmuş <u>id'yi seçmek için</u> <b>#id adı</b> yazılır.</li>
             <li>Oluşturulmuş <u>class'ı seçmek için</u> <b>.class adı</b> yazılır.</li>
             <li>Değerden sonra girilen <b>!important</b> tagi seçili attribute'e verilen değeri diğer genel
-                tanımlamalardan
-                üstün
-                kılar. <br>
+                tanımlamalardan üstün kılar. <br>
                 <b>#ilkparagraf</b> yada <b>.ilkbaşlıkparagrafları {font-size: 40px!important;}</b> gibi.
             </li>
+            <li>* tagi tüm sayfaya etki eder.</li>
         </ul>
         </p>
     </details> <br>
@@ -161,21 +161,90 @@
                 </ul>
                 </p>
             </details>
+            <details List>
+                <summary><b>List</b></summary>
+                <p>
+                <ul type="disc">
+                    <li><b>.classadı </b><i>{list-style-type: disc, circle, square}</i> (liste simgesi değiştirme)</li>
+                    <li><b>.classadı </b><i>{list-style-image: url (image)}</i> (liste simgesini özelleştirme)</li>
+                    <li><b>.classadı </b><i>{list-style-position: inside, outside}</i> (liste girintisi)</li>
+                </ul>
+                </p>
+            </details>
+            <details Table>
+                <summary><b>Table</b></summary>
+                <p>
+                <ul type="disc">
+                    <li><b>table, th, tr, td </b><i>{border: 2px solid #666}</i> (tablo çizgilerini oluşturma)</li>
+                    <li><b>table </b><i>{border-collapse: collapse}</i> (tablo çizgilerini birleştirme)</li>
+                    <li><b>th, td </b><i>{padding: 5px}</i> (border-text uzaklığı)</li>
+                    <li><b>tr td:nth-child (3) </b><i>{text-align: center} </i>(belirli sütunu hizalama)</li>
+                    <li><b>tr td:nth-child (1) </b><i>{background-color: yellow} </i>(belirli sütuna arka plan rengi
+                        verme)</li>
+                    <li><b>tr td:nth-child (2) </b><i>{font-weight: bold} </i>(belirli sütundaki içerikleri
+                        kalınlaştırma)</li>
+                    <li><b>tbody tr:nth-child (odd) </b><i>{background-color: aliceblue} </i>(tek sayılı satırlara arka
+                        plan rengi verme)</li>
+                    <li><b>tbody tr:nth-child (even) </b><i>{background-color: greenyellow} </i>(çift sayılı satırlara
+                        arka plan rengi verme)</li>
+                    <li><b>tbody tr:first-child </b><i>{font-style: italic; color: red} </i>(ilk satır fontu-rengi
+                        değiştirme)</li>
+                    <li><b>tbody tr:last-child </b><i>{font-style: italic; color: red} </i>(son satır fontu-rengi
+                        değiştirme)</li>
+                    <li><b>*</b><i>{font-family: "open sans", Arial, sans-serif}</i> (tüm sayfanın fontunu değiştirme)
+                    </li>
+                    <li><b>tbody tr:hover</b><i>{background-color: yellow}</i> (satır üzerine gelindiğinde renk
+                        değiştirme)</li>
+                </ul>
+                </p>
+            </details>
+            <details Box>
+                <summary><b>Box</b></summary><br>
+                <b>div =</b> <i>box</i><br>
+                <b>padding =</b> <i>iç boşluk</i><br>
+                <b>margin =</b> <i>dış boşluk</i><br>
+                <b></b><i></i>
+                <p>
+                <ul type="disc">
+                    <li><b>
+                            < div </b><i>class="classadı"</i><b>> < /div></b></li>
+                    <ul type="circle">
+                        <li><b>width: </b><i>200px</i></li>
+                        <li><b>background-color: </b><i>burlywood</i></li>
+                        <li><b>padding: </b><i>5px</i></li>
+                        <ul type="square">
+                            <li><b>padding-left: </b><i>10px</i></li>
+                            <li><b>padding-right: </b><i>10px</i></li>
+                            <li><b>padding-top: </b><i>10px</i></li>
+                            <li><b>padding-bottom: </b><i>10px</i></li>
+                            <li><b>padding: </b><i>10px 20px 30px 40px </i>(saat yönünü ifade eder: 10px=12, 20px=3,
+                                30px=6, 40px=9)</li>
+                            <li><b>padding: </b><i>20px 40px </i>(20px=yukarıdan aşağı, 40px=soldan sağa)</li>
+                        </ul>
+                        <li><b>margin: </b><i>20px</i></li>
+                        <ul type="square">
+                            <li><b>margin-left: </b><i>10px</i></li>
+                            <li><b>margin-right: </b><i>10px</i></li>
+                            <li><b>margin-top: </b><i>10px</i></li>
+                            <li><b>margin-bottom: </b><i>10px</i></li>
+                            <li><b>margin: </b><i>10px 20px 30px 40px </i>(saat yönünü ifade eder: 10px=12, 20px=3,
+                                30px=6, 40px=9)</li>
+                            <li><b>margin: </b><i>20px 40px </i>(20px=yukarıdan aşağı, 40px=soldan sağa)</li>
+                        </ul>
+                    </ul>
+                </ul>
+                </p>
+            </details>
             <details Yeni Konu>
                 <summary><b>Yeni Konu</b></summary>
                 <p>
-                    <ul>
-                        <li><b></b><i></i></li>
-                        <li><b></b><i></i></li>
-                        <li><b></b><i></i></li>
-                        <li><b></b><i></i></li>
-                        <li><b></b><i></i></li>
-                        <li><b></b><i></i></li>
-                        <li><b></b><i></i></li>
-                        <li><b></b><i></i></li>
-                        <li><b></b><i></i></li>
-                        <li><b></b><i></i></li>
-                    </ul>
+                <ul>
+                    <li><b></b><i></i></li>
+                    <li><b></b><i></i></li>
+                    <li><b></b><i></i></li>
+                    <li><b></b><i></i></li>
+                    <li><b></b><i></i></li>
+                </ul>
                 </p>
             </details>
         </ol>
