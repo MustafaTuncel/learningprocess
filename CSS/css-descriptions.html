@@ -36,10 +36,11 @@
     <details CSS KULLANIM ŞEKİLLERİ>
         <summary><b>CSS KULLANIM ŞEKİLLERİ</b></summary>
         <ol>
-            CSS dört şekilde kullanılabilir : <br><br>
-            <details 1 - Sayfada Tanımlama>
-                <summary><b>1 - Sayfada Tanımlama</b></summary>
+            CSS üç şekilde kullanılabilir : <br><br>
+            <details 1 - Internal CSS - Sayfa İçi Tanımlama>
+                <summary><b>1 - Internal CSS - Sayfa İçi Tanımlama</b></summary>
                 <p>
+                    <i>Yazılan CSS kodları <u>sadece tek bir sayfayı ilgilendiriyorsa</u> kullanılır.</i>
                 <ol>
                     <mark>Head bloğu içerisinde yazılan</mark>
                     < style>
@@ -56,9 +57,12 @@
                 </ol>
                 </p>
             </details>
-            <details 2 - InLine Tanımlama>
-                <summary><b>2 - InLine Tanımlama</b></summary>
+            <details 2 - InLine CSS - Satır İçi Tanımlama>
+                <summary><b>2 - InLine CSS - Satır İçi Tanımlama</b></summary>
                 <p>
+                    <i>Yazılan CSS kodları <u>sadece tek bir satırı ilgilendiriyorsa</u> kullanılır.</i><br>
+                    <i><b>InLine yazılan CSS kodları</b> <u>Internal CSS kodlarını ezer.</u></i> <br>
+
                 <ol>
                     <mark>Satır içerisinde yazılan</mark>
                     < style>
@@ -71,15 +75,17 @@
                 </ol>
                 </p>
             </details>
-            <details 3 - Ek Bir Dosyayı Sayfaya Tanımlama>
-                <summary><b>3 - Ek Bir Dosyayı Sayfaya Tanımlama</b></summary>
+            <details 3 - External CSS - Sayfa Dışı Tanımlama>
+                <summary><b>3 - External CSS - Sayfa Dışı Tanımlama</b></summary>
                 <p>
+                    <i><u>Birden çok html dosyasına</u> CSS ile etki etmek istendiğinde kullanılır.</i><br>
+                    <i><b>Internal</b> yada <b>InLine yazılan CSS kodları</b> <u>External CSS kodlarını ezer.</u>
                 <ol>
                     <u>Projenin bulunduğu klasör içerisinde</u> <mark>style.css</mark> adında bir dosya oluşturulur.
                     <br>
                     CSS tanımlamaları bu dosyanın içerisine yazılır ve dosya içerisinde tekrardan < style>
                         </style> tagi kullanılmaz. <br><br>
-                        Daha sonra <u>çalışılan dosya içerisinde</u> <mark>style.css</mark> dosyasıyla şu şekilde
+                        Daha sonra <u>çalışılan html dosyası içerisinde</u> <mark>style.css</mark> dosyasıyla şu şekilde
                         bağlantı
                         kurulur ; <br>
                         <b>
@@ -88,15 +94,26 @@
                 </ol>
                 </p>
             </details>
-            <details 4 - Dosya Üzerinden Tanımlanarak>
-                <summary><b>4 - Dosya Üzerinden Tanımlanarak</b></summary>
-                <p>
-                <ol>
-
-                </ol>
-                </p>
-            </details>
         </ol>
+    </details> <br>
+
+    <details CSS YAPISI>
+        <summary><b>CSS YAPISI</b></summary>
+        <P>
+        <ul>
+            <li>selector = seçici</li>
+            <li>declaration = ifade/ler</li>
+            <ul type="circle">
+                <li>property = nitelik, özellik</li>
+                <li>value = değer</li>
+            </ul>
+            <br>
+            <i>selector declaration</i> <br>
+            <i>declaration = {property: value;}</i> <br>
+            <br>
+            <b>seçici {özellik:değer; özellik2:değer}</b> body {color: blueviolet}
+        </ul>
+        </P>
     </details> <br>
 
     <details SAYFA İÇİ DÜZEN VE ETİKETLER>
@@ -109,14 +126,13 @@
                         </style>
                 </b> etiketiyle oluşturulur.
             </li>
-            <li>Yapısı şu şekildedir ; <b>seçici {özellik:değer; özellik2:değer}</b> body {color:blueviolet} gibi.</li>
+            <li>* tüm sayfaya etki eder.</li>
             <li>Oluşturulmuş <u>id'yi seçmek için</u> <b>#id adı</b> yazılır.</li>
             <li>Oluşturulmuş <u>class'ı seçmek için</u> <b>.class adı</b> yazılır.</li>
             <li>Değerden sonra girilen <b>!important</b> tagi seçili attribute'e verilen değeri diğer genel
                 tanımlamalardan üstün kılar. <br>
                 <b>#ilkparagraf</b> yada <b>.ilkbaşlıkparagrafları {font-size: 40px!important;}</b> gibi.
             </li>
-            <li>* tagi tüm sayfaya etki eder.</li>
         </ul>
         </p>
     </details> <br>
@@ -370,8 +386,12 @@
                     <li>Seçtiğin dosyayı, çalıştığın html dosyasına <b>
                             < link rel="stylesheet" href="fontawesome/css/font-awesome.css (dosya yolu)">
                         </b> kullanarak tanımla.</li>
-                    <li><b>< i class="fa fa-ikonkodu">< /i></b> şeklinde kullanılır.</li>
-                        <i><u>(Kullanım detaylarına ve ikon kodlarına fontawesome web sitesi üzerinden ulaşabilirsin.)</u></i> <a href="https://fontawesome.com/">Fontawesome</a>
+                    <li><b>
+                            < i class="fa fa-ikonkodu">
+                                < /i>
+                        </b> şeklinde kullanılır.</li>
+                    <i><u>(Kullanım detaylarına ve ikon kodlarına fontawesome web sitesi üzerinden
+                            ulaşabilirsin.)</u></i> <a href="https://fontawesome.com/">Fontawesome</a>
                 </ol>
                 </p>
                 <p>
@@ -380,33 +400,46 @@
                     </i> <br>
                     <i>
                         < li>
-                            < a href="#"><b>< i class="fa fa-home">< /i></b> Anasayfa< /a> 
+                            < a href="#"><b>
+                                    < i class="fa fa-home">
+                                        < /i>
+                                </b> Anasayfa< /a>
                                     < /li>
                     </i> <br>
                     <i>
                         < li>
-                            < a href="#"><b>< i class="fa fa-users">< /i></b> Hakkımızda< /a>
+                            < a href="#"><b>
+                                    < i class="fa fa-users">
+                                        < /i>
+                                </b> Hakkımızda< /a>
                                     < /li>
                     </i> <br>
                     <i>
                         < li>
-                            < a href="#"><b>< i class="fa fa-shopping-basket">< /i> </b> Ürünler< /a>
+                            < a href="#"><b>
+                                    < i class="fa fa-shopping-basket">
+                                        < /i>
+                                </b> Ürünler< /a>
                                     < /li>
                     </i> <br>
                     <i>
                         < li>
-                            < a href="#"><b>< i class="fa fa-phone-square">< /i></b> İletişim< /a>
+                            < a href="#"><b>
+                                    < i class="fa fa-phone-square">
+                                        < /i>
+                                </b> İletişim< /a>
                                     < /li>
                     </i> <br>
                     <i>
                         < /ul>
                     </i>
-                </ul>
+                    </ul>
                 </p>
             </details>
         </ol>
-    </details>
+    </details> <br>
 </body>
+
 <footer>
 </footer>
 
