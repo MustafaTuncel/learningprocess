@@ -1,0 +1,23 @@
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid blue;
+    display: inline-block;
+}
+
+#gameheader {
+    height: 150px;
+    background-color: yellow;
+}
+
+#box1 {
+    background-color: red
+}
+
+#box2 {
+    background-color: blue;
+}
+
+#box3 {
+    background-color: orange;
+}
