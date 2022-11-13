@@ -8,6 +8,7 @@
 #gameheader {
     height: 150px;
     background-color: yellow;
+    margin-bottom: 5px;
 }
 
 #box1 {

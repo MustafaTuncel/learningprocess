@@ -133,6 +133,21 @@
             <details Attribute Selectors>
                 <summary><b>Attribute Selectors:</b></summary><br>
                 <ul type="disc">
+                    <li><b>p[title] </b><i>{border: 1px solid gray; padding: 5px;} </i>p elementlerindeki title attributelerinin tümünü seçer</li>
+                    <li><b>p[title="third paragraph"] </b><i>{background-color: gold;} </i>p elementlerindeki title attributelerinde geçen (third paragraph) title adını seçer</li>
+                    <li><b>p[title~"third"] </b><i>{background-color: red;} </i>p elementlerindeki title attributelerinin içinde geçen (third) değerin bulunduğu titleları seçer (= yerine ~ kullanılır)</li>
+                    <li><b>a[href^="http"] </b><i>{color: red;} </i>a elementlerindeki href attributelerinin başında geçen (http) değerin bulunduğu linkleri seçer</li>
+                    <li><b>a[href$="com"] </b><i>{color: aqua;} </i>a elementlerindeki href attributelerinin sonunda geçen (com) değerin bulunduğu linkleri seçer</li>
+                    <li><b>a[href="https://www.example.net"][target="_blank"] </b><i>{color: yellow;} </i>a elementlerindeki href ve target attributeleri içinde geçen (https://www.example.net ve _blank) değerlerin bulunduğu linkleri seçer</li>
+                    <li><b>input[type="text"] </b><i>{display: block; width: 150px; background-color: red;} </i>input elementlerindeki type attributelerinin içinde geçen (text) değerin bulunduğu inputları seçer</li>
+                    <li><b>input[type="button"] </b><i>{background-color: green; color: white; padding: 8px 16px;} </i>input elementlerindeki type attributelerinin içinde geçen (button) değerin bulunduğu inputları seçer</li>
+                    <li><b>img[src="https://www.example.com"] </b><i>{color: orange;} </i>img elementlerindeki src attributelerinde geçen (https://www.example.com) değerin bulunduğu resimleri seçer</li>
+                    <li><b>div[id="example1993"] </b><i>div elementlerindeki id attributelerinde geçen (example1993) değerin bulunduğu div bloklarını seçer</i></li>
+                </ul><br>
+            </details>
+            <details Pseudo Selectors>
+                <summary><b>Pseudo Selectors</b></summary><br>
+                <ul type="disc">
                     <li><b></b><i></i></li>
                     <li><b></b><i></i></li>
                     <li><b></b><i></i></li>

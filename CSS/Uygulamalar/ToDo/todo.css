@@ -1,3 +1,16 @@
+/* LİSTE İŞARETLERİNİ KALDIRMAK (1,2,3,4,5,6) */
 .todo {
     list-style-type: none;
+}
+
+/* ID OLUŞTURARAK ÜSTÜ ÇİZİLİ YAPMAK (1,2,3) */
+#li1,
+#li2,
+#li3 {
+    text-decoration: line-through;
+}
+
+/* CLASS OLUŞTURARAK ÜSTÜ ÇİZİLİ YAPMAK (4,5,6) */
+.line-through {
+    text-decoration: line-through;
 }
