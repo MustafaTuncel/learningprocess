@@ -1,0 +1,99 @@
+/* PSEUDO ELEMENT */
+p::first-line {
+    font-weight: bold;
+    color: brown;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+p.ikinciparagraf::first-line {
+    color: green
+}
+
+p::first-letter {
+    font-size: 48px;
+}
+
+p::after {
+    content: "-deneme";
+    color: blueviolet;
+    background-color: yellow;
+    width: 60px;
+}
+
+/* PSEUDO CLASS */
+ul li {
+    padding: 10px;
+    margin: bottom 10px;
+    list-style-type: none;
+    width: 450px;
+    border-radius: 50px;
+}
+
+ul li:nth-of-type(odd) {
+    border: 2px solid blue;
+    margin: 5px;
+    background-color: green;
+    color: white;
+}
+
+ul li:nth-of-type(even) {
+    border: 2px solid red;
+    margin: 5px;
+    background-color: purple;
+    color: white;
+}
+
+ul li:first-child {
+    background-color: yellow;
+    color: blue;
+}
+
+ul li:last-child {
+    background-color: yellow;
+    color: red;
+}
+
+.pseudolink {
+    float: left;
+}
+
+a.pseudolink {
+    padding: 4px 8px;
+    margin-right: 5px;
+    text-decoration: none;
+    display: block;
+    width: 60px;
+    border: 2px solid pink;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+a.pseudolink:visited {
+    color: purple;
+}
+
+a.pseudolink:link {
+    color: goldenrod;
+}
+
+a.pseudolink:hover {
+    color: green;
+}
+
+a.pseudolink:active {
+    color: red;
+}
+
+/* SPAN */
+#spangizleme {
+    display: none;
+    background-color: yellow;
+    padding: 5px;
+    width: 460px;
+}
+
+div:hover #spangizleme {
+    display: block;
+}

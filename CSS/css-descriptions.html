@@ -103,19 +103,25 @@
         <summary><b>CSS YAPISI</b></summary>
         <P>
         <ul>
-            <li>selector = seçici</li>
-            <li>declaration = ifade/ler</li>
-            <ul type="circle">
-                <li>property = nitelik, özellik</li>
-                <li>value = değer</li>
-            </ul>
-            <br>
-            <i>selector declaration</i> <br>
-            <i>declaration = {property: value;}</i> <br>
-            <br>
-            <b>seçici {özellik:değer; özellik2:değer}</b> <br>
-            body {color: blueviolet;}<br>
-            <br>
+            <details CSS Tanımı>
+                <summary><b>CSS Tanımı</b></summary>
+                <p>
+                <ul>
+                    <li>selector = seçici</li>
+                    <li>declaration = ifade/ler</li>
+                    <ul type="circle">
+                        <li>property = nitelik, özellik</li>
+                        <li>value = değer</li>
+                    </ul>
+                    <br>
+                    <i>selector declaration</i> <br>
+                    <i>declaration = {property: value;}</i> <br>
+                    <br>
+                    <b>seçici {özellik:değer; özellik2:değer}</b> <br>
+                    body {color: blueviolet;}<br>
+                </ul>
+                </p>
+            </details>
             <details Group Selectors>
                 <summary><b>Group Selectors:</b></summary><br>
                 <ul type="disc">
@@ -126,39 +132,77 @@
                     <li><b>div p = </b><i>div içindeki tüm p etiketleri</i></li>
                     <li><b>div>p = </b><i>sadece üst etiketi div olan p etiketleri</i></li>
                     <li><b>div,p = </b><i>tüm div etiketleri ve tüm p etiketleri</i></li>
-                    <li><b>p~div = </b><i>p ile aynı seviyedeki div etiketleri ve p etiketlerinden sonra gelen div etiketleri</i></li>
+                    <li><b>p~div = </b><i>p ile aynı seviyedeki div etiketleri ve p etiketlerinden sonra gelen div
+                            etiketleri</i></li>
                     <li><b>p+div = </b><i>p etiketinden sonra gelen ilk div etiketleri</i></li>
                 </ul><br>
             </details>
             <details Attribute Selectors>
                 <summary><b>Attribute Selectors:</b></summary><br>
                 <ul type="disc">
-                    <li><b>p[title] </b><i>{border: 1px solid gray; padding: 5px;} </i>p elementlerindeki title attributelerinin tümünü seçer</li>
-                    <li><b>p[title="third paragraph"] </b><i>{background-color: gold;} </i>p elementlerindeki title attributelerinde geçen (third paragraph) title adını seçer</li>
-                    <li><b>p[title~"third"] </b><i>{background-color: red;} </i>p elementlerindeki title attributelerinin içinde geçen (third) değerin bulunduğu titleları seçer (= yerine ~ kullanılır)</li>
-                    <li><b>a[href^="http"] </b><i>{color: red;} </i>a elementlerindeki href attributelerinin başında geçen (http) değerin bulunduğu linkleri seçer</li>
-                    <li><b>a[href$="com"] </b><i>{color: aqua;} </i>a elementlerindeki href attributelerinin sonunda geçen (com) değerin bulunduğu linkleri seçer</li>
-                    <li><b>a[href="https://www.example.net"][target="_blank"] </b><i>{color: yellow;} </i>a elementlerindeki href ve target attributeleri içinde geçen (https://www.example.net ve _blank) değerlerin bulunduğu linkleri seçer</li>
-                    <li><b>input[type="text"] </b><i>{display: block; width: 150px; background-color: red;} </i>input elementlerindeki type attributelerinin içinde geçen (text) değerin bulunduğu inputları seçer</li>
-                    <li><b>input[type="button"] </b><i>{background-color: green; color: white; padding: 8px 16px;} </i>input elementlerindeki type attributelerinin içinde geçen (button) değerin bulunduğu inputları seçer</li>
-                    <li><b>img[src="https://www.example.com"] </b><i>{color: orange;} </i>img elementlerindeki src attributelerinde geçen (https://www.example.com) değerin bulunduğu resimleri seçer</li>
-                    <li><b>div[id="example1993"] </b><i>div elementlerindeki id attributelerinde geçen (example1993) değerin bulunduğu div bloklarını seçer</i></li>
+                    <li><b>p[title] </b><i>{border: 1px solid gray; padding: 5px;} </i>p elementlerindeki title
+                        attributelerinin tümünü seçer</li>
+                    <li><b>p[title="third paragraph"] </b><i>{background-color: gold;} </i>p elementlerindeki title
+                        attributelerinde geçen (third paragraph) title adını seçer</li>
+                    <li><b>p[title~"third"] </b><i>{background-color: red;} </i>p elementlerindeki title
+                        attributelerinin içinde geçen (third) değerin bulunduğu titleları seçer (= yerine ~ kullanılır)
+                    </li>
+                    <li><b>a[href^="http"] </b><i>{color: red;} </i>a elementlerindeki href attributelerinin başında
+                        geçen (http) değerin bulunduğu linkleri seçer</li>
+                    <li><b>a[href$="com"] </b><i>{color: aqua;} </i>a elementlerindeki href attributelerinin sonunda
+                        geçen (com) değerin bulunduğu linkleri seçer</li>
+                    <li><b>a[href="https://www.example.net"][target="_blank"] </b><i>{color: yellow;} </i>a
+                        elementlerindeki href ve target attributeleri içinde geçen (https://www.example.net ve _blank)
+                        değerlerin bulunduğu linkleri seçer</li>
+                    <li><b>input[type="text"] </b><i>{display: block; width: 150px; background-color: red;} </i>input
+                        elementlerindeki type attributelerinin içinde geçen (text) değerin bulunduğu inputları seçer
+                    </li>
+                    <li><b>input[type="button"] </b><i>{background-color: green; color: white; padding: 8px 16px;}
+                        </i>input elementlerindeki type attributelerinin içinde geçen (button) değerin bulunduğu
+                        inputları seçer</li>
+                    <li><b>img[src="https://www.example.com"] </b><i>{color: orange;} </i>img elementlerindeki src
+                        attributelerinde geçen (https://www.example.com) değerin bulunduğu resimleri seçer</li>
+                    <li><b>div[id="example1993"] </b><i>div elementlerindeki id attributelerinde geçen (example1993)
+                            değerin bulunduğu div bloklarını seçer</i></li>
                 </ul><br>
             </details>
             <details Pseudo Selectors>
                 <summary><b>Pseudo Selectors</b></summary><br>
-                <ul type="disc">
-                    <li><b></b><i></i></li>
-                    <li><b></b><i></i></li>
-                    <li><b></b><i></i></li>
-                    <li><b></b><i></i></li>
-                    <li><b></b><i></i></li>
-                    <li><b></b><i></i></li>
-                    <li><b></b><i></i></li>
-                    <li><b></b><i></i></li>
-                    <li><b></b><i></i></li>
-                    <li><b></b><i></i></li>
-                </ul>
+                <u>Sayfa içerisindeki elementlerin bir parçasını</u> seçmek istediğimizde <b>Pseudo
+                    Elementlerini</b> kullanırız. <br>
+                <u>Sayfa içerisindeki elementlerin altında bulunan attributeleri</u> seçmek istediğimizde <b>Pseudo
+                    Classlarını</b> kullanırız. <br>
+                <br>
+                <ol>
+                    <details Pseudo Elements>
+                        <summary><b>Pseudo Elements</b></summary><br>
+                        <ul type="disc">
+                            <li><b>p::first-line </b><i>{font-weight: bold; color: brown; word-spacing: 2px;
+                                    letter-spacing: 1px;}</i></li>
+                            <li><b>p::first-letter </b><i>{font-size: 48px;}</i></li>
+                            <li><b>p::after </b><i>{content: "-deneme"; color: blueviolet; background-color: yellow;
+                                    width: 60px;}</i></li>
+                        </ul><br>
+                    </details>
+                    <details Pseudo Classes>
+                        <summary><b>Pseudo Classes</b></summary><br>
+                        <ul type="disc">
+                            <li><b>ul li </b><i>{padding: 10px; margin: bottom 10px; list-style-type: none; width:
+                                    450px; border-radius: 50px;}</i></li>
+                            <li><b>ul li:nth-of-type(odd) </b><i>{border: 2px solid blue; margin: 5px; background-color:
+                                    green; color: white;}</i></li>
+                            <li><b>ul li:nth-of-type(even) </b><i>{border: 2px solid red; margin: 5px; background-color:
+                                    purple; color: white;}</i></li>
+                            <li><b>ul li:first-child </b><i>{background-color: yellow; color: blue;}</i></li>
+                            <li><b>ul li:last-child </b><i>{background-color: yellow; color: red;}</i></li>
+                            <li><b>a:link </b><i>{color: goldenrod;}</i></li>
+                            <li><b>a:hover </b><i>{color: green;}</i></li>
+                            <li><b>a:active </b><i>{color: red;}</i></li>
+                            <li><b>a:visited </b><i>{color: purple;}</i></li>
+                            <li><b>div:hover span </b>{display: block;}<i></i></li>
+                        </ul>
+                    </details>
+                </ol>
             </details>
         </ul>
         </P>
