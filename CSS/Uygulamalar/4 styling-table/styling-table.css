@@ -1,0 +1,38 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    text-align: left;
+}
+
+.table-blue th {
+    background-color: #2196f3;
+    color: white;
+}
+
+#hr1 {border: 1px solid #ddd;}
+
+.table-green th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 6px 6px;
+}
+
+/* nth-child & nth-of-type farkı nedir? neden child kullandım? 
+nth-child = aynı seviyedeki tüm elemanlar
+nth-of-type = sadece aynı tip elemanlar */
+
+table tr:nth-child(even) {
+    background-color: #F2F2F2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
