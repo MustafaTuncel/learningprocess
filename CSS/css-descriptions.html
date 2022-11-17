@@ -223,13 +223,16 @@
                     <details CSS Inherit>
                         <summary><b>CSS Inherit</b></summary>
                         <p>
-                            a elementini baz alırsak ; kendisi üzerinde bulunan elementlerden (body>ul>li>a vb.) css kodu
+                            a elementini baz alırsak ; kendisi üzerinde bulunan elementlerden (body>ul>li>a vb.) css
+                            kodu
                             almaz. <br>
-                            Bu türdeki elementlerin üst elementlerden attribute değerlerini alabilmeleri için inherit kodu kullanılır. <br>
+                            Bu türdeki elementlerin üst elementlerden attribute değerlerini alabilmeleri için inherit
+                            kodu kullanılır. <br>
                             <br>
-                            <b>< div id=example</b> yada <b>class=example >< /div></b><br>
-                            <b>#example span </b><i>{color: inherit;} </i>yada<br>
-                            <b>.example span </b><i>{color: inherit;} </i>gibi
+                            <b>
+                                < div id=example</b> yada <b>class=example >< /div></b><br>
+                                    <b>#example span </b><i>{color: inherit;} </i>yada<br>
+                                    <b>.example span </b><i>{color: inherit;} </i>gibi
                         </p>
                     </details>
                 </ul>
@@ -255,7 +258,8 @@
                 <b>#ilkparagraf</b> yada <b>.ilkbaşlıkparagrafları {font-size: 40px!important;}</b> gibi.
             </li>
             <li><b>cursor: </b><i>pointer</i> (tanımlandığında imleç türünü değiştirir)</li>
-            <li><b>focus: </b><i>{background-color: lightgoldenrodyellow;} </i>(tanımlandığında, öğeye odaklanıldığında gerçekleşecek eylemi belirtir)</li>
+            <li><b>focus: </b><i>{background-color: lightgoldenrodyellow;} </i>(tanımlandığında, öğeye odaklanıldığında
+                gerçekleşecek eylemi belirtir)</li>
         </ul>
         </p>
     </details> <br>
@@ -339,40 +343,48 @@
                 </ul>
                 </p>
             </details>
-            <details Box>
-                <summary><b>Box</b></summary><br>
+            <details Box (Div)>
+                <summary><b>Box (Div)</b></summary><br>
                 <b>div =</b> <i>box</i><br>
                 <b>padding =</b> <i>iç boşluk</i><br>
                 <b>margin =</b> <i>dış boşluk</i><br>
-                <b></b><i></i>
+                <b>overflow =</b> <i>sığma-taşma</i>
                 <p>
-                <ul type="disc">
-                    <li><b>
-                            < div </b><i>class="classadı"</i><b>> < /div></b></li>
-                    <ul type="circle">
-                        <li><b>width: </b><i>200px</i></li>
-                        <li><b>background-color: </b><i>burlywood</i></li>
-                        <li><b>padding: </b><i>5px</i></li>
-                        <ul type="square">
-                            <li><b>padding-left: </b><i>10px</i></li>
-                            <li><b>padding-right: </b><i>10px</i></li>
-                            <li><b>padding-top: </b><i>10px</i></li>
-                            <li><b>padding-bottom: </b><i>10px</i></li>
-                            <li><b>padding: </b><i>10px 20px 30px 40px </i>(saat yönünü ifade eder: 10px=12, 20px=3,
-                                30px=6, 40px=9)</li>
-                            <li><b>padding: </b><i>20px 40px </i>(20px=yukarıdan aşağı, 40px=soldan sağa)</li>
-                        </ul>
-                        <li><b>margin: </b><i>20px</i></li>
-                        <ul type="square">
-                            <li><b>margin-left: </b><i>10px</i></li>
-                            <li><b>margin-right: </b><i>10px</i></li>
-                            <li><b>margin-top: </b><i>10px</i></li>
-                            <li><b>margin-bottom: </b><i>10px</i></li>
-                            <li><b>margin: </b><i>10px 20px 30px 40px </i>(saat yönünü ifade eder: 10px=12, 20px=3,
-                                30px=6, 40px=9)</li>
-                            <li><b>margin: </b><i>20px 40px </i>(20px=yukarıdan aşağı, 40px=soldan sağa)</li>
-                        </ul>
-                    </ul>
+                    <b>
+                        < div </b><i>class="classadı"</i><b>> < /div></b>
+                            <ul type="circle">
+                                <li><b>width: </b><i>200px</i></li>
+                                <li><b>background-color: </b><i>burlywood</i></li>
+                                <li><b>padding: </b><i>5px</i></li>
+                                <p>
+                                <ul type="square">
+                                    <li><b>padding-left: </b><i>10px</i></li>
+                                    <li><b>padding-right: </b><i>10px</i></li>
+                                    <li><b>padding-top: </b><i>10px</i></li>
+                                    <li><b>padding-bottom: </b><i>10px</i></li>
+                                    <li><b>padding: </b><i>10px 20px 30px 40px </i>(saat yönünü ifade eder: 10px=12,
+                                        20px=3,
+                                        30px=6, 40px=9)</li>
+                                    <li><b>padding: </b><i>20px 40px </i>(20px=yukarıdan aşağı, 40px=soldan sağa)</li>
+                                </ul>
+                </p>
+                <li><b>margin: </b><i>20px</i></li>
+                <p>
+                <ul type="square">
+                    <li><b>margin-left: </b><i>10px</i></li>
+                    <li><b>margin-right: </b><i>10px</i></li>
+                    <li><b>margin-top: </b><i>10px</i></li>
+                    <li><b>margin-bottom: </b><i>10px</i></li>
+                    <li><b>margin: </b><i>10px 20px 30px 40px </i>(saat yönünü ifade eder: 10px=12, 20px=3,
+                        30px=6, 40px=9)</li>
+                    <li><b>margin: </b><i>20px 40px </i>(20px=yukarıdan aşağı, 40px=soldan sağa)</li>
+                </ul>
+                </p>
+                </ul>
+                </p>
+                <p>
+                <ul>
+                    <li><b>overflow: </b><i>{auto, hidden, inherit, scroll, visible} </i></li>
                 </ul>
                 </p>
             </details>
@@ -394,7 +406,9 @@
                             <ul type="disc">
                                 <li><b>display</b><i></i></li>
                                 <ul type="circle">
-                                    <li><b></b><i></i></li>
+                                    <li><b>display: </b><i>{none} </i></li>
+                                    <li><b>display: </b><i>{block} </i></li>
+                                    <li><b>display: </b><i>{inline-block} </i></li>
                                 </ul>
                                 <li><b>position</b><i></i></li>
                                 <ul type="circle">
