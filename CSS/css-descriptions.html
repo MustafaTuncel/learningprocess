@@ -192,9 +192,10 @@
                                     <li><b>p::first-line </b><i>{font-weight: bold; color: brown; word-spacing: 2px;
                                             letter-spacing: 1px;}</i></li>
                                     <li><b>p::first-letter </b><i>{font-size: 48px;}</i></li>
+                                    <li><b>p::before </b><i>{content: "-deneme"; color: blueviolet; background-color:
+                                            yellow; width: 60px;}</i></li>
                                     <li><b>p::after </b><i>{content: "-deneme"; color: blueviolet; background-color:
-                                            yellow;
-                                            width: 60px;}</i></li>
+                                            yellow; width: 60px;}</i></li>
                                 </ul><br>
                             </details>
                             <details Pseudo Classes>
@@ -273,7 +274,7 @@
                 <ul type="disc">
                     <li><b>background-image:</b> <i>url ("")</i></li>
                     <li><b>background-repeat:</b> <i>repeat, no-repeat, repeat X (yatay), repeat Y (dikey)</i></li>
-                    <li><b>background-color:</b> <i>renk adı / kodu</i></li>
+                    <li><b>background-color:</b> <i>renk adı / kodu, rgb kodu, rgba kodu</i></li>
                 </ul>
                 </p>
             </details>
@@ -281,7 +282,7 @@
                 <summary><b>Text</b></summary>
                 <p>
                 <ul type="disc">
-                    <li><b>Color: </b><i>renk adı, kodu, rgb kodu</i></li>
+                    <li><b>Color: </b><i>renk adı, kodu, rgb kodu, rgba kodu</i></li>
                     <li><b>Text-align: </b><i>left, right, center, justify, start, end, inherit, match-parent</i></li>
                     <li><b>Text-decoration: </b><i>none, dashed, dotted, double, line-through, overline, solid,
                             underline, wavy</i></li>
@@ -395,6 +396,12 @@
                         < div </b><i>class="classadı"</i><b>> < /div></b>
                             <ul type="disc">
                                 <li><b>float: </b><i>left, right, top, bottom</i> (sıralama düzeni)</li>
+                                (Float komutunu sonlandırmak ve float değeri verdiğimiz içeriklerden sonra gelen
+                                içeriklerin üzerinden float etkisini kaldırmak için <b>clear: both</b> kullanılır. <br><br>
+                                <b>.temizle</b> <i>{clear: both;}</i><br>
+                                <b>.temizle:after</b> <i>{clear: both;}</i><br>
+                                <b>.temizle:after</b> <i>{content: ""; display: block; clear: both;}</i>  (div için)<br>
+                                <b>< div class="temizle">< /div></b> )
                             </ul>
                 </p>
             </details>
