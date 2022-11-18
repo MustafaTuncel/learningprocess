@@ -349,7 +349,8 @@
                 <b>div =</b> <i>box</i><br>
                 <b>padding =</b> <i>iç boşluk</i><br>
                 <b>margin =</b> <i>dış boşluk</i><br>
-                <b>overflow =</b> <i>sığma-taşma</i>
+                <b>overflow =</b> <i>sığma-taşma</i><br>
+                <b>clear: both =</b> <i>floating temizleme</i>
                 <p>
                     <b>
                         < div </b><i>class="classadı"</i><b>> < /div></b>
@@ -397,11 +398,15 @@
                             <ul type="disc">
                                 <li><b>float: </b><i>left, right, top, bottom</i> (sıralama düzeni)</li>
                                 (Float komutunu sonlandırmak ve float değeri verdiğimiz içeriklerden sonra gelen
-                                içeriklerin üzerinden float etkisini kaldırmak için <b>clear: both</b> kullanılır. <br><br>
+                                içeriklerin üzerinden float etkisini kaldırmak için <b>clear: both</b> kullanılır.
+                                <br><br>
                                 <b>.temizle</b> <i>{clear: both;}</i><br>
                                 <b>.temizle:after</b> <i>{clear: both;}</i><br>
-                                <b>.temizle:after</b> <i>{content: ""; display: block; clear: both;}</i>  (div için)<br>
-                                <b>< div class="temizle">< /div></b> )
+                                <b>.temizle:after</b> <i>{content: ""; display: block; clear: both;}</i> (div için)<br>
+                                <b>
+                                    < div class="temizle">
+                                        < /div>
+                                </b> )
                             </ul>
                 </p>
             </details>
@@ -413,20 +418,33 @@
                             <ul type="disc">
                                 <li><b>display</b><i></i></li>
                                 <ul type="circle">
-                                    <li><b>display: </b><i>{none} </i></li>
-                                    <li><b>display: </b><i>{block} </i></li>
-                                    <li><b>display: </b><i>{inline-block} </i></li>
+                                    <li><b>display: </b><i>{none} </i> (görünürlüğü gizleme)</li>
+                                    <li><b>display: </b><i>{inline} </i> (satır şeklinde sıralama /
+                                        <u>boyutlandırılamaz</u>)
+                                    </li>
+                                    <li><b>display: </b><i>{block} </i> (blok şeklinde sıralama)</li>
+                                    <li><b>display: </b><i>{inline-block} </i> (satır şeklinde ve blok halinde sıralama
+                                        / <u>boyutlandırılabilir</u>)</li><br>
+                                    <ul type="square">
+                                        <b>browser defaults </b><i></i>
+                                        <ul type="square">
+                                            <li><b>display: </b><i>block</i> (div için)</li>
+                                            <li><b>display: </b><i>inline</i> (span için)</li>
+                                            <li><b>display: </b><i>inline</i> (a için)</li>
+                                        </ul>
+                                    </ul>
                                 </ul>
                                 <li><b>position</b><i></i></li>
                                 <ul type="circle">
-                                    <li><b>position: </b><i>relative </i>(sıralama noktasını baz alır)</li>
-                                    <ul type="square">
-                                        <li><b>left: </b><i>10px</i></li>
-                                        <li><b>right: </b><i>10px</i></li>
-                                        <li><b>top: </b><i>10px</i></li>
-                                        <li><b>bottom: </b><i>10px</i></li>
-                                    </ul>
-                                    <li><b>position: </b><i>absolute </i>(başlangıç noktasını baz alır)</li>
+                                    <li><b>position: </b><i>static </i>(altalta / varsayılan)</li>
+                                    <li><b>position: </b><i>relative </i>(bulunduğu konumu baz alır)</li>
+                                    <li><b>position: </b><i>fixed </i>(belirtilen konumda, scroll bar hareket etse bile
+                                        sabit kalıp görünmeye devam eder / bottom: 0px; right: 0px gibi)</li>
+                                    <li><b>position: </b><i>absolute </i>(relative nesne varsa onun bulunduğu konumu,
+                                        yoksa başlangıç konumunu yani sol üst köşeyi baz alır)</li>
+                                    <li><b>position: </b><i>sticky </i>(scroll bar hareket ettirildiğinde, divin
+                                        belirtildiği pixeldeki noktaya gelindiğinde div belirtilen konumun başlangıcına
+                                        yapışır / top: 0px gibi)</li><br>
                                     <ul type="square">
                                         <li><b>left: </b><i>10px</i></li>
                                         <li><b>right: </b><i>10px</i></li>
