@@ -23,10 +23,24 @@
 
 <head>
     <title>CSS Descriptions</title>
+    <link rel="stylesheet" href="FontAwesome/fontawesome-free-6.2.1-web/css/all.css">
     <h1>CSS Descriptions</h1>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        div.fa-div {
+            color: crimson;
+            font-size: 200%;
+            margin-right: 5px;
+        }
+
+        ul.fa-ul {
+            color: tomato;
+            font-size: 200%;
+            margin-right: 5px;
+        }
+    </style>
 </head>
 
 <body>
@@ -608,6 +622,26 @@
                 </ul>
                 </p>
             </details>
+            <details Fonts>
+                <summary><b>Fonts</b></summary>
+                <p>
+                    Varsayılan fontlar dışında font kullanmak istediğimizde, font kütüphanesini html dosyasına css
+                    şeklinde tanımlamamız gerekir. <br>
+                    <b>
+                        < link href="<i>https://fonts.googleapis.com/css2?family=Caveat&display=swap</i>"
+                            rel="stylesheet">
+                    </b>
+                <ul type="disc">
+                    <li>body {<b>font-family: </b><i>Times New Roman, Times, Serif</i> (tarayıcı 1. fontu tanımazsa 2.
+                        fontu, 2. fontu da tanımazsa 3. fontu kullanır)</li>
+                    <li>p {<b>font-family: </b><i>Arial, Helvetica, sans-serif</i> (tarayıcı 1. fontu tanımazsa 2.
+                        fontu, 2. fontu da tanımazsa 3. fontu kullanır)</li>
+                    <li>body {<b>font-size: </b><i>20px</i> (harf büyüklüğü)</li>
+                    <li>p {<b>font-size: </b><i>50% / 200%</i> (%50 küçük yada %200 büyük)</li>
+                    <li>span {<b>font-size: </b><i>0.5em / 2em</i> (yarısı / 2 katı)</li>
+                </ul>
+                </p>
+            </details>
             <details Fontawesome (font ikonları)>
                 <summary><b>Fontawesome (font ikonları)</b></summary>
                 <p>
@@ -665,8 +699,45 @@
                     <i>
                         < /ul>
                     </i>
-                    </ul>
                 </p>
+                <p>
+                <ul>
+                    <h3>Font Icon Sizes</h3>
+                    < i class="fa fa-home" <b>fa-2x</b>>< /i><br><br>
+                            <ul type="disc">
+                                <li><b>fa-xs</b> 0.75em</li>
+                                <li><b>fa-sm</b> 0.875em</li>
+                                <li><b>fa-lg</b> 1.33em</li>
+                                <li><b>fa-2x</b> through <b>fa-10x</b> 2em through 10em</li>
+                            </ul>
+                </ul>
+                </p>
+                <div class="fa-div">
+                    <ul>
+                        <ul>
+                            <i class="fa fa-home"></i>
+                            <i class="fa fa-users"></i>
+                            <i class="fa fa-shopping-basket"></i>
+                            <i class="fa fa-phone-square"></i>
+                            <i class="fas fa-check-square"></i>
+                            <i class="far fa-square"></i>
+                            <i class="fas fa-spinner fa-pulse"></i>
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </ul>
+                    </ul>
+                </div>
+                <ul class="fa-ul">
+                    <li>
+                        <i class="fa fa-home"></i>
+                        <i class="fa fa-users"></i>
+                        <i class="fa fa-shopping-basket"></i>
+                        <i class="fa fa-phone-square"></i>
+                        <i class="fas fa-check-square"></i>
+                        <i class="far fa-square"></i>
+                        <i class="fas fa-spinner fa-pulse"></i>
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </li>
+                </ul>
             </details>
         </ol>
     </details> <br>
