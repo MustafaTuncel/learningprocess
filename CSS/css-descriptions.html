@@ -295,6 +295,7 @@
             <details Text>
                 <summary><b>Text</b></summary>
                 <p>
+                    Column değerleri verileceğinde kodun başına ; Opera, Chrome ve Safari tarayıcıları için <b>-webkit-</b>, Mozilla Firefox tarayıcısı için <b>-moz-</b> eklenir.
                 <ul type="disc">
                     <li><b>Color: </b><i>renk adı, kodu, rgb kodu, rgba kodu</i></li>
                     <li><b>Text-align: </b><i>left, right, center, justify, start, end, inherit, match-parent</i></li>
@@ -304,8 +305,10 @@
                             calc(), var(), full-width, full-size-kana</i></li>
                     <li><b>Text-indent: </b><i>50px, 10%</i> (paragraf girişi)</li>
                     <li><b>Line-height: </b><i>25px</i> (satırlar arası boşluk)</li>
-                    <li><b>Letter-spacing: </b><i>1px</i>(harfler arası boşluk)</li>
-                    <li><b>Word-spacing: </b><i>5px</i>(kelimeler arası boşluk)</li>
+                    <li><b>Letter-spacing: </b><i>1px</i> (harfler arası boşluk)</li>
+                    <li><b>Word-spacing: </b><i>5px</i> (kelimeler arası boşluk)</li>
+                    <li><b>Column-count: </b><i>2</i> (yazıyı sütunlara bölme)</li>
+                    <li><b>Column-rule: </b><i>{1px solid lightblue}</i> (yazı sütunlarının arasına çizgi koyma)</li>
                 </ul>
                 </p>
             </details>
@@ -634,11 +637,11 @@
                 <ul type="disc">
                     <li>body {<b>font-family: </b><i>Times New Roman, Times, Serif</i> (tarayıcı 1. fontu tanımazsa 2.
                         fontu, 2. fontu da tanımazsa 3. fontu kullanır)</li>
-                    <li>p {<b>font-family: </b><i>Arial, Helvetica, sans-serif</i> (tarayıcı 1. fontu tanımazsa 2.
-                        fontu, 2. fontu da tanımazsa 3. fontu kullanır)</li>
                     <li>body {<b>font-size: </b><i>20px</i> (harf büyüklüğü)</li>
-                    <li>p {<b>font-size: </b><i>50% / 200%</i> (%50 küçük yada %200 büyük)</li>
+                    <li>span {<b>font-size: </b><i>50% / 200%</i> (%50 küçük yada %200 büyük)</li>
                     <li>span {<b>font-size: </b><i>0.5em / 2em</i> (yarısı / 2 katı)</li>
+                    <li>span {<b>font-weight: </b><i>bold</i> (kalın)</li>
+                    <li>span {<b>font-style: </b><i>italic</i> (eğik)</li>
                 </ul>
                 </p>
             </details>
