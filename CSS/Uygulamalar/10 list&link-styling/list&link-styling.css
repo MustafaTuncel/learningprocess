@@ -1,0 +1,130 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Caveat', cursive;
+    font-size: 22px;
+    letter-spacing: 2px;
+    line-height: 35px;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 150%;
+}
+
+#container {
+    width: 1140px;
+    margin: 20px auto;
+}
+
+#blog-post-container {
+    width: 70%;
+    float: left;
+}
+
+#other-posts {
+    width: 30%;
+    float: left;
+    padding-left: 10px;
+}
+
+#inner-other-posts {
+    position: relative;
+}
+
+#inner-other-posts ul li {
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+#inner-other-posts ul li i {
+    font-size: 75%;
+}
+
+#share {
+    position: relative;
+    padding-left: 32px;
+    margin-top: 10px;
+}
+
+#share a {
+    color: gray;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+#share a:hover {
+    opacity: 0.6;
+}
+
+#author-box {
+    border-top: 1px solid rgb(0, 0, 0, .125);
+    padding-top: 10px;
+}
+
+#author-box img {
+    border-radius: 50%;
+    float: left;
+}
+
+#author-text {
+    float: left;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.box {
+    background-color: white;
+    margin-bottom: 15;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.blog-post {
+    position: relative;
+}
+
+.blog-post img {
+    width: 100%;
+}
+
+.date {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #aaa;
+}
+
+.blog-text {
+    margin-top: 15px;
+}
+
+.clear {
+    clear: both;
+}
+
+.tags ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.tags ul li a {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+
+.header {
+    border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+}
