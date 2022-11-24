@@ -295,7 +295,8 @@
             <details Text>
                 <summary><b>Text</b></summary>
                 <p>
-                    Column değerleri verileceğinde kodun başına ; Opera, Chrome ve Safari tarayıcıları için <b>-webkit-</b>, Mozilla Firefox tarayıcısı için <b>-moz-</b> eklenir.
+                    Column değerleri verileceğinde kodun başına ; Opera, Chrome ve Safari tarayıcıları için
+                    <b>-webkit-</b>, Mozilla Firefox tarayıcısı için <b>-moz-</b> eklenir.
                 <ul type="disc">
                     <li><b>Color: </b><i>renk adı, kodu, rgb kodu, rgba kodu</i></li>
                     <li><b>Text-align: </b><i>left, right, center, justify, start, end, inherit, match-parent</i></li>
@@ -308,7 +309,13 @@
                     <li><b>Letter-spacing: </b><i>1px</i> (harfler arası boşluk)</li>
                     <li><b>Word-spacing: </b><i>5px</i> (kelimeler arası boşluk)</li>
                     <li><b>Column-count: </b><i>2</i> (yazıyı sütunlara bölme)</li>
+                    <li><b>column-gap: </b><i></i></li>
                     <li><b>Column-rule: </b><i>{1px solid lightblue}</i> (yazı sütunlarının arasına çizgi koyma)</li>
+                    <li><b>column-rule-style: </b><i></i></li>
+                    <li><b>column-rule-width: </b><i></i></li>
+                    <li><b>column-rule-color: </b><i></i></li>
+                    <li><b>column-span: </b><i></i></li>
+                    <li><b>column-width: </b><i></i></li>
                 </ul>
                 </p>
             </details>
@@ -363,11 +370,16 @@
             </details>
             <details Box (Div)>
                 <summary><b>Box (Div)</b></summary><br>
+                Box-shadow değerleri verileceğinde kodun başına ; Chrome ve Safari tarayıcıları için <b>-webkit-</b>, Mozilla Firefox tarayıcısı için <b>-moz-</b> eklenir. <br>
+                Aynı box içerisinde aynı box-shadow değerleri iki kez kullanıldığında daha belirgin bir görünüm elde edilebilir. <br>
+                Kutuya belirginlik kazandırmak istendiğinde kutuya border verilirse etki artar. <br>
+                <br>
                 <b>div =</b> <i>box</i><br>
                 <b>padding =</b> <i>iç boşluk</i><br>
                 <b>margin =</b> <i>dış boşluk</i><br>
                 <b>overflow =</b> <i>sığma-taşma</i><br>
-                <b>clear: both =</b> <i>floating temizleme</i>
+                <b>box-shadow =</b> <i>div gölgelendirme</i><br>
+                <b>clear: both =</b> <i>floating temizleme</i><br>
                 <p>
                     <b>
                         < div </b><i>class="classadı"</i><b>> < /div></b>
@@ -404,6 +416,17 @@
                 <p>
                 <ul>
                     <li><b>overflow: </b><i>{auto, hidden, inherit, scroll, visible} </i></li>
+                    <li><b>box-shadow </b><i>{20px 20px 20px 10px rgba(0, 0, 0, 0.3) inset;}</i></li>
+                    <ul>
+                        <p>
+                            <li><b>parametre 1 = </b><i>soldan sağa</i></li>
+                            <li><b>parametre 2 = </b><i>yukarıdan aşağıya</i></li>
+                            <li><b>parametre 3 = </b><i>blur</i></li>
+                            <li><b>parametre 4 = </b><i>blur büyüklüğü</i></li>
+                            <li><b>parametre 5 = </b><i>gölge rengi</i> (opacity yada direkt renk kullanılabilir)</li>
+                            <li><b>parametre 6 = </b><i>gölgeyi kutu içinden verme</i></li>
+                        </p>
+                    </ul>
                 </ul>
                 </p>
             </details>
