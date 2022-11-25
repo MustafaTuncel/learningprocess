@@ -368,27 +368,49 @@
                 </ul>
                 </p>
             </details>
-            <details Box (Div)>
-                <summary><b>Box (Div)</b></summary><br>
-                Box-shadow değerleri verileceğinde kodun başına ; Chrome ve Safari tarayıcıları için <b>-webkit-</b>, Mozilla Firefox tarayıcısı için <b>-moz-</b> eklenir. <br>
-                Aynı box içerisinde aynı box-shadow değerleri iki kez kullanıldığında daha belirgin bir görünüm elde edilebilir. <br>
-                Kutuya belirginlik kazandırmak istendiğinde kutuya border verilirse etki artar. <br>
+            <details Box (div)>
+                <summary><b>Box (div)</b></summary><br>
+                (padding, margin, overflow, box-shadow, transition, clear: both)<br><br>
+
+                <ol type="1">
+                    <li><u>Box-shadow</u> değerleri verileceğinde kodun başına ; Chrome ve Safari tarayıcıları için
+                        <b>-webkit-</b>, Mozilla Firefox tarayıcısı için <b>-moz-</b> eklenir,<br> ayrıca kodun yalın
+                        hali de yazılmalıdır.
+                    </li>
+                    <li><u>Transition</u> değerleri verileceğinde kodun başına ; Chrome ve Safari tarayıcıları için
+                        <b>-webkit-</b>,
+                        Mozilla Firefox tarayıcısı için <b>-moz-</b>, Opera tarayıcısı için <b>-o-</b> eklenir,<br>
+                        ayrıca
+                        kodun yalın hali de yazılmalıdır.
+                    </li>
+                    <li>Aynı box içerisinde aynı box-shadow değerleri iki kez kullanıldığında daha belirgin bir görünüm
+                        elde edilebilir. <br>
+                        Kutuya belirginlik kazandırmak istendiğinde kutuya border verilirse etki artar.</li>
+
+                </ol>
                 <br>
                 <b>div =</b> <i>box</i><br>
                 <b>padding =</b> <i>iç boşluk</i><br>
                 <b>margin =</b> <i>dış boşluk</i><br>
                 <b>overflow =</b> <i>sığma-taşma</i><br>
                 <b>box-shadow =</b> <i>div gölgelendirme</i><br>
+                <b>transition =</b> <i>geçiş efekti</i><br>
+                <b>ease =</b><i> yavaş-hızlı-yavaş</i> (varsayılan)<br>
+                <b>ease-in =</b><i> yavaş-hızlı</i><br>
+                <b>ease-out =</b><i> hızlı-yavaş</i><br>
+                <b>ease-in-out =</b><i> yavaş-yavaş</i><br>
+                <b>linear =</b><i> sabit hızda</i><br>
+                <b>cubic-bezier(n,n,n,n) =</b><i> </i><br>
                 <b>clear: both =</b> <i>floating temizleme</i><br>
                 <p>
                     <b>
                         < div </b><i>class="classadı"</i><b>> < /div></b>
-                            <ul type="circle">
+                            <ul type="disc">
                                 <li><b>width: </b><i>200px</i></li>
                                 <li><b>background-color: </b><i>burlywood</i></li>
                                 <li><b>padding: </b><i>5px</i></li>
                                 <p>
-                                <ul type="square">
+                                <ul type="circle">
                                     <li><b>padding-left: </b><i>10px</i></li>
                                     <li><b>padding-right: </b><i>10px</i></li>
                                     <li><b>padding-top: </b><i>10px</i></li>
@@ -401,7 +423,7 @@
                 </p>
                 <li><b>margin: </b><i>20px</i></li>
                 <p>
-                <ul type="square">
+                <ul type="circle">
                     <li><b>margin-left: </b><i>10px</i></li>
                     <li><b>margin-right: </b><i>10px</i></li>
                     <li><b>margin-top: </b><i>10px</i></li>
@@ -414,10 +436,10 @@
                 </ul>
                 </p>
                 <p>
-                <ul>
+                <ul type="disc">
                     <li><b>overflow: </b><i>{auto, hidden, inherit, scroll, visible} </i></li>
-                    <li><b>box-shadow </b><i>{20px 20px 20px 10px rgba(0, 0, 0, 0.3) inset;}</i></li>
-                    <ul>
+                    <li><b>box-shadow: </b><i>{20px 20px 20px 10px rgba(0, 0, 0, 0.3) inset;}</i></li>
+                    <ul type="circle">
                         <p>
                             <li><b>parametre 1 = </b><i>soldan sağa</i></li>
                             <li><b>parametre 2 = </b><i>yukarıdan aşağıya</i></li>
@@ -427,6 +449,18 @@
                             <li><b>parametre 6 = </b><i>gölgeyi kutu içinden verme</i></li>
                         </p>
                     </ul>
+                    <li>div <b>{transition: </b><i>width 2s linear 1s, height 4s linear 1s;}</i> <br>
+                        div:hover {width: <i>300px; height: 300px;}</i>
+                    </li>
+                    <p>
+                    <ul type="circle">
+                        <li><b>{transition-property: </b><i>width;}</i> (nitelik)</li>
+                        <li><b>{transition-duration: </b><i>2s;}</i> (süre)</li>
+                        <li><b>{transition-timing-function: </b><i>linear;}</i> (zamanlama fonksiyonu)</li>
+                        <li><b>{transition-delay: </b><i>1s;}</i> (gecikme)</li>
+                    </ul>
+                    </p>
+
                 </ul>
                 </p>
             </details>
