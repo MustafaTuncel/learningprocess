@@ -284,11 +284,59 @@
         <ol>
             <details Background>
                 <summary><b>Background</b></summary>
+                <p><b>gradient efekti = </b><i>to 'yön'</i> gradient efektinin başlangıç noktası (efekt ters yöne
+                    doğru devam
+                    eder)
+                    <br>
+                    <b>Linear = </b><i>giderek artan gradient efekti</i>
+                    <br>
+                    <b>Radial = </b><i></i>
+                    <br>
+                    <b>Conic = </b><i></i>
+                    <br><br>
+                    <b>Multiple = </b><i>red, orange, yellow, green, blue, purple...</i> (çok renkli gradient)
+                    <br>
+                    <b>Direction = </b><i>to right</i> [soldan sağa (tek yön)}
+                    <br>
+                    <b>Degree = </b><i>0deg, 90deg, 180deg, -90deg</i> [alttan üste, soldan sağa, üstten alta,
+                    sağdan solda (tek yön)}
+                    <br>
+                    <b>Diagonal = </b><i> to right bottom</i> [sol üstten sağ alta (çift yön)}
+                    <br><br>
+                    <b>clip-path = </b><i>arka plan üzerinde açıları kullanarak arka planı kırpar</i>
+                    <br>
+                    <b>viewport = </b><i>tarayıcı üzerinde gösterilen arka plan alanı</i>
+                    <br>
+                    <b>vh = </b><i>viewport yüksekliği</i>
+                    <br>
+                    <b>vw = </b><i>viewport genişliği</i>
+                    <br><br>
+                    <b>background-size = </b><i>viewport'un yani arka planın tarayıcıda gözüken kısmının ölçüsü</i>
+                    <br>
+                    <b>background-position = </b><i>arka planın viewport üzerindeki konumu</i>
+                </p>
                 <p>
                 <ul type="disc">
                     <li><b>background-image:</b> <i>url ("")</i></li>
-                    <li><b>background-repeat:</b> <i>repeat, no-repeat, repeat X (yatay), repeat Y (dikey)</i></li>
-                    <li><b>background-color:</b> <i>renk adı / kodu, rgb kodu, rgba kodu</i></li>
+                    <p>
+                    <ul type="circle">
+                        <li>background-image: <b>...-gradient(red, yellow) </b><i>efekt verme</i> (top to bottom default
+                            ayardır)
+                        </li>
+                        <ul type="square">
+                            <li>background-image: <b>linear-gradient(to left top, rgba(0,0,0,0), rgba(0,0,0,0)),
+                                    url("");</b> (gradient efekti verme)</li>
+                        </ul>
+                    </ul>
+                    </p>
+                    <li><b>background-size: </b><i>cover</i> (arka planın kalitesini bozmadan çerçeveye sığdırır)</li>
+                    <li><b>background-position: </b><i>center</i> (arka planı konumlandırır)</li>
+                    <li><b>background-repeat: </b> <i>repeat, no-repeat, repeat X (yatay), repeat Y (dikey)</i></li>
+                    <li><b>background-color: </b> <i>renk adı / kodu, rgb kodu, rgba kodu</i></li>
+                    <li><b>clip-path: </b><i>polygon(0 0, 100% 0, 100% 100%, 0 100%)</i> (arka plan üzerinde açısal crop
+                        işlemleri)</li>
+                    <li><b>height / width: </b><i>100vh / 100vw </i>(viewport'un ne kadarlık alanında arkaplanın
+                        gösterileceği)</li>
                 </ul>
                 </p>
             </details>
@@ -463,10 +511,13 @@
                     <li>div <b>{object-fit: </b><i>cover}</i></li>
                     <p>
                     <ul type="circle">
-                        <li>{object-fit: <b>fill} </b><i>en-boy oranını otomatik ayarlar</i> (varsayılan, görselde bozulmalar olabilir)</li>
+                        <li>{object-fit: <b>fill} </b><i>en-boy oranını otomatik ayarlar</i> (varsayılan, görselde
+                            bozulmalar olabilir)</li>
                         <li>{object-fit: <b>contain} </b><i>görseli küçülterek tam boyutunu çerçeveye alır</i></li>
-                        <li>{object-fit: <b>cover} </b><i>görselin çerçeveye sığdığı kadarlık kısmını çerçeveye alır</i></li>
-                        <li>{object-fit: <b>scale-down} </b><i>görselin en küçük boyutunu bulmak için none ve contain karşılaştırması yapılır</i></li>
+                        <li>{object-fit: <b>cover} </b><i>görselin çerçeveye sığdığı kadarlık kısmını çerçeveye alır</i>
+                        </li>
+                        <li>{object-fit: <b>scale-down} </b><i>görselin en küçük boyutunu bulmak için none ve contain
+                                karşılaştırması yapılır</i></li>
                         <li>{object-fit: <b>none} </b><i>görselin ortasını ölçekleme olmadan çerçeveye alır</i></li>
                         <ul type="square">
                             {object-fit: none; <b>object-position: 50% 50%</b>;} yüzdelerle oynayarak görsel önizlemesi
