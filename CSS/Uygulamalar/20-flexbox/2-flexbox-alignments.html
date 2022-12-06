@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>flexbox-container</title>
+    <title>flexbox-alignments</title>
     <style>
         * {
             margin: 0px;
@@ -17,17 +17,21 @@
             padding: 15px;
             display: flex;
             /*
-            flex-direction: row;
-            flex-direction: row-reverse;
-            flex-direction: column;
-            flex-direction: column-reverse;
+            justify-content: flex-start
+            justify-content: center
+            justify-content: flex-end
+            justify-content: space-between
+            justify-content: space-around
+            justify-content: space-evenly
             */
+
             /*
-            flex-wrap: nowrap;
-            flex-wrap: wrap;
-            flex-wrap: wrap-reverse;
+            align-items: stretch (varsayılan)
+            align-items: baseline
+            align-items: flex-start
+            align-items: center
+            align-items: flex-end
             */
-            flex-wrap: wrap;
         }
 
         .item {
@@ -46,10 +50,6 @@
         <div class="item">item 2</div>
         <div class="item">item 3</div>
         <div class="item">item 4</div>
-        <div class="item">item 5</div>
-        <div class="item">item 6</div>
-        <div class="item">item 7</div>
-        <div class="item">item 8</div>
     </div>
 </body>
 

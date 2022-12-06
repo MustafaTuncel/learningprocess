@@ -603,7 +603,7 @@
                 </p>
                 <p>
                 <ul type="disc">
-                    <li><b>flex-direction </b><i></i> (flex-itemları sıralamak)</li>
+                    <li><b>flex-direction </b><i></i> (container içerisindeki flex-itemları sıralamak)</li>
                     <p>
                     <ul type="circle">
                         <li>flex-direction: <b>row </b><i>(sola dayalı satırı kaplar, sıralama soldan başlar)</i>
@@ -616,16 +616,54 @@
                                 başlar)</i></li>
                     </ul>
                     </p>
-                    <li><b>flex-wrap </b><i></i> (flex-itemlara responsive kazandırmak)</li>
+                    <li><b>flex-wrap </b><i></i> (container içerisindeki flex-itemlara responsive kazandırmak)</li>
                     <p>
                     <ul type="circle">
-                        <li>flex-wrap: <b>nowrap </b><i>(satıra sığmayan elemanların aynı satırda kalması)</i> (varsayılan)</li>
+                        <li>flex-wrap: <b>nowrap </b><i>(satıra sığmayan elemanların aynı satırda kalması)</i>
+                            (varsayılan)</li>
                         <li>flex-wrap: <b>wrap </b><i>(satıra sığmayan elemanların alt satıra inmesi)</i> </li>
                         <li>flex-wrap: <b>wrap-reverse </b><i>(satıra sığmayan elemanların üst satıra çıkması)</i> </li>
                     </ul>
                     </p>
-                    <li><b>justify-content </b><i></i> (flex-itemları yatay hizalamak)</li>
-                    <li><b>align-items </b><i></i> (flex-itemları dikey hizalamak)</li>
+                    <li><b>justify-content: </b><i></i> (container içerisindeki flex-itemları yatay hizalamak)</li>
+                    <p>
+                    <ul type="circle">
+                        <li>justify-content: <b>flex-start </b><i>(sola hizalamak)</i></li>
+                        <li>justify-content: <b>center </b><i>(ortaya hizalamak)</i></li>
+                        <li>justify-content: <b>flex-end </b><i>(sağa hizalamak)</i></li>
+                        <li>justify-content: <b>space-between </b><i>(sadece flex-itemların aralarında x1 boşluk
+                                bırakarak eşit şekilde hizalamak)</i></li>
+                        <li>justify-content: <b>space-around </b><i>(başlangıç flex-itemından önce ve son flex-itemından
+                                sonra x1, flex-itemların aralarında x2 boşluk bırakarak hizalamak)</i></li>
+                        <li>justify-content: <b>space-evenly </b><i>(flex-itemların her yerinden eşit şekilde boşluk
+                                bırakarak hizalamak)</i></li>
+                        <br>
+                        <b><i>WARNING !</b><br>
+                        flex-direction'a varsayılan row değeri kaldırılıp column değeri verilmişse ; <br>
+                        justify-content dikey olarak, align-items yatay olarak düşünülür.</i>
+                    </ul>
+                    </p>
+                    <li><b>align-items </b><i></i> (container içerisindeki flex-itemları dikey hizalamak)</li>
+                    <p>
+                    <ul type="circle">
+                        <li>align-items: <b>flex-start </b><i>(flex-itemları yukarı hizalar ve değer verilen itemlar
+                                sabit boyutunda kalır, değer verilmeyen itemlar küçülür.)</i></li>
+                        <li>align-items: <b>center </b><i>(flex-itemları ortaya hizalar ve değer verilen itemlar sabit
+                                boyutunda kalır, değer verilmeyen itemlar küçülür.)</i></li>
+                        <li>align-items: <b>flex-end </b><i>(flex-itemları aşağı hizalar ve değer verilen itemlar sabit
+                                boyutunda kalır, değer verilmeyen itemlar küçülür.)</i></li>
+                        <li>align-items: <b>baseline </b><i>(flex-itemlar yazı ve içeriklerin alt sınırından
+                                hizalanır)</i></li>
+                        <li>align-items: <b>stretch </b><i>(flex-itema verilen height gibi bir attribute değerini diğer
+                                değer verilmemiş flex-itemlara uygular, <br>
+                                2 yada daha fazla flex-itema aynı attribute verildiyse fazla olan baz alınır.)</i>
+                            (varsayılan)</li>
+                        <br>
+                        <b><i>WARNING !</b><br>
+                        flex-direction'a varsayılan row değeri kaldırılıp column değeri verilmişse ; <br>
+                        align-items yatay olarak, justify-content dikey olarak düşünülür.</i>
+                    </ul>
+                    </p>
                     <li><b>align-content </b><i></i> (flex-item div grupları arasına mesafe vermek)</li>
                     <li><b>align-self </b><i></i> (tek bir flex-itemı hareket ettirmek)</li>
                     <li><b>order </b><i></i> (flex-itemların yerlerini değiştirmek)</li>
