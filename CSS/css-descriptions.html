@@ -664,20 +664,50 @@
                         align-items yatay olarak, justify-content dikey olarak düşünülür.</i>
                     </ul>
                     </p>
-                    <li><b>align-content </b><i></i> (flex-item div grupları arasına mesafe vermek)</li>
                     <li><b>align-self </b><i></i> (tek bir flex-itemı hareket ettirmek)</li>
-                    <li><b>order </b><i></i> (flex-itemların yerlerini değiştirmek)</li>
-                    <li><b>flex: </b><i>0 1 auto</i> (tek satırda büyüme, daralma ve genişlik oranını ayarlamak)</li>
                     <p>
                     <ul type="circle">
-                        <li><b>flex-grow: 0 </b><i></i> (flex-container büyüdüğünde flex-itemların büyüme oranını
+                        <li>align-self: <b>flex-start </b><i>(dikeyde üstten hizalar)</i></li>
+                        <li>align-self: <b>center </b><i>(dikeyde ortaya hizalar)</i></li>
+                        <li>align-self: <b>flex-end </b><i>(dikeyde alttan hizalar)</i></li>
+                        <li>align-self: <b>baseline </b><i>(yazı ve içeriklerin alt sınırından hizalanır)</i></li>
+                        <li>align-self: <b>stretch </b><i>(değer verilmeyenleri verilen maksimum değere eşitler)</i>
+                        </li>
+                    </ul>
+                    </p>
+                    <li><b>order </b><i></i> (flex-itemları başa almak, yerlerini değiştirmek)</li>
+                    <p>
+                    <ul type="circle">
+                        <li>order: <b>-1 </b><i></i></li>
+                        <li>order: <b>-2 </b><i></i></li>
+                        <br>
+                        <b><i>WARNING !</b><br>
+                        Align-self ile birlikte kullanıldı, <br>
+                        verilen en büyük '-' değer en başa ve verilen en büyük '+' değer en sona gelir.</i>
+                    </ul>
+                    </p>
+                    <li><b>flex: </b><i>0 1 auto / % / px</i> (tek satırda büyüme, daralma ve genişlik oranını
+                        ayarlamak)
+                        <br><br>
+                        <b>flex: 1 =</b> flex-grow: 1 <br>
+                        <b>flex: 0 1 =</b> flex-shrink: 1 <br>
+                        <b>flex: 0 0 auto / % / px =</b> flex-basis: auto / % / px
+                    </li>
+                    <p>
+                    <ul type="circle">
+                        <li><b>flex-grow: 1 </b><i></i> (flex-container büyütüldüğünde flex-itemların büyüme oranını
                             ayarlamak)</li>
                         <li><b>flex-shrink: 1 </b><i></i> (flex-container daraltıldığında flex-itemların daralma oranını
                             ayarlamak)</li>
-                        <li><b>flex-basis: auto </b><i></i> (flex-container genişletildiğinde flex-itemların genişlik
-                            oranını ayarlamak)</li>
+                        <li><b>flex-basis: auto / % / px</b><i></i> (flex-container genişletildiğinde flex-itemların
+                            genişlik oranını ayarlamak)</li>
+                        <br>
+                        <b><i>WARNING !</b><br>
+                        "X" bir itema 1, "Y" bir itema 2 değeri verildiğinde "Y" itemı "X" itemının 2 katı değer
+                        kazanır.</i>
                     </ul>
                     </p>
+                    <li><b>align-content </b><i></i> (flex-item div grupları arasına mesafe vermek)</li>
                 </ul>
                 </p>
             </details>
