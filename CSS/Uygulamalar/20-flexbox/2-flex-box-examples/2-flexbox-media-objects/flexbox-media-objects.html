@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox-media-object</title>
+    <style>
+        .media {
+            display: flex;
+            align-items: flex-start;
+            background-color: antiquewhite;
+            max-width: 500px;
+            margin: 20px;
+            border-radius: 3px;
+        }
+
+        .media-object {
+            width: 100px;
+            padding: 16px;
+            margin-right: 16px;
+        }
+
+        .media-heading {
+            margin: 0 0 8 0px;
+        }
+
+        .img-right {
+            order: 1;
+        }
+
+        .media-inner {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .media-body2 {
+            margin-left: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="media">
+        <img class="media-object" src="avatar.png" alt="">
+        <div class="media-body">
+            <h3 class="media-heading">Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium minima quod eligendi sequi vero
+                omnis ullam quae at. Facilis, exercitationem.</p>
+        </div>
+    </div>
+
+    <div class="media">
+        <img class="media-object img-right" src="avatar.png" alt="">
+        <div class="media-body2">
+            <h3 class="media-heading">Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium minima quod eligendi sequi vero
+                omnis ullam quae at. Facilis, exercitationem.</p>
+        </div>
+    </div>
+
+    <div class="media">
+        <img class="media-object" src="avatar.png" alt="">
+        <div class="media-body">
+            <h3 class="media-heading">Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium minima quod eligendi sequi vero
+                omnis ullam quae at. Facilis, exercitationem.</p>
+
+            <div class="media media-inner">
+                <img class="media-object" src="avatar.png" alt="">
+                <div class="media-body">
+                    <h3 class="media-heading">Lorem, ipsum.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

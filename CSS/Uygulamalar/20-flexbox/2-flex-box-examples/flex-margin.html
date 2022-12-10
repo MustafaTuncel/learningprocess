@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-margin</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            display:flex;
+            height: 500px;
+            background-color: #f2f2f2;
+            /*
+            FLEX-ORTALAMA
+            display: flex
+            align-items: center
+            justify-content: center
+            */
+            /*
+            FLEX-MARGIN-ORTALAMA
+            display: flex
+            margin: auto
+            */
+            /*
+            FLEX-MARGIN-ALT/UST-ORTALAMA
+            display: flex
+            margin-bottom/top: auto
+            margin-left: auto
+            margin-right: auto
+            */
+            /*
+            FLEX-YANA-YASLAMA
+            display: flex
+            margin-left: auto
+            margin-right: auto
+            */
+            /*
+            FLEX-NAVBAR-EXAMPLE
+            display: flex
+            .i1 {margin-right: auto}
+            .i2 {margin-left: auto}
+            */
+
+
+        }
+
+        .item {
+            margin: auto;
+            background-color: chocolate;
+            padding: 30px;
+            color: #fff;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">Item 1</div>
+    </div>
+</body>
+
+</html>
