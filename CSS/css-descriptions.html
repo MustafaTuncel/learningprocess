@@ -445,13 +445,24 @@
                 <b>overflow =</b> <i>sığma-taşma</i><br>
                 <b>box-shadow =</b> <i>div gölgelendirme</i><br>
                 <b>transition =</b> <i>geçiş efekti</i><br>
+                <b>transform =</b><i> eksen ayarları</i><br>
+                <b>clear: both =</b> <i>floating temizleme</i><br><br>
+                <b>TIMING FUNCTIONS</b><br>
                 <b>ease =</b><i> yavaş-hızlı-yavaş</i> (varsayılan)<br>
                 <b>ease-in =</b><i> yavaş-hızlı</i><br>
                 <b>ease-out =</b><i> hızlı-yavaş</i><br>
                 <b>ease-in-out =</b><i> yavaş-yavaş</i><br>
                 <b>linear =</b><i> sabit hızda</i><br>
-                <b>cubic-bezier(n,n,n,n) =</b><i> </i><br>
-                <b>clear: both =</b> <i>floating temizleme</i><br>
+                <b>cubic-bezier(n,n,n,n) =</b><i> </i><br><br>
+                <b>ANIMATION FILL MODES</b><br>
+                <b>none = </b><i>herhangi bir stil uygulanmaz</i> (varsayılan değer)<br>
+                <b>forwards = </b><i>öğe, son anahtar kare tarafından ayarlanan stil değerlerini koruyacaktır</i>
+                (animasyon yönüne ve animasyon sayısına bağlıdır)<br>
+                <b>backwards = </b><i>öğe, ilk ana kare tarafından ayarlanan stil değerlerini alır ve bunu animasyon
+                    gecikme süresi boyunca korur</i> (animasyon yönüne bağlıdır)<br>
+                <b>both = </b><i>animasyon başlamadan önce ilk anahtar kare tarafından ayarlanan stil değerlerini
+                    almasına ve animasyon sona erdiğinde son anahtar karedeki stil değerlerini korumasına izin
+                    verir</i><br>
                 <p>
                     <b>
                         < div </b><i>class="classadı"</i><b>> < /div></b>
@@ -528,6 +539,165 @@
                     </ul>
                     </p>
 
+                    <li>div <b>{transform: </b><i>rotate(20deg), skewY(20deg), scaleY(1.5), translate(50px,100px)}</i>
+                        (rotate, scale, move,
+                        skew, translate...)</li>
+                    <p>
+                        <b>Chrome = </b><i>-webkit-</i><br>
+                        <b>Mozilla = </b><i>-moz-</i><br>
+                        <b>Opera = </b><i>-o-</i><br>
+                        <b>Safari = </b><i>-webkit-</i><br>
+                        <b>IE / Edge = </b><i>-ms-</i>
+                    </p>
+                    <p>
+                    <ul type="circle"> 2D
+                        <li><b>translate = </b><i>bir öğeyi mevcut bulunduğu konumdan hareket ettirir</i></li>
+                        <li><b>scale = </b><i>bir öğenin boyutunu büyütür veya küçültür</i></li>
+                        <li><b>skew = </b><i>bir öğeyi eksen boyunca verilen açı kadar eğer</i></li>
+                        <li><b>rotate = </b><i>bir öğeyi verilen açı kadar döndürme</i></li>
+                    </ul>
+                    </p>
+                    <p>
+                    <ul type="circle"> 3D
+                        <li>transform: <b>rotateX(150deg)</b><i> X ekseninde döndürme</i></li>
+                        <li>transform: <b>rotateY(150deg)</b><i> Y ekseninde döndürme</i></li>
+                        <li>transform: <b>rotateZ(90deg)</b><i> Z ekseninde döndürme</i></li>
+                    </ul>
+                    </p>
+                    <li>div <b>@keyframes </b><i>animation code</i><br>
+                        (işleyişi transition gibi ; önce div içine bilgiler girilir, sonra @keyframes 'animasyonadı'
+                        içine bilgiler girilir)</li>
+                    <p>
+                    <ul type="circle">
+                        <li><b>@keyframes = </b><i>animasyon etiketi</i></li>
+                        <li><b>animation-name = </b><i>animasyon kod adı</i></li>
+                        <li><b>animation-duration = </b><i>animasyon süresi</i></li>
+                        <li><b>animation-delay = </b><i>animasyon gecikmesi</i></li>
+                        <li><b>animation-iteration-count = </b><i>animasyon yineleme sayısı</i></li>
+                        <li><b>animation-direction = </b><i>animasyon yönü</i></li>
+                        <p>
+                        <ul type="square">
+                            <li><b>normal = </b><i>normal yönde</i></li>
+                            <li><b>reverse = </b><i>ters yönde</i></li>
+                            <li><b>alternate = </b><i>önce ileri sonra geri yönde</i></li>
+                            <li><b>alternate-reverse = </b><i>önce geri sonra ileri yönde</i></li>
+                        </ul>
+                        </p>
+                        <li><b>animation-timing-function = </b><i>zamanlama fonksiyonu</i></li>
+                        <li><b>animation-fill-mode = </b><i>animasyon doldurma modu</i> (başlamadan önce, bittikten
+                            sonra yada her ikisi de)</li>
+                        <li><b>animation = </b><i>kestirme animasyon kodu</i> (animation: 'animasyonadı' 5s linear 2s
+                            infinite alternate;)</li>
+                    </ul>
+                    </p>
+                    <p><b>ÖRNEK 1:</b><br><br>
+                        div { <br>
+                        width: 100px; <br>
+                        height: 100px; <br>
+                        background-color: red; <br>
+                        animation-name: example; <br>
+                        animation-duration: 4s; <br>
+                        } <br><br>
+
+                        @keyframes example { <br>
+                        from {background-color: red;} <br>
+                        to {background-color: yellow;} <br>
+                        }
+                    </p>
+                    <p><b>ÖRNEK 2:</b><br><br>
+                        div { <br>
+                        width: 100px; <br>
+                        height: 100px; <br>
+                        background-color: red; <br>
+                        animation-name: example; <br>
+                        animation-duration: 4s; <br>
+                        } <br><br>
+
+                        @keyframes example { <br>
+                        0% {background-color: red;} <br>
+                        25% {background-color: yellow;} <br>
+                        50% {background-color: blue;} <br>
+                        100% {background-color: green;} <br>
+                        }
+                    </p>
+                    <p><b>ÖRNEK 3:</b><br><br>
+                        div { <br>
+                        width: 100px; <br>
+                        height: 100px; <br>
+                        background-color: red; <br>
+                        position: relative; <br>
+                        animation-name: example; <br>
+                        animation-duration: 4s; <br>
+                        } <br><br>
+
+                        @keyframes example { <br>
+                        0% {background-color:red; left:0px; top:0px;} <br>
+                        25% {background-color:yellow; left:200px; top:0px;} <br>
+                        50% {background-color:blue; left:200px; top:200px;} <br>
+                        75% {background-color:green; left:0px; top:200px;} <br>
+                        100% {background-color:red; left:0px; top:0px;} <br>
+                        }
+                    </p>
+                    <p><b>ÖRNEK 4:</b><br><br>
+                        div { <br>
+                        width: 100px; <br>
+                        height: 50px; <br>
+                        background-color: red; <br>
+                        font-weight: bold; <br>
+                        position: relative; <br>
+                        animation: mymove 5s infinite; <br>
+                        } <br><br>
+
+                        #div1 {animation-timing-function: linear;} <br>
+                        #div2 {animation-timing-function: ease;} <br>
+                        #div3 {animation-timing-function: ease-in;} <br>
+                        #div4 {animation-timing-function: ease-out;} <br>
+                        #div5 {animation-timing-function: ease-in-out;} <br><br>
+
+                        @keyframes mymove { <br>
+                        from {left: 0px;} <br>
+                        to {left: 300px;} <br>
+                        }
+                    </p>
+                    <p><b>ÖRNEK 5:</b><br><br>
+                        div { <br>
+                        width: 100px; <br>
+                        height: 100px; <br>
+                        background-color: red; <br>
+                        position: relative; <br>
+                        animation-name: example; <br>
+                        animation-duration: 5s; <br>
+                        animation-timing-function: linear; <br>
+                        animation-delay: 2s; <br>
+                        animation-iteration-count: infinite; <br>
+                        animation-direction: alternate; <br>
+                        } <br><br>
+
+                        @keyframes example { <br>
+                        0% {background-color:red; left:0px; top:0px;} <br>
+                        25% {background-color:yellow; left:200px; top:0px;} <br>
+                        50% {background-color:blue; left:200px; top:200px;} <br>
+                        75% {background-color:green; left:0px; top:200px;} <br>
+                        100% {background-color:red; left:0px; top:0px;} <br>
+                        } <br>
+                    </p>
+                    <p><b>ÖRNEK 6:</b><br><br>
+                        div { <br>
+                            width: 100px; <br>
+                            height: 100px; <br>
+                            background-color: red; <br>
+                            position: relative; <br>
+                            animation: myfirst 5s linear 2s infinite alternate; <br>
+                          } <br><br>
+                          
+                          @keyframes myfirst { <br>
+                            0%   {background-color:red; left:0px; top:0px;} <br>
+                            25%  {background-color:yellow; left:200px; top:0px;} <br>
+                            50%  {background-color:blue; left:200px; top:200px;} <br>
+                            75%  {background-color:green; left:0px; top:200px;} <br>
+                            100% {background-color:red; left:0px; top:0px;} <br>
+                          }
+                    </p>
                 </ul>
                 </p>
             </details>
