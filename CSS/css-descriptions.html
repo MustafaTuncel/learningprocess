@@ -333,8 +333,19 @@
                     </p>
                     <li><b>background-size: </b><i>cover</i> (arka planın kalitesini bozmadan çerçeveye sığdırır)</li>
                     <li><b>background-position: </b><i>center</i> (arka planı konumlandırır)</li>
-                    <li><b>background-repeat: </b> <i>repeat, no-repeat, repeat X (yatay), repeat Y (dikey)</i></li>
-                    <li><b>background-color: </b> <i>renk adı / kodu, rgb kodu, rgba kodu</i></li>
+                    <li><b>background-repeat: </b><i>repeat, no-repeat, repeat X (yatay), repeat Y (dikey)</i></li>
+                    <li><b>background-color: </b><i>renk adı / kodu, rgb kodu, rgba kodu</i></li>
+                    <li><b>background-attachment: </b><i>'attachment value'</i> (arka plan resmi akış ayarı)</li>
+                    <p>
+                    <ul type="circle">
+                        <li>background-attachment: <b>scroll</b><i> (arkaplan resmi sayfayla birlikte kayar)</i> (varsayılan)</li>
+                        <li>background-attachment: <b>fixed</b><i> (arkaplan resmi sabit kalır, sayfayla birlikte kaymaz)</i></li>
+                        <li>background-attachment: <b>local</b><i> (arkaplan resmi, (elementlerin) öğenin içeriğiyle birlikte kayar)</i></li>
+                        <li>background-attachment: <b>initial</b><i> (varsayılan değer kodu)</i></li>
+                        <li>background-attachment: <b>inherit</b><i> (bu özelliği üst (elementten) öğesinden alır)</i></li>
+                        <li>background-attachment: <b>unset</b><i> ?</i></li>
+                    </ul>
+                    </p>
                     <li><b>clip-path: </b><i>polygon(0 0, 100% 0, 100% 100%, 0 100%)</i> (arka plan üzerinde açısal crop
                         işlemleri)</li>
                     <li><b>height / width: </b><i>100vh / 100vw </i>(viewport'un ne kadarlık alanında arkaplanın
@@ -683,20 +694,20 @@
                     </p>
                     <p><b>ÖRNEK 6:</b><br><br>
                         div { <br>
-                            width: 100px; <br>
-                            height: 100px; <br>
-                            background-color: red; <br>
-                            position: relative; <br>
-                            animation: myfirst 5s linear 2s infinite alternate; <br>
-                          } <br><br>
-                          
-                          @keyframes myfirst { <br>
-                            0%   {background-color:red; left:0px; top:0px;} <br>
-                            25%  {background-color:yellow; left:200px; top:0px;} <br>
-                            50%  {background-color:blue; left:200px; top:200px;} <br>
-                            75%  {background-color:green; left:0px; top:200px;} <br>
-                            100% {background-color:red; left:0px; top:0px;} <br>
-                          }
+                        width: 100px; <br>
+                        height: 100px; <br>
+                        background-color: red; <br>
+                        position: relative; <br>
+                        animation: myfirst 5s linear 2s infinite alternate; <br>
+                        } <br><br>
+
+                        @keyframes myfirst { <br>
+                        0% {background-color:red; left:0px; top:0px;} <br>
+                        25% {background-color:yellow; left:200px; top:0px;} <br>
+                        50% {background-color:blue; left:200px; top:200px;} <br>
+                        75% {background-color:green; left:0px; top:200px;} <br>
+                        100% {background-color:red; left:0px; top:0px;} <br>
+                        }
                     </p>
                 </ul>
                 </p>
