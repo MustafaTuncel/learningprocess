@@ -14,10 +14,15 @@
     <ol type="1">
         <li>Javascript dosyamızı html dosyası içerisinde yazmak yerine,
             ek bir <b>script.js</b> dosyası oluşturarak da yazabiliriz.</li>
-        <li>Oluşturduğumuz <b>script.js</b> dosyamızı, html>body içerisine ; <br><b>
-                <.script src="script.js" type="text/javascript">
+        <li>Oluşturduğumuz <b>script.js</b> dosyamızı, html>body içerisine <u>en altta olacak şekilde</u> ; <br><b>
+                <.script src="script.js">
                     < /script>
-            </b> yazarak tanımlayabiliriz.
+            </b> yazarak tanımlayabiliriz. <br>
+            Yada ; <br>
+            <u>HTML ve CSS kodlarının ardından</u> JS kodlarını çalıştırmak için html>head içerisine ; <br><b>
+                <.script src="script.js" defer>
+                    < /script>
+            </b> kodunu yazarak da dosyamızı tanıtabiliriz.
         </li>
         <li>Web tarayıcıları üzerinde, öğe denetleme kısmını açarak <b>'console'</b> üzerinden JS kodlarımızı test
             edebiliriz.</li>
