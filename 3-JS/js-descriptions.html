@@ -9,25 +9,98 @@
 </head>
 
 <body>
-    <h1>Javascript Descriptions</h1>
-    <p>
-    <ol type="1">
-        <li>Javascript dosyamızı html dosyası içerisinde yazmak yerine,
-            ek bir <b>script.js</b> dosyası oluşturarak da yazabiliriz.</li>
-        <li>Oluşturduğumuz <b>script.js</b> dosyamızı, html>body içerisine <u>en altta olacak şekilde</u> ; <br><b>
-                <.script src="script.js">
-                    < /script>
-            </b> yazarak tanımlayabiliriz. <br>
-            Yada ; <br>
-            <u>HTML ve CSS kodlarının ardından</u> JS kodlarını çalıştırmak için html>head içerisine ; <br><b>
-                <.script src="script.js" defer>
-                    < /script>
-            </b> kodunu yazarak da dosyamızı tanıtabiliriz.
-        </li>
-        <li>Web tarayıcıları üzerinde, öğe denetleme kısmını açarak <b>'console'</b> üzerinden JS kodlarımızı test
-            edebiliriz.</li>
-    </ol>
-    </p>
+    <h1>JAVASCRIPT DESCRIPTIONS</h1>
+    <P>
+    <details JAVASCRIPT'E GİRİŞ>
+        <summary><b>JAVASCRIPT'E GİRİŞ</b></summary>
+        <ol type="1">
+            <li>Javascript dosyamızı html dosyası içerisinde yazmak yerine,
+                ek bir <b>script.js</b> dosyası oluşturarak da yazabiliriz.</li>
+            <li>Oluşturduğumuz <b>script.js</b> dosyamızı, html>body içerisine <u>en altta olacak şekilde</u> ;
+                <br><b>
+                    <.script src="script.js">
+                        < /script>
+                </b> yazarak tanımlayabiliriz. <br>
+                Yada ; <br>
+                <u>HTML ve CSS kodlarının ardından</u> JS kodlarını çalıştırmak için html>head içerisine ; <br><b>
+                    <.script src="script.js" defer>
+                        < /script>
+                </b> kodunu yazarak da dosyamızı tanıtabiliriz.
+            </li>
+            <li>Web tarayıcıları üzerinde, öğe denetleme kısmını açarak <b>'console'</b> üzerinden JS kodlarımızı
+                test
+                edebiliriz.</li>
+        </ol>
+        </p>
+    </details><br>
+    <details DEĞİŞKENLER (VARIABLES)>
+        <summary><b>DEĞİŞKENLER (VARIABLES)</b></summary>
+        <p>
+        <ol type="1">
+
+            <h3>Önemli Noktalar ve Uyarılar</h3>
+
+            <li><u>Kodlar yukarıdan aşağıya doğru işletilir, <b>sıra önemlidir !</b></u></li>
+            <li><u>Önceden değer atanmış bir değişkene tekrar değer atanırsa ; <b>ilk atanan değer silinir ve son atanan
+                        değer etkin olur.</b></u></li>
+            <li><u>Değişken isimleri büyük - küçük harflere <b>duyarlıdır !</b></u></li>
+            <li>Değişken isimleri ; <br>
+                <i>alpha numeric karakterler ile </i><b>başlayabilir.</b><br>
+                <i>sayı ile </i><b>başlayamaz !</b><br>
+                <i>komut adı ile </i><b>başlayamaz !</b>
+            </li>
+            <li>Bir değişken üzerinde birden fazla kelimeyi değişken ismi
+                olarak <b>kullanamayız !</b> (ad soyad vb. şekilde) <br>
+                Bunun yerine kelimelerin aralarında herhangi bir işaret kullanarak yada
+                kelimeleri birleştirerek birden fazla kelimeyi değişken ismi olarak <b>kullanabiliriz.</b>
+                (ad_soyad yada AdSoyad vb. şekilde)
+            </li>
+        </ol>
+        </p>
+        <p>
+        <ol type="1">
+
+            <h3>Tanımlamalar</h3>
+
+            <li>Değişkenler ; <br>
+                <b>Var age;</b> yani <i>Değişken Komutu 'Değişken İsmi'</i> yada <br>
+                <b>Var fullname;</b> yani <i>Değişken Komutu 'Değişken İsmi'</i> şeklinde tanımlanabilir.
+            </li>
+            <li>Değişkenlere ; <br>
+                <b>age = 20;</b> vb. şekilde <i> değer atanabilir.</i> (sayısal ifade) <br>
+                <b>fullname = "Mustafa Tuncel";</b> vb. şekilde <i> değer atanabilir.</i> (sözel / string ifade)
+            </li>
+            <li>Atanmış değerlerde ; <br>
+                <b>sayısal ifadeler </b><i>mavi renkte,</i><br>
+                <b>sözel ifadeler </b><i>gri renkte</i> gösterilir (string ifadeler).
+            </li>
+            <li><i>Atama yapılmamış değişkenler</i> konsolda <b>'undefined'</b> olarak gösterilir.</li>
+            <li><b>Case sensitive = </b><i>büyük - küçük harf duyarlılığı</i></li>
+        </ol>
+        </p>
+        <p>
+        <ul type="disc">
+
+            <h3>Kullanılan Terimler</h3>
+
+            <li><b>var = </b><u>tekrar tanımlanabilir ve değeri güncellenebilir</u> <i>değişken oluşturma komutu</i></li>
+            <li><b>let = </b><u>tekrar tanımlanamaz ancak değeri güncellenebilir</u> <i>değişken oluşturma komutu</i> (var ile oluşturulan tüm komutları oluşturabilir.)</li>
+            <li><b>const = </b><u>tekrar tanımlanamaz ve değeri güncellenemez</u> <i>değişken oluşturma komutu</i></li>
+            <li><b>age = </b><i>değişken ismi</i> <br>
+                <b>fullname = </b><i>değişken ismi</i>
+            </li>
+            <li><b>20 = </b><i>değişkene atanan değer</i> (sayısal değerler tırnak içine alınmaz) <br>
+                <b>"Mustafa Tuncel" = </b><i>değişkene atanan değer</i> {(stringler) sözel değerler tırnak içine alınır}
+            </li>
+            <li><b>console.log(değişkenismi); = </b><i>web tarayıcısı konsolunda log göstermek</i></li>
+            <li><b>console.warn("uyarımesajı"); = </b><i>web tarayıcısı konsolunda uyarı mesajı göstermek</i></li>
+            <li><b>console.error("hatamesajı"); = </b><i>web tarayıcısı konsolunda hata mesajı göstermek</i></li>
+            <li><b>console.clear(); = </b><i>web tarayıcısı konsolunda geçmişi temizler</i></li>
+            <li><b>alert("websayfasımesajı"); = </b><i>web tarayıcısında web sayfası açıldığında mesaj göstermek</i>
+            </li>
+        </ul>
+        </p>
+    </details><br>
 </body>
 
 </html>
