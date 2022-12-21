@@ -33,8 +33,8 @@
         </ol>
         </p>
     </details><br>
-    <details DEĞİŞKENLER (VARIABLES)>
-        <summary><b>DEĞİŞKENLER (VARIABLES)</b></summary>
+    <details DEĞİŞKENLER (variables)>
+        <summary><b>DEĞİŞKENLER (variables)</b></summary>
         <p>
         <ol type="1">
 
@@ -43,7 +43,8 @@
             <li><u>Kodlar yukarıdan aşağıya doğru işletilir, <b>sıra önemlidir !</b></u></li>
             <li><u>Önceden değer atanmış bir değişkene tekrar değer atanırsa ; <b>ilk atanan değer silinir ve son atanan
                         değer etkin olur.</b></u></li>
-            <li><u>Değişken isimleri büyük - küçük harflere <b>duyarlıdır !</b></u></li>
+            <li><u>Değişken isimleri büyük - küçük harflere <b>duyarlıdır !</b></u> (Case sensitive)</li>
+            <li><i>Atama yapılmamış değişkenler</i> konsolda <b>'undefined'</b> olarak gösterilir.</li>
             <li>Değişken isimleri ; <br>
                 <i>alpha numeric karakterler ile </i><b>başlayabilir.</b><br>
                 <i>sayı ile </i><b>başlayamaz !</b><br>
@@ -55,27 +56,10 @@
                 kelimeleri birleştirerek birden fazla kelimeyi değişken ismi olarak <b>kullanabiliriz.</b>
                 (ad_soyad yada AdSoyad vb. şekilde)
             </li>
-        </ol>
-        </p>
-        <p>
-        <ol type="1">
-
-            <h3>Tanımlamalar</h3>
-
-            <li>Değişkenler ; <br>
-                <b>Var age;</b> yani <i>Değişken Komutu 'Değişken İsmi'</i> yada <br>
-                <b>Var fullname;</b> yani <i>Değişken Komutu 'Değişken İsmi'</i> şeklinde tanımlanabilir.
-            </li>
-            <li>Değişkenlere ; <br>
-                <b>age = 20;</b> vb. şekilde <i> değer atanabilir.</i> (sayısal ifade) <br>
-                <b>fullname = "Mustafa Tuncel";</b> vb. şekilde <i> değer atanabilir.</i> (sözel / string ifade)
-            </li>
             <li>Atanmış değerlerde ; <br>
-                <b>sayısal ifadeler </b><i>mavi renkte,</i><br>
-                <b>sözel ifadeler </b><i>gri renkte</i> gösterilir (string ifadeler).
+                <b>sayısal ifadeler </b><i>mavi renkte,</i> (number)<br>
+                <b>sözel ifadeler </b><i>gri renkte</i> gösterilir (string)
             </li>
-            <li><i>Atama yapılmamış değişkenler</i> konsolda <b>'undefined'</b> olarak gösterilir.</li>
-            <li><b>Case sensitive = </b><i>büyük - küçük harf duyarlılığı</i></li>
         </ol>
         </p>
         <p>
@@ -83,16 +67,23 @@
 
             <h3>Kullanılan Terimler</h3>
 
-            <li><b>var = </b><u>tekrar tanımlanabilir ve değeri güncellenebilir</u> <i>değişken oluşturma komutu</i></li>
-            <li><b>let = </b><u>tekrar tanımlanamaz ancak değeri güncellenebilir</u> <i>değişken oluşturma komutu</i> (var ile oluşturulan tüm komutları oluşturabilir.)</li>
+            <li><b>var = </b><u>tekrar tanımlanabilir ve değeri güncellenebilir</u> <i>değişken oluşturma komutu</i>
+            </li>
+            <li><b>let = </b><u>tekrar tanımlanamaz ancak değeri güncellenebilir</u> <i>değişken oluşturma komutu</i>
+                (var ile oluşturulan tüm komutları oluşturabilir.)</li>
             <li><b>const = </b><u>tekrar tanımlanamaz ve değeri güncellenemez</u> <i>değişken oluşturma komutu</i></li>
             <li><b>age = </b><i>değişken ismi</i> <br>
-                <b>fullname = </b><i>değişken ismi</i>
+                <b>fullname = </b><i>değişken ismi</i><br>
+                <b>isactive = </b><i>değişken ismi</i>
             </li>
             <li><b>20 = </b><i>değişkene atanan değer</i> (sayısal değerler tırnak içine alınmaz) <br>
                 <b>"Mustafa Tuncel" = </b><i>değişkene atanan değer</i> {(stringler) sözel değerler tırnak içine alınır}
+                <br>
+                <b>True - False = </b><i>değişkene atanan değer</i> (boolean değerleri tırnak içine alınmaz)
             </li>
             <li><b>console.log(değişkenismi); = </b><i>web tarayıcısı konsolunda log göstermek</i></li>
+            <li><b>console.log(typeof 'değişkenismi'); = </b><i>'typeof' parametresi, web tarayıcısı konsolunda
+                    değişkenin tipini gösterir</i> (string, number, array)</li>
             <li><b>console.warn("uyarımesajı"); = </b><i>web tarayıcısı konsolunda uyarı mesajı göstermek</i></li>
             <li><b>console.error("hatamesajı"); = </b><i>web tarayıcısı konsolunda hata mesajı göstermek</i></li>
             <li><b>console.clear(); = </b><i>web tarayıcısı konsolunda geçmişi temizler</i></li>
@@ -101,6 +92,32 @@
         </ul>
         </p>
     </details><br>
+    <details DEĞİŞKEN TİPLERİ (variable types)>
+        <summary><b>DEĞİŞKEN TİPLERİ (variable types)</b></summary>
+        <P>
+        <ul type="disc">
+            <li><b>Pritive Types</b> (tekil kullanıma izin verir)</li>
+            <p>
+            <ul type="circle">
+                <li><b>Undefined = </b><i>let car;</i> (değer atanmamış)</li>
+                <li><b>String = </b><i>let firstname = "Mustafa";</i> (sözel)</li>
+                <li><b>Number = </b><i>let age = 29;</i> (sayısal)</li>
+                <li><b>Boolean = </b><i>let IsActive = true;</i> (doğru - yanlış, aktif - pasif, açık - kapalı)</li>
+                <li><b>Null = </b><i>let job=null;</i> (değer atanmayacak değişkene atanan değerdir, hiç bir değeri
+                    temsil etmeyen boşluğu temsil eden bir değerdir)</li>
+            </ul>
+            </p>
+            <li><b>Reference Types - Objects</b> (çoğul kullanıma izin verir)</li>
+            <p>
+            <ul type="circle">
+                <li><b>Array = </b><i>let names = ["Ali", "Ahmet", "Can"];</i>(tek bir değişken altında, birden fazla verinin saklanması için kullanılır)</li>
+                <li><b>Object Literals = </b><i>let address = {city: "Tekirdağ", country: "Türkiye"};</i> (obje / nesne oluşturmak için kullanılır)</li>
+                <li><b>Function = </b><i></i> (işlem yapmayı sağlayan kod bloğu oluşturmak için kullanılır)</li>
+            </ul>
+            </p>
+        </ul>
+        </P>
+    </details>
 </body>
 
 </html>
