@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="js-descriptions.css">
 </head>
 
 <body>
@@ -110,11 +111,65 @@
             <li><b>Reference Types - Objects</b> (çoğul kullanıma izin verir)</li>
             <p>
             <ul type="circle">
-                <li><b>Array = </b><i>let names = ["Ali", "Ahmet", "Can"];</i>(tek bir değişken altında, birden fazla verinin saklanması için kullanılır)</li>
-                <li><b>Object Literals = </b><i>let address = {city: "Tekirdağ", country: "Türkiye"};</i> (obje / nesne oluşturmak için kullanılır)</li>
+                <li><b>Array = </b><i>let names = ["Ali", "Ahmet", "Can"];</i>(tek bir değişken altında, birden fazla
+                    verinin saklanması için kullanılır)</li>
+                <li><b>Object Literals = </b><i>let address = {city: "Tekirdağ", country: "Türkiye"};</i> (obje / nesne
+                    oluşturmak için kullanılır)</li>
                 <li><b>Function = </b><i></i> (işlem yapmayı sağlayan kod bloğu oluşturmak için kullanılır)</li>
             </ul>
             </p>
+        </ul>
+        </P>
+    </details><br>
+    <details TÜR DÖNÜŞTÜRME (type conversions)>
+        <summary><b>TÜR DÖNÜŞTÜRME (type conversions)</b></summary>
+        <p>
+        <ul class="turdonusturmelistesi">
+            <li><b>String</b> <i>string</i></li>
+            <li><b>Number</b> <i>number</i></li>
+            <li><b>Boolean</b> <i>boolean</i></li>
+            <br>
+            <li><b>Number(true); = </b>1</li>
+            <li><b>Number(false); = </b>0</li>
+            <li><b>Number(null); = </b>0</li>
+            <li><b>Number("a"); = </b>NaN <i>(not a number)</i></li>
+            <li><b>Number([1,2,3,4]); = </b>NaN <i>(not a number)</i></li>
+            <br>
+            <li><b>parseInt("10"); = </b> Ondalıklı sayıları tam sayıya yuvarlar</li>
+            <li><b>parseFloat("10.50"); = </b>Ondalıklı sayıları olduğu gibi görüntüler</li>
+        </ul>
+        </p>
+        <P>
+        <ul>
+            <li><b>string to number = </b><i>Sözel değeri sayısal değere dönüştürmek</i><br><br><i>
+                    let num1 = ("5"); <br>
+                    let num2 = ("10"); <br>
+                    console.log(num1+num2);</i> dediğimizde, değişkenler <u>string değerli oldukları için</u>
+                toplandıklarında yanyana
+                gelirler ve sonuç "510" olur. <br><br><i>
+                    let num1 = Number("5"); <br>
+                    let num2 = Number("10"); <br>
+                    console.log(num1+num2);</i> yada<br><i>
+                    let total = num1+num2; <br>
+                    console.log(total);</i> dediğimizde, değişkenler <u>sayısal değere dönüştürüldükleri için</u>
+                toplandıklarında yanyana
+                gelmezler, matematik işlemi gerçekleşir ve sonuç "15" olur.
+            </li><br>
+            <li><b>number to string = </b><i>Sayısal değeri sözel değere dönüştürmek</i><br><br><i>
+                    val = 10 <br>
+                    val = String(10); <br>
+                    console.log(val);</i> dediğimizde, değişken <u>sözel değere dönüştürülmüş</u> olur.</li><br>
+            <li><b>boolean to string = </b><i>Boolean değerini sözel değere dönüştürmek<br><br>
+                    val = true <br>
+                    val = String(true);</i> dediğimizde, değişken <u>sözel değere dönüştürülmüş</u> olur.</li><br>
+            <li><b>date to string = </b><i>Date değerini sözel değere dönüştürmek <br><br>
+                    val = new Date(); <br>
+                    val = String(new Date());</i> dediğimizde, değişken <u>sözel değere dönüştürülmüş</u> olur.</li><br>
+            <li><b>array to string = </b><i>Array değerini sözel değere dönüştürmek <br><br>
+                    val = String([1,2,3,4]);</i> dediğimizde, değişken <u>sözel değere dönüştürülmüş</u> olur.</li><br>
+            <li><b>toString() = </b><i>Arkasına eklendiği değeri sözele dönüştürür <br><br>
+                    val = (10).toString();</i> yada <br><i>
+                    val = (false).toString();</i> dediğimizde, değişken <u>sözel değere dönüştürülmüş</u> olur.</li><br>
         </ul>
         </P>
     </details>
