@@ -135,3 +135,77 @@ console.log(course.length);
 
 
 
+// Operatörler
+let val;
+const a = 10;
+const b = 5;
+const c = 5;
+let d = 3; // olduğunu varsayarsak...
+
+// 1 Aritmetik Operatörler (Matematiksel İşlemler)
+val = a + b;
+val = a - b;
+val = a * b;
+val = a / b;
+val = a % b; //mod almak, sayının tek mi çift mi olduğunu kontrol etmek (0 = çift, 1 = tek)
+val = d++; // değişkeni konsola yazdırdıktan sonra arttırma işlemi yapar, önceden belirlenmiş değer gözükür
+val = ++d; // değişkeni konsola yazdırmadan önce arttırma işlemi yapar, güncel değer gözükür
+val = d--;
+val = --d;
+
+// 2 Atama Operatörleri (Matematiksel Kısayol İşlemler)
+val = a;
+val += a; // val = val + a (10+10)
+val -= a; // val = val - a (20-10)
+val *= a; // val = val * a (10*10)
+val /= a; // val = val / a (100/10)
+val %= a; // val = val % a (10/2 = 0, val çift sayı)
+
+// 3 Karşılaştırma Operatörleri (Eşitlik, Büyüklük - Küçüklük ve Tip Kontrolleri)
+val = a == b; // false
+val = b == c; // true
+val = a == b + c; // true
+
+val = 5 == "5"; // true, sadece değeri kontrol eder (birisi Number birisi String olmasına rağmen doğru sonuç verir)
+val = 5 === "5"; // false, değeri ve tipi kontrol eder (birisi Number Birisi String olduğu için yanlış sonuç verir)
+
+val = a != b; // true, a b'ye eşit değildir
+val = a !== b; // true, a b'ye eşit değildir
+val = a > b; // true, a b'den büyüktür
+val = b < a; // true, b a'dan küçüktür
+
+val = a >= b; // true, a b'ye eşit yada daha büyüktür
+val = a <= b; // false, a b'ye eşit yada daha küçük değildir
+val = 5 >= 5; // true, 5 5'e eşit yada daha büyüktür
+val = 4 >= 5; // false, 4 5'e eşit yada daha büyük değildir
+
+// 4 Mantıksal Operatörler
+
+// && (and, birden fazla değerin sonucunun ayrı ayrı değil tek olarak alınması)
+// true  && true  = true
+// true  && false = false
+// false && false = false
+val = a > b // true
+val = a > c // true
+val = (a > b) && (a > c) // true
+
+// || (or, birden fazla değerden herhangi birisinin sonucunun alınması)
+// true  && true  = true
+// true  && false = true
+// false && false = false
+val = a > b // true
+val = a > c // true
+val = (a > b) || (a > c) // true
+
+// ! (not, ters değer alınması)
+// !true = false
+// !false = true
+val = a > b // true
+val = a > c // true
+val = !(a > b) // false
+
+console.log(val);
+console.log(typeof val);
+
+
+

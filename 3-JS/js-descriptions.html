@@ -85,7 +85,7 @@
             </li>
             <li><b>console.log(değişkenismi); = </b><i>web tarayıcısı konsolunda log göstermek</i></li>
             <li><b>console.log(typeof 'değişkenismi'); = </b><i>'typeof' parametresi, web tarayıcısı konsolunda
-                    değişkenin tipini gösterir</i> (string, number, array)</li>
+                    değişkenin tipini gösterir</i> (string, number, array, boolean...)</li>
             <li><b>console.warn("uyarımesajı"); = </b><i>web tarayıcısı konsolunda uyarı mesajı göstermek</i></li>
             <li><b>console.error("hatamesajı"); = </b><i>web tarayıcısı konsolunda hata mesajı göstermek</i></li>
             <li><b>console.clear(); = </b><i>web tarayıcısı konsolunda geçmişi temizler</i></li>
@@ -173,7 +173,97 @@
                     val = (false).toString();</i> dediğimizde, değişken <u>sözel değere dönüştürülmüş</u> olur.</li><br>
         </ul>
         </P>
-    </details>
+    </details><br>
+    <details OPERATÖRLER (operators)>
+        <summary><b>OPERATÖRLER (operators)</b></summary>
+        <p>
+        <ul>
+            <i>
+                let val; <br>
+                const a = 10; <br>
+                const b = 5; <br>
+                const c = 5; <br>
+                let d = 3;</i>
+
+            dediğimizi varsayarsak
+        </ul>
+        <ol type="1">
+            <li><b>Aritmetik Operatörler </b><i>(Matematiksel İşlemler)</i></li>
+            <p>
+                val = a + b; <br>
+                val = a - b; <br>
+                val = a * b; <br>
+                val = a / b; <br>
+                val = a % b; //mod almak, sayının tek mi çift mi olduğunu anlamak için sayıyı ikiye böler (0 = çift, 1 =
+                tek) <br>
+                val = d++; // değişkeni konsola yazdırdıktan sonra arttırma işlemi yapar, önceki değer gözükür <br>
+                val = ++d; // değişkeni konsola yazdırmadan önce arttırma işlemi yapar, güncel değer gözükür <br>
+                val = d--; <br>
+                val = --d;
+            </p>
+            <li><b>Atama Operatörleri </b><i>(Matematiksel Kısayol İşlemler)</i></li>
+            <p>
+                val = a; <br>
+                val += a; // val = val + a (10+10) <br>
+                val -= a; // val = val - a (20-10) <br>
+                val *= a; // val = val * a (10*10) <br>
+                val /= a; // val = val / a (100/10) <br>
+                val %= a; // val = val % a (10/2 = 0, val çift sayı)
+            </p>
+            <li><b>Karşılaştırma Operatörleri </b><i>(Eşitlik, Büyüklük - Küçüklük ve Tip Kontrolleri)</i></li>
+            <p>
+                val = a == b; // false <br>
+                val = b == c; // true <br>
+                val = a == b + c; // true <br>
+                <br>
+                val = 5 == "5"; // true, sadece değeri kontrol eder (birisi Number birisi String olmasına rağmen doğru
+                sonuç verir) <br>
+                val = 5 === "5"; // false, değeri ve tipi kontrol eder (birisi Number Birisi String olduğu için yanlış
+                sonuç verir) <br>
+                <br>
+                val = a!=b; // true, a b'ye eşit değildir <br>
+                val = a!==b; // true, a b'ye eşit değildir <br>
+                val = a > b; // true, a b'den büyüktür <br>
+                val = b < a; // true, b a'dan küçüktür val=a>= b; // true, a b'ye eşit yada daha büyüktür <br>
+                    val = a <= b; // false, a b'ye eşit yada daha küçük değildir <br>
+                        val = 5 >= 5; // true, 5 5'e eşit yada daha büyüktür <br>
+                        val = 4 >= 5; // false, 4 5'e eşit yada daha büyük değildir
+            </p>
+            <li><b>Mantıksal Operatörler </b><i></i></li>
+            <p>
+                <b>&& (and) </b><i>(birden fazla değerin sonucunun ayrı ayrı değil tek olarak alınması)</i><br>
+                    <br>
+                    // true && true = true <br>
+                    // true && false = false <br>
+                    // false && false = false <br>
+                    <br>
+                    val = a > b // true <br>
+                    val = a > c // true <br>
+                    val = (a > b) && (a > c) // true <br>
+                <br>
+                <b>|| (or) </b><i>(birden fazla değerden herhangi birisinin sonucunun alınması)</i><br>
+                    <br>
+                    // true && true = true <br>
+                    // true && false = true <br>
+                    // false && false = false <br>
+                    <br>
+                    val = a > b // true <br>
+                    val = a > c // true <br>
+                    val = (a > b) || (a > c) // true <br>
+                <br>
+                <b>! (not) </b><i>(ters değer alınması)</i><br>
+                    <br>
+                    // !true = false <br>
+                    // !false = true <br>
+                    <br>
+                    val = a > b // true <br>
+                    val = a > c // true <br>
+                    val = !(a > b) // false
+            </ul>
+            </p>
+        </ol>
+        </p>
+    </details><br>
 </body>
 
 </html>
