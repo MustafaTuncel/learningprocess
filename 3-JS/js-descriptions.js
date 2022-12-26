@@ -209,3 +209,61 @@ console.log(typeof val);
 
 
 
+// ÖRNEKLER (demo: operators)
+
+// 1 - Can ve Ada'nın boy ve kg bilgilerini alın.
+// 2 - Alınan bilgilere göre kilo indekslerini hesaplayınız.
+// (formül : kişinin kilosu / boy uzunluğunun karesi)
+// 3 - Hesaplanan indeks bilgisine göre karşılaştırma yapınız.
+// 4 - Aşağıdaki tabloya göre Can ve Ada hangi gruba giriyor ?
+
+// 0 - 18,4 : zayıf
+// 18,5 - 24,9 : Normal
+// 25,0 - 29,9 : Fazla Kilolu
+// 30,0 - 34,9 : Şişman (Obez)
+
+// 1 -
+let IndexKgCan;
+let IndexKgAda;
+
+const weightCan = 60;
+const weightAda = 40;
+
+const heightCan = 1.70;
+const heightAda = 1.50;
+
+// 2 -
+IndexKgCan = (weightCan) / (heightCan * heightCan);
+IndexKgAda = (weightAda) / (heightAda * heightAda);
+
+console.log(IndexKgCan, IndexKgAda);
+
+// 3 -
+// Karşılaştırmalar, normal ve açıklamalı boolean değerleri, Ada Can'dan / Can Ada'dan daha mı kilolu ? vb. sorular
+let AdaHigherIndex = IndexKgAda > IndexKgCan;
+
+console.log(AdaHigherIndex);
+
+console.log("Ada'nın kilo indeksi, Can'ın kilo indeksinden daha büyüktür. : " + AdaHigherIndex);
+
+let CanHigherIndex = IndexKgCan > IndexKgAda;
+
+console.log(CanHigherIndex);
+
+console.log("Can'ın kilo indeksi, Ada'nın kilo indeksinden daha büyüktür. : " + CanHigherIndex);
+
+// 4 -
+let AdaZayıftır = (IndexKgAda >= 0) && (IndexKgAda <= 18.4);
+
+console.log(AdaZayıftır);
+
+console.log("Ada zayıf gruptadır : " + AdaZayıftır);
+
+let CanZayıftır = (IndexKgCan >= 0) && (IndexKgCan <= 18.4);
+
+console.log(CanZayıftır);
+
+console.log("Can zayıf gruptadır : " + CanZayıftır);
+
+
+
