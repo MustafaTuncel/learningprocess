@@ -267,3 +267,59 @@ console.log("Can zayıf gruptadır : " + CanZayıftır);
 
 
 
+// TARİH & SAAT (Date & Time) // Object
+
+// (pzr = 0, pzt = 1, tue = 2, wed = 3, thu = 4, fri = 5, sat = 6)
+// (jan = 0, feb = 1, mar = 2, apr = 3, may = 4, jun = 5, jul = 6, aug = 7, sep = 8, oct = 9, nov = 10, dec = 11)
+
+let d = new Date();
+console.log(d);
+console.log(typeof d);
+
+// Doğum günü hesaplama örneği
+let birthday = new Date(1993, 6, 21);
+console.log(d.getFullYear() - birthday.getFullYear()); // Kaç sene olmuş ? // Güncel yıl - Doğum yılı (2022-1993=29 yıl)
+console.log(d.getMonth() - birthday.getMonth()); // Kaç ay olmuş ? // Güncel ay - Doğduğun ay (11-6=5 ay, 11=aralık, 6=temmuz)
+console.log(d.getDate() - birthday.getDate()); // Kaç gün olmuş ? // Güncel gün - Doğduğun gün (27-21=6 gün, bulunduğun ayı sayar)
+
+// 1 - SET METHODS (get metoduyla girilen tarih ve saat bilgilerini el ile değiştirmek)
+
+// (değerler işlem sırası olarak get metodlarından önce girilmelidir)
+// (.setDay çalışmaz, .setDate ile zaten otomatik olarak değiştirilir)
+d.setMilliseconds(10);
+d.setSeconds(20);
+d.setMinutes(30);
+d.setHours(8);
+d.setDate(20);
+d.setMonth(5);
+d.setFullYear(2020);
+
+// 2 - GET METHODS (otomatik tarih ve saat bilgilerini almak)
+
+// Konsolda görünürlük
+console.log(d); // Tam tarih ve saat bilgisi
+console.log(d.getMilliseconds()); // Milisaniye kaç ?
+console.log(d.getSeconds()); // Saniye kaç ?
+console.log(d.getMinutes()); // Dakika kaç ?
+console.log(d.getHours()); // Saat kaç ?
+console.log(d.getDay()); // Hangi gün ?
+console.log(d.getDate()); // Ayın kaçı ?
+console.log(d.getMonth()); // Hangi ay ?
+console.log(d.getFullYear()); // Hangi yıl ?
+
+console.log(d.getTime()); // 1 Ocak 1970'den günümüze geçen süreyi milisaniye cinsinden hesaplar
+console.log(d.getTimezoneOffset()); // UTC saati ile bulunduğun saat arasındaki farkı dakika cinsinden hesaplar
+// GMT+03:00 ise, -180 gösterir, 3 saatlik fark ile UTC saatinden ileridesin
+
+// Konsolda UTC görünürlüğü
+console.log(d.getUTCMilliseconds()); // UTC Milisaniye kaç ?
+console.log(d.getUTCSeconds()); // UTC Saniye kaç ?
+console.log(d.getUTCMinutes()); // UTC Dakika kaç ?
+console.log(d.getUTCHours()); // UTC Saat kaç ?
+console.log(d.getUTCDay()); // UTC Hangi gün ?
+console.log(d.getUTCDate()); // UTC Ayın kaçı ?
+console.log(d.getUTCMonth()); // UTC Hangi ay ?
+console.log(d.getUTCFullYear()); // UTC Hangi yıl ?
+
+
+
