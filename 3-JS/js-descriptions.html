@@ -264,10 +264,84 @@
         </ol>
         </p>
     </details><br>
-    <details TARİHLER VE ZAMANLAR (dates & times)>
-        <summary><b>TARİHLER VE ZAMANLAR (dates & times)</b></summary>
-        <p></p>
-    </details>
+    <details TARİH VE SAAT (date & time)>
+        <summary><b>TARİH VE SAAT (date & time)</b></summary>
+        <p>
+            <i>// (pzr = 0, pzt = 1, tue = 2, wed = 3, thu = 4, fri = 5, sat = 6)</i> <br>
+            <i>// (jan = 0, feb = 1, mar = 2, apr = 3, may = 4, jun = 5, jul = 6, aug = 7, sep = 8, oct = 9, nov = 10,
+                dec = 11)</i> <br>
+        <ul type="disc">
+            ... ... = <b>new Date();</b> <i>(Tam tarih ve saat)</i><br>
+            let tarih = <b>new Date();</b><br>
+            <br><br>
+            <b>// Doğum günü hesaplama örneği</b> <br>
+            <br>
+            let birthday = <b>new Date(1993, 6, 21);</b> <br>
+            console.log(tarih<i>.getFullYear()</i> - birthday<i>.getFullYear());</i> // Kaç sene olmuş ? // Güncel yıl -
+            Doğum yılı
+            (2022-1993=29 yıl) <br>
+            console.log(tarih<i>.getMonth()</i> - birthday<i>.getMonth());</i> // Kaç ay olmuş ? // Güncel ay - Doğduğun
+            ay (11-6=5
+            ay, 11=aralık, 6=temmuz) <br>
+            console.log(tarih<i>.getDate()</i> - birthday<i>.getDate());</i> // Kaç gün olmuş ? // Güncel gün - Doğduğun
+            gün (27-21=6
+            gün, bulunduğun ayı sayar) <br>
+            <br>
+            <ul type="disc">
+                <li><b>// 1 - SET METHODS (get metoduyla girilen tarih ve saat bilgilerini el ile değiştirmek)</b><br>
+                    <br>
+                    <i>// (değerler işlem sırası olarak get metodlarından önce girilmelidir)</i><br>
+                    <i>// (.setDay çalışmaz, .setDate ile zaten otomatik olarak değiştirilir)</i><br>
+                </li>
+                <br>
+                <ul type="circle">
+                    .setMilliseconds(10); <br>
+                    .setSeconds(20); <br>
+                    .setMinutes(30); <br>
+                    .setHours(8); <br>
+                    .setDate(20); <br>
+                    .setMonth(5); <br>
+                    .setFullYear(2020); <br>
+                </ul>
+            </ul><br>
+            <br>
+            <ul type="disc">
+                <li><b>// 2 - GET METHODS (otomatik tarih ve saat bilgilerini almak)</b></li>
+                <br>
+                <ul type="circle">
+                    <i>// Konsolda görünürlük</i><br>
+                    console.log(tarih); <i>// Tam tarih ve saat bilgisi</i> <br>
+                    console.log(tarih.getMilliseconds()); <i>// Milisaniye kaç ?</i> <br>
+                    console.log(tarih.getSeconds()); <i>// Saniye kaç ?</i> <br>
+                    console.log(tarih.getMinutes()); <i>// Dakika kaç ?</i> <br>
+                    console.log(tarih.getHours()); <i>// Saat kaç ?</i> <br>
+                    console.log(tarih.getDay()); <i>// Hangi gün ?</i> <br>
+                    console.log(tarih.getDate()); <i>// Ayın kaçı ?</i> <br>
+                    console.log(tarih.getMonth()); <i>// Hangi ay ?</i> <br>
+                    console.log(tarih.getFullYear()); <i>// Hangi yıl ?</i> <br>
+
+                    console.log(tarih.getTime()); <i>// 1 Ocak 1970'den günümüze geçen süreyi milisaniye cinsinden
+                        hesaplar</i> <br>
+                    console.log(tarih.getTimezoneOffset()); <i>// UTC saati ile bulunduğun saat arasındaki farkı dakika
+                        cinsinden hesaplar</i> <br>
+                    <i>// Örneğin ; GMT+03:00 ise, -180 gösterir, 3 saatlik fark ile UTC saatinden ileridesin</i>
+                </ul>
+                <br>
+                <ul type="circle">
+                    <i>// Konsolda UTC görünürlüğü</i><br>
+                    console.log(tarih.getUTCMilliseconds()); <i>// UTC Milisaniye kaç ?</i> <br>
+                    console.log(tarih.getUTCSeconds()); <i>// UTC Saniye kaç ?</i> <br>
+                    console.log(tarih.getUTCMinutes()); <i>// UTC Dakika kaç ?</i> <br>
+                    console.log(tarih.getUTCHours()); <i>// UTC Saat kaç ?</i> <br>
+                    console.log(tarih.getUTCDay()); <i>// UTC Hangi gün ?</i> <br>
+                    console.log(tarih.getUTCDate()); <i>// UTC Ayın kaçı ?</i> <br>
+                    console.log(tarih.getUTCMonth()); <i>// UTC Hangi ay ?</i> <br>
+                    console.log(tarih.getUTCFullYear()); <i>// UTC Hangi yıl ?</i>
+                </ul>
+            </ul>
+        </ul>
+        </p>
+    </details><br>
 </body>
 
 </html>
