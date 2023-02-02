@@ -338,11 +338,15 @@
                     <li><b>background-attachment: </b><i>'attachment value'</i> (arka plan resmi akış ayarı)</li>
                     <p>
                     <ul type="circle">
-                        <li>background-attachment: <b>scroll</b><i> (arkaplan resmi sayfayla birlikte kayar)</i> (varsayılan)</li>
-                        <li>background-attachment: <b>fixed</b><i> (arkaplan resmi sabit kalır, sayfayla birlikte kaymaz)</i></li>
-                        <li>background-attachment: <b>local</b><i> (arkaplan resmi, (elementlerin) öğenin içeriğiyle birlikte kayar)</i></li>
+                        <li>background-attachment: <b>scroll</b><i> (arkaplan resmi sayfayla birlikte kayar)</i>
+                            (varsayılan)</li>
+                        <li>background-attachment: <b>fixed</b><i> (arkaplan resmi sabit kalır, sayfayla birlikte
+                                kaymaz)</i></li>
+                        <li>background-attachment: <b>local</b><i> (arkaplan resmi, (elementlerin) öğenin içeriğiyle
+                                birlikte kayar)</i></li>
                         <li>background-attachment: <b>initial</b><i> (varsayılan değer kodu)</i></li>
-                        <li>background-attachment: <b>inherit</b><i> (bu özelliği üst (elementten) öğesinden alır)</i></li>
+                        <li>background-attachment: <b>inherit</b><i> (bu özelliği üst (elementten) öğesinden alır)</i>
+                        </li>
                         <li>background-attachment: <b>unset</b><i> ?</i></li>
                     </ul>
                     </p>
@@ -405,7 +409,8 @@
             <details Table>
                 <summary><b>Table</b></summary>
                 <br>
-                Tabloya <b>border-radius</b> verilmek istendiğinde, etkin olabilmesi için <b>overflow: hidden</b> da verilmelidir.
+                Tabloya <b>border-radius</b> verilmek istendiğinde, etkin olabilmesi için <b>overflow: hidden</b> da
+                verilmelidir.
                 <p>
                 <ul type="disc">
                     <li><b>table, th, tr, td </b><i>{border: 2px solid #666}</i> (tablo çizgilerini oluşturma)</li>
@@ -905,6 +910,36 @@
                                 aralarına eşit şekilde mesafe bırakarak hizalar)</i></li>
                     </ul>
                     </p>
+                </ul>
+                </p>
+            </details>
+            <details Grid - (layout)>
+                <summary><b>Grid (layout)</b></summary>
+                <p>
+                    <i>display :</i><b> grid;</b><br><br>
+                    <b>grid-template-columns :</b> yada <b>grid-template-rows :</b><br>
+                    veya <br>
+                    <b>grid-auto-columns :</b> yada <b>grid-auto-rows :</b>
+                <ul type="disc">
+                    <li><i> 100px 150px 200px...</i> (1. kolon 100px, 2. kolon 150px, 3. kolon 200px)</li>
+                    <li><i> auto auto auto...</i> (1. kolon auto, 2. kolon auto, 3. kolon auto)</li>
+                    <li><i> 25% 25% 50%...</i> (1. kolon 25%, 2. kolon 25%, 3. kolon 50%)</li>
+                    <li><i> auto 25% 50%...</i> (1. kolon auto, 2. kolon 25%, 3. kolon 50%)</li>
+                    <li><i> repeat(3, auto)</i> (3 tane otomatik kolon)</li>
+                    <li><i> 1fr 2fr 1fr...</i> (1. kolon 1 fragment, 2. kolon 2 fragment, 3. kolon 1 fragment)</li>
+                    <li><i> repeat(3, 1fr)</i> (1. kolon 1 fragment, 2. kolon 1 fragment, 3. kolon 1 fragment)</li>
+                </ul>
+                <br>
+                <b>gap :</b><i> 10px</i> (boşluk bırakma)<br>
+                <b>column-gap :</b><i> 10px</i> (kolonlar arası boşluk)<br>
+                <b>row-gap :</b><i> 10px</i> (satırlar arası boşluk)<br>
+                <br>
+                <i>.item:first-child {}</i>
+                <ul type="disc">
+                    <li><b>grid-column-start :</b><i> 2</i> (başlangıç kolonu)</li>
+                    <li><b>grid-column-end :</b><i> 4</i> (bitiş kolonu)</li>
+                    <li><b>grid-row-start :</b><i> 1</i> (başlangıç satırı)</li>
+                    <li><b>grid-row-end :</b><i> 5</i> (bitiş satırı)</li>
                 </ul>
                 </p>
             </details>
