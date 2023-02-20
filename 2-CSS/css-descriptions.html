@@ -928,6 +928,11 @@
                     <li><i> repeat(3, auto)</i> (3 tane otomatik kolon)</li>
                     <li><i> 1fr 2fr 1fr...</i> (1. kolon 1 fragment, 2. kolon 2 fragment, 3. kolon 1 fragment)</li>
                     <li><i> repeat(3, 1fr)</i> (1. kolon 1 fragment, 2. kolon 1 fragment, 3. kolon 1 fragment)</li>
+                    <li><i> minmax(200px,1fr) 1fr, 1fr</i> (1. kolon / satır en az 200px, 2. kolon / satır 1fr, 3. kolon / satır 1fr)</li>
+                    <li><i> minmax(200px,400px) 1fr, 1fr</i> (1. kolon / satır en az 200px - en fazla 400px, 2. kolon / satır 1fr, 3. kolon / satır 1fr)</li>
+                    <li><i> repeat(3, minmax(200px,1fr))</i> (3 kolonda da / satırda da en az 200px ve max 1fr)</li>
+                    <li><i> repeat(auto-fill, minmax(200px,1fr))</i> (kolonlar / satırlar 200px'den aza indirgendiğinde ekranı otomatik doldurur, ekran ölçeği düşürüldüğünde boşluğa ekstra eleman ekleneceğinde kullanılır)</li>
+                    <li><i> repeat(auto-fit, minmax(200px,1fr))</i> (kolonlar / satırlar 200px'den aza indirgendiğinde ekranı otomatik doldurur, ekran ölçeği düşürüldüğünde boşluğa ekstra eleman eklenmeyecekse ekrana yaymak için kullanılır)</li>
                 </ul>
                 <br>
                 <b>gap :</b><i> 10px</i> (boşluk bırakma)<br>
