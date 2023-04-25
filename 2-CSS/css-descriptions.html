@@ -863,6 +863,17 @@
                         </li>
                     </ul>
                     </p>
+                    <li><b>justify-self </b><i></i> (tek bir flex-itemı hareket ettirmek)</li>
+                    <p>
+                    <ul type="circle">
+                        <li>justify-self: <b>flex-start </b><i>(yatayda üstten hizalar) ???</i></li>
+                        <li>justify-self: <b>center </b><i>(yatayda ortaya hizalar) ???</i></li>
+                        <li>justify-self: <b>flex-end </b><i>(yatayda alttan hizalar) ???</i></li>
+                        <li>justify-self: <b>baseline </b><i>(yazı ve içeriklerin alt sınırından hizalanır) ???</i></li>
+                        <li>justify-self: <b>stretch </b><i>(değer verilmeyenleri verilen maksimum değere eşitler) ???</i>
+                        </li>
+                    </ul>
+                    </p>
                     <li><b>order </b><i></i> (flex-itemları başa almak, yerlerini değiştirmek)</li>
                     <p>
                     <ul type="circle">
@@ -928,11 +939,17 @@
                     <li><i> repeat(3, auto)</i> (3 tane otomatik kolon)</li>
                     <li><i> 1fr 2fr 1fr...</i> (1. kolon 1 fragment, 2. kolon 2 fragment, 3. kolon 1 fragment)</li>
                     <li><i> repeat(3, 1fr)</i> (1. kolon 1 fragment, 2. kolon 1 fragment, 3. kolon 1 fragment)</li>
-                    <li><i> minmax(200px,1fr) 1fr, 1fr</i> (1. kolon / satır en az 200px, 2. kolon / satır 1fr, 3. kolon / satır 1fr)</li>
-                    <li><i> minmax(200px,400px) 1fr, 1fr</i> (1. kolon / satır en az 200px - en fazla 400px, 2. kolon / satır 1fr, 3. kolon / satır 1fr)</li>
+                    <li><i> minmax(200px,1fr) 1fr, 1fr</i> (1. kolon / satır en az 200px, 2. kolon / satır 1fr, 3. kolon
+                        / satır 1fr)</li>
+                    <li><i> minmax(200px,400px) 1fr, 1fr</i> (1. kolon / satır en az 200px - en fazla 400px, 2. kolon /
+                        satır 1fr, 3. kolon / satır 1fr)</li>
                     <li><i> repeat(3, minmax(200px,1fr))</i> (3 kolonda da / satırda da en az 200px ve max 1fr)</li>
-                    <li><i> repeat(auto-fill, minmax(200px,1fr))</i> (kolonlar / satırlar 200px'den aza indirgendiğinde ekranı otomatik doldurur, ekran ölçeği düşürüldüğünde boşluğa ekstra eleman ekleneceğinde kullanılır)</li>
-                    <li><i> repeat(auto-fit, minmax(200px,1fr))</i> (kolonlar / satırlar 200px'den aza indirgendiğinde ekranı otomatik doldurur, ekran ölçeği düşürüldüğünde boşluğa ekstra eleman eklenmeyecekse ekrana yaymak için kullanılır)</li>
+                    <li><i> repeat(auto-fill, minmax(200px,1fr))</i> (kolonlar / satırlar 200px'den aza indirgendiğinde
+                        ekranı otomatik doldurur, ekran ölçeği düşürüldüğünde boşluğa ekstra eleman ekleneceğinde
+                        kullanılır)</li>
+                    <li><i> repeat(auto-fit, minmax(200px,1fr))</i> (kolonlar / satırlar 200px'den aza indirgendiğinde
+                        ekranı otomatik doldurur, ekran ölçeği düşürüldüğünde boşluğa ekstra eleman eklenmeyecekse
+                        ekrana yaymak için kullanılır)</li>
                 </ul>
                 <br>
                 <b>gap :</b><i> 10px</i> (boşluk bırakma)<br>
@@ -949,8 +966,10 @@
                     <li><b>grid-column-end :</b><i> 4</i> (bitiş kolonu)</li>
                     <li><b>grid-row-start :</b><i> 1</i> (başlangıç satırı)</li>
                     <li><b>grid-row-end :</b><i> 5</i> (bitiş satırı)</li>
-                    <li><b>grid-area :</b><i> 1 / 1 / 4 / 5</i> (1. satır ve 1. kolondan başla - 4. satır ve 5. kolonda bitir)</li>
-                    <li><b>grid-area :</b><i> 1 / 1 / span 4 / span 5</i> (1. satır ve 1. kolondan başla - 4. satır ve 5. kolonda bitir)</li>
+                    <li><b>grid-area :</b><i> 1 / 1 / 4 / 5</i> (1. satır ve 1. kolondan başla - 4. satır ve 5. kolonda
+                        bitir)</li>
+                    <li><b>grid-area :</b><i> 1 / 1 / span 4 / span 5</i> (1. satır ve 1. kolondan başla - 4. satır ve
+                        5. kolonda bitir)</li>
                 </ul>
                 </p>
             </details>
